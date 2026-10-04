@@ -1,0 +1,34 @@
+<!-- @dsCard group="Работа" height=660 subtitle="история одной работы: одна вертикальная хроника" width=760 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Chronicle — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 24px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.Chronicle, { view: 'brief',
+      groups: [
+        { kind: 'origin', at: '12:36', status: 'running', title: 'Правило «Счёт получен» завело работу',
+          text: h('span', null, 'Факт ', h('b', null, '«счёт №417 получен»'), ' — сработало условие «сумма > 0 и договор действует».'), source: { source: 'external', label: 'из 1С' } },
+        { kind: 'delivery', at: '12:37', human: true, done: true, actor: { kind: 'human', name: 'Ирина Котова' }, title: 'Карточка финансовому директору',
+          channel: { channel: 'Telegram', state: 'decided', at: '12:41' }, text: 'Доставлено 12:40 → открыто 12:41 → решено из Telegram 12:41.' },
+        { kind: 'signature', at: '12:41', human: true, done: true, actor: { kind: 'human', name: 'Ирина Котова' }, title: 'Ирина согласовала оплату',
+          text: 'Причина: «поставка принята, счёт сверен». Исполнилось: бухгалтерия уведомлена, работа → «Оплачивается».' },
+        { kind: 'attempt', at: '12:42', actor: { kind: 'process', name: 'Оплата счетов', label: 'ОС' }, title: 'Попытка №1 · 3 мин',
+          text: 'Платёжное поручение сформировано и отправлено в банк.', box: 'Протокол: 6 шагов · размышления не хранятся · стоимость — во втором слое' },
+        { kind: 'verify', at: '13:05', status: 'verified', title: 'Проверено внешним состоянием',
+          criteria: [{ ok: true, text: 'Платёж проведён банком — 184 500 ₽' }, { ok: true, text: 'Сумма совпадает со счётом' }] },
+        { kind: 'reconcile', missing: true, title: 'Сверки ещё не было', text: 'Звена нет: сверка запускается раз в сутки в 23:00.' },
+        { kind: 'impact', at: '13:05', status: 'verified', title: 'Оплачено 184 500 ₽', text: 'Обязательство перед «Альфа-Снаб» закрыто.' }
+      ] })
+  );
+</script>
+</body>
+</html>

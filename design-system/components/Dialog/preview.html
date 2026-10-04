@@ -1,0 +1,27 @@
+<!-- @dsCard group="Действия" height=620 subtitle="действие с последствиями до кнопки" width=760 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Dialog — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.Dialog, { title: 'Снять работу «Сверить счёт №421»?', sub: 'Снятая работа не выполняется дальше; причина записывается в журнал.', alert: true,
+      hint: 'Необратимо: снятую работу не вернуть — можно завести новую',
+      footer: [h(T.Button, { key: 1, variant: 'ghost' }, 'Отмена'), h(T.Button, { key: 2, variant: 'danger' }, 'Снять работу')] },
+      h(T.Consequences, { items: [
+        { tone: 'info', k: 'Текущая попытка', v: 'нет идущей — последняя завершилась в 13:58' },
+        { tone: 'ok', k: 'Что уже сделано вовне', v: 'откатывать нечего: агент только читал 1С' },
+        { tone: 'warn', k: 'Дело процесса', v: '«Оплата счёта №421» остановится на шаге «Сверка»' },
+        { tone: 'warn', k: 'Обратимо ли', v: 'нет: снятая работа закрывается насовсем' }] }),
+      h(T.Field, { label: 'Причина' }, h('textarea', { className: 'tc-textarea', placeholder: 'Например: счёт отозван поставщиком' }))));
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- @dsCard group="Состояния" height=405 subtitle="онбординг с одним действием; спокойное пусто" width=1000 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>EmptyState — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 } },
+      h('div', { className: 'tc-zone' }, h(T.EmptyState, { art: true, title: 'Организация ещё не запущена',
+        body: 'Установите пакет — он объявит типы работы, процессы и правила. Работа появится на пути сама.', action: 'Установить пакет' })),
+      h('div', { className: 'tc-zone' }, h(T.EmptyState, { title: 'Ничего не ждёт вашей подписи',
+        body: 'Последняя — Иван, 12:40, из Telegram.' })))
+  );
+</script>
+</body>
+</html>

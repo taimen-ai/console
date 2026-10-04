@@ -1,0 +1,23 @@
+/* Формы шагов процесса (forms/SchemaForm.tsx) на классах полей дизайн-системы. */
+.sf { display: flex; flex-direction: column; gap: var(--space-3); }
+.sf-form { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-3); }
+.sf-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-3); }
+.sf-group { border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: var(--space-3); margin: 0; display: grid; gap: var(--space-3); }
+.sf-group > legend { padding: 0 4px; font-weight: 600; font-size: 14px; }
+.sf-choice { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.sf-choice > legend { padding: 0; margin-bottom: 4px; }
+.sf-option, .sf-check { display: flex; align-items: flex-start; gap: var(--space-2); font-size: 14px; line-height: 20px; cursor: pointer; }
+.sf-option input, .sf-check input { margin-top: 3px; accent-color: var(--brand); }
+.sf-error { display: block; margin-top: 4px; font-size: 12px; color: var(--status-failed); }
+.sf-hint { display: block; margin-top: 4px; font-size: 12px; color: var(--text-muted); }
+.sf-label { margin: 0; color: var(--text-secondary); font-size: 14px; }
+.sf-actions { display: flex; justify-content: flex-end; }
+[aria-invalid="true"].tc-input, [aria-invalid="true"].tc-select, [aria-invalid="true"].tc-textarea { border-color: var(--status-failed); }
+/* Вложенные объекты и списки */
+.sf-nested { margin: 0; }
+.sf-list { display: flex; flex-direction: column; gap: var(--space-2); }
+.sf-list-item { display: flex; align-items: flex-end; gap: var(--space-2); }
+.sf-list-object { align-items: flex-start; }
+.sf-list-object > .tc-btn { margin-top: var(--space-4); }
+.sf-list-body { flex: 1; min-width: 0; }
+.sf-list-empty { margin: 0; font-size: 13px; }

@@ -1,0 +1,20 @@
+<!-- @dsCard group="Списки" height=72 subtitle="фильтр: выпадающий или переключатель" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>FilterChip — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'flex', gap: 8, flexWrap: 'wrap' } },
+      h(T.FilterChip, { label: 'Только моё', pressed: true }), h(T.FilterChip, { label: 'Тип работы', value: 'все' }), h(T.FilterChip, { label: 'Срок', value: 'любой' }), h(T.FilterChip, { label: 'Договоры', count: 23, pressed: false })));
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "console",
+  "private": true,
+  "description": "Web console of the Taimen organizational runtime: SPA, BFF, design system",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter './packages/*' --filter ./apps/web run build",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "dev": "pnpm --filter @console/devstack run dev",
+    "check": "pnpm run typecheck && pnpm run lint && pnpm run test && pnpm --filter @console/web i18n:check",
+    "lint": "eslint .",
+    "e2e": "pnpm run build && pnpm --filter @console/e2e run e2e",
+    "third-party": "node --disable-warning=ExperimentalWarning scripts/third-party.ts",
+    "third-party:check": "node --disable-warning=ExperimentalWarning scripts/third-party.ts --check"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.13.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.0"
+  }
+}

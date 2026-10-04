@@ -1,0 +1,93 @@
+<!-- @dsCard group="Экраны" height=2240 subtitle="главный экран: семь зон, цвет только там, где нужен человек" width=1440 page -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Pult — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 0; }
+  .pult { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, var(--layout-rail)); gap: var(--zone-pad); padding: var(--zone-pad); }
+  .pult-left { display: flex; flex-direction: column; gap: var(--zone-pad); min-width: 0; }
+  .pult-right { display: flex; flex-direction: column; gap: var(--zone-pad); min-width: 0; }
+  .pult-two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--zone-pad); align-items: start; }
+  .stack { display: flex; flex-direction: column; gap: 12px; }
+  .levers { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; font-size: 13px; }
+  .levers li { padding: 8px 0; border-bottom: 1px solid var(--border-subtle); color: var(--text-secondary); }
+  .levers li:last-child { border-bottom: 0; }
+  .levers b { color: var(--text-primary); font-weight: 600; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { className: 'tc-root' },
+      h(T.TopBar, { brand: { name: 'Taimen', mark: 'T' }, org: 'Полярис', date: 'Сегодня, 29 сентября', at: '14:02', user: 'Антон Белов' }),
+      h('div', { className: 'pult' },
+        h('div', { className: 'pult-left' },
+          h('section', { className: 'tc-zone' }, h(T.Summary, { verified: 31, submitted: 35, waiting: 2, broken: 1, unit: 'работу',
+            changes: [
+              { title: h('span', null, 'Оплачено ', h('b', null, '12'), ' счетов · ', h('b', null, '2 418 300 ₽')), method: 'external', methodText: 'внешним состоянием', evidence: 'Платежи в банке' },
+              { title: h('span', null, 'Подано ', h('b', null, '3'), ' заявки на тендеры'), method: 'human', methodText: 'человеком: Ирина', evidence: 'Квитанции ЕИС' },
+              { small: true, title: 'Сверено с реальностью: 2 сняты' } ] })),
+          h('div', { className: 'pult-two' },
+            h('section', { className: 'tc-zone tc-zone-human', 'aria-label': 'Ждёт вашей подписи' },
+              h('div', { className: 'tc-zone-head' }, h('h2', { className: 'tc-zone-title' }, 'Ждёт вашей подписи'), h('span', { className: 'tc-zone-count' }, '2')),
+              h('div', { className: 'stack' },
+                h(T.DecisionCard, { kind: 'Решить · согласование', holds: true,
+                  title: h('span', null, 'Согласовать оплату счёта «Альфа-Снаб», ', h('span', { className: 'tc-num' }, '184 500 ₽')),
+                  requester: { kind: 'process', name: 'Оплата счетов', label: 'ОС' }, since: 'с 12:37',
+                  delivery: { channel: 'Telegram', state: 'delivered', at: '12:40' },
+                  why: 'сумма выше порога 150 000 ₽ по таблице согласования.',
+                  yes: 'Бухгалтерия получит уведомление, работа перейдёт в «Оплачивается».', no: 'Счёт будет отозван.',
+                  evidence: ['Счёт №417 (PDF)', 'Акт сверки — из 1С'], primary: 'Согласовать', kbd: 'E' }),
+                h(T.DecisionCard, { kind: 'Принять · приёмка', title: 'Принять заявку на тендер №0373200041',
+                  requester: { kind: 'agent', name: 'Подготовщик заявок', label: 'Пз' }, since: 'с 11:02',
+                  why: 'вы — ответственный за тендерный отдел.', evidence: ['Заявка (DOCX)'], primary: 'Принять', dismissible: false }))),
+            h('section', { className: 'tc-zone tc-zone-problem', 'aria-label': 'Сломано или застряло' },
+              h('div', { className: 'tc-zone-head' }, h('h2', { className: 'tc-zone-title' }, 'Сломано / застряло'), h('span', { className: 'tc-zone-count' }, '1')),
+              h('div', { className: 'stack' },
+                h(T.ProblemCard, { severity: 'failed',
+                  diagnosis: 'Агент «Сверщик» три раза не прошёл проверку по «Сверить счёт №421» — работа передана человеку',
+                  where: 'Оплата счетов → «Проверить документы»', since: 'с 13:12',
+                  actions: [{ label: 'Открыть основание' }, { label: 'Изменить и продолжить' }] }),
+                h(T.ProblemCard, { severity: 'approaching', diagnosis: 'Срок удержания «Заявка №0373…» истекает через 20 мин', where: 'Подготовщик заявок', since: 'до 14:20' })))),
+          h('section', { className: 'tc-zone', 'aria-label': 'Путь работы' },
+            h('div', { className: 'tc-zone-head' }, h('h2', { className: 'tc-zone-title' }, 'Путь работы'), h('span', { className: 'tc-zone-count' }, 'сегодня')),
+            h(T.WorkPath, {
+              stages: [
+                { label: 'Возникло', count: 42, byKind: { human: 6, agent: 3, process: 33 }, origin: 'правило 28 · процесс 8 · человек 6' },
+                { label: 'Поручено', count: 39, byKind: { human: 14, agent: 17, process: 8 } },
+                { label: 'Исполняется', count: 11, byKind: { human: 3, agent: 6, process: 2 } },
+                { label: 'Проверено', count: 31, byKind: { human: 9, agent: 16, process: 6 } },
+                { label: 'Изменило', count: 24 },
+                { label: 'Сверено / снято', count: 2, tail: true } ],
+              gates: [ { count: 3, reason: 'некому поручить' }, { count: 0 }, { count: 2, reason: 'ждёт вашей приёмки', mine: true }, { count: 1, reason: 'проверка не пройдена трижды' }, { count: 0 } ] })),
+          h('section', { className: 'tc-zone', 'aria-label': 'Что произошло' },
+            h('div', { className: 'tc-zone-head' }, h('h2', { className: 'tc-zone-title' }, 'Что произошло'), h('button', { className: 'tc-link', type: 'button' }, 'Весь журнал')),
+            h('div', { className: 'tc-journal' },
+              h(T.JournalEntry, { at: '14:00', actor: { kind: 'human', name: 'Антон' }, verb: 'применил пакет', object: 'invoice-approval 0.4.0', why: '3 объекта изменены' }),
+              h(T.JournalEntry, { at: '13:02', actor: { kind: 'agent', name: 'Сверщик', label: 'Св' }, verb: 'сдал', object: '«Сверить счёт №421»', why: 'на проверке: 2 из 3 критериев прошли' }),
+              h(T.JournalEntry, { at: '12:41', actor: { kind: 'human', name: 'Иван' }, verb: 'согласовал оплату', object: '«Вектор», 96 000 ₽', channel: 'Telegram' }),
+              h(T.JournalEntry, { at: '12:36', actor: { kind: 'process', name: 'Правило «Счёт получен»', label: '' }, verb: 'завело', object: '«Оплатить счёт №417»', why: 'по наблюдению из 1С' })))),
+        h('div', { className: 'pult-right' },
+          h('section', { className: 'tc-zone', 'aria-label': 'Парк' },
+            h('div', { className: 'tc-zone-head' }, h('h2', { className: 'tc-zone-title' }, 'Парк'), h('span', { className: 'tc-zone-count' }, '9')),
+            h('div', { className: 'stack' },
+              h(T.ExecutorCard, { kind: 'agent', name: 'Сверщик счетов', label: 'Св', meta: 'r7', state: 'failed', stateLabel: 'падает при запуске', problem: true, now: 'нет машины для агентов с 13:12', trusted: 'сверяет счета до 500 000 ₽' }),
+              h(T.ExecutorCard, { kind: 'human', name: 'Ирина Котова', meta: 'Финансовый директор', state: 'waiting_human', stateLabel: 'решает 2', trusted: 'согласует оплату от 150 000 ₽' }),
+              h(T.ExecutorCard, { kind: 'process', name: 'Оплата счетов', label: 'ОС', meta: 'v2', state: 'running', stateLabel: '5 дел', now: '1 дело на «Согласовании» 3 ч', trusted: 'объявлен пакетом invoice-approval' }),
+              h(T.ExecutorCard, { vacant: true, role: 'юрист', now: '2 работы ждут роль с 10:15' }))),
+          h('section', { className: 'tc-zone', 'aria-label': 'Рычаги' },
+            h('div', { className: 'tc-zone-head' }, h('h2', { className: 'tc-zone-title' }, 'Рычаги')),
+            h('ul', { className: 'levers' },
+              h('li', null, h('b', null, 'Автономия: с приёмкой'), ' — агенты не завершают без проверки'),
+              h('li', null, h('b', null, 'Согласование'), ' — «Оплата счёта», «Подача заявки»'),
+              h('li', null, h('b', null, 'Правил включено 7'), ' · 1 выключено: нет исполнителя'),
+              h('li', null, h('b', null, 'Каналы'), ': Telegram · CRM не подключена'),
+              h('li', null, 'Пакет ', h('b', null, 'invoice-approval 0.4.0'), ' применён Антоном 29.09 — 3 объекта'))))))
+  );
+</script>
+</body>
+</html>

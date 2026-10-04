@@ -1,0 +1,29 @@
+<!-- @dsCard group="Статусы и печати" height=116 subtitle="10 операционных состояний: форма + слово, цвет — третьим" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>StatusMark — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'flex', flexDirection: 'column', gap: 12 } },
+      h('div', { style: { display: 'flex', gap: 8, flexWrap: 'wrap' } },
+        ['queued', 'running', 'waiting_human', 'waiting_external', 'blocked', 'paused', 'stale', 'failed', 'completed', 'verified'].map(function (s) {
+          return h(T.StatusMark, { key: s, status: s });
+        })),
+      h('div', { style: { display: 'flex', gap: 16, flexWrap: 'wrap', alignItems: 'center' } },
+        h(T.StatusMark, { status: 'waiting_human', mine: true, label: 'ждёт вас' }),
+        h(T.StatusMark, { status: 'waiting_human', label: 'ждёт Ивана' }),
+        h(T.StatusMark, { status: 'verified', pill: false, label: 'проверено внешним состоянием' }),
+        h(T.StatusMark, { status: 'failed', pill: false, label: 'не пройдено 2/3' })))
+  );
+</script>
+</body>
+</html>

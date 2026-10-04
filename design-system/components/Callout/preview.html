@@ -1,0 +1,21 @@
+<!-- @dsCard group="Действия" height=150 subtitle="предупреждение в форме: обход правила видно" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Callout — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'flex', flexDirection: 'column', gap: 12 } },
+      h(T.Callout, { tone: 'warning' }, h('b', null, 'У Ирины Котовой нет роли «Бухгалтер». '), 'Назначить можно, но работа пройдёт мимо очереди бухгалтерии — это будет видно в истории.'),
+      h(T.Callout, { tone: 'info' }, 'Роль — правило подбора исполнителя. Полномочия проверяет ядро при действии.')));
+</script>
+</body>
+</html>

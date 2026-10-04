@@ -1,0 +1,23 @@
+/* Документ консоли. Токены и компоненты — из дизайн-системы, здесь только фон и тело. */
+html,body{margin:0;background:var(--surface-page);color:var(--text-primary);font-family:var(--font-sans)}
+#root{min-height:100vh}
+/* Ответы ассистента в markdown: блоки панели без лишних отступов. */
+.asst-md{display:block}
+.asst-md-plain{white-space:pre-wrap}
+.asst-md > :first-child{margin-top:0}
+.asst-md > :last-child{margin-bottom:0}
+.asst-md p,.asst-md ul,.asst-md ol,.asst-md pre,.asst-md blockquote{margin:0 0 8px}
+.asst-md ul,.asst-md ol{padding-left:20px}
+.asst-md a{color:var(--link)}
+.asst-md code{font-family:var(--font-mono);font-size:.92em}
+.asst-md pre{overflow:auto;padding:8px;border-radius:var(--radius-sm);background:var(--surface-sunken)}
+.asst-md-table{overflow-x:auto}
+.asst-md table{border-collapse:collapse}
+.asst-md th,.asst-md td{border:1px solid var(--border-subtle);padding:4px 6px;text-align:left}
+/* Переключатель языка в подвале меню: две кнопки, выбранная — нажата. */
+.shell-langs{display:flex;gap:4px;padding:4px 12px}
+.shell-langs button{border:1px solid var(--border-subtle);background:transparent;color:var(--text-secondary);border-radius:var(--radius-sm);padding:2px 8px;font:inherit;font-size:12px;cursor:pointer}
+.shell-langs button[aria-pressed="true"]{background:var(--surface-sunken);color:var(--text-primary);border-color:var(--border-strong,var(--border-subtle))}
+.shell-langs button:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+/* «Выйти» — кнопка в стиле пункта меню (tc-nav-item рассчитан на ссылку). */
+button.tc-nav-item{width:100%;border:0;background:transparent;font:inherit;text-align:left;cursor:pointer}

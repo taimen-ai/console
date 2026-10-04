@@ -1,0 +1,25 @@
+/* «Журнал» (Journal.tsx) */
+.jr { display: flex; flex-direction: column; gap: var(--space-3); }
+.jr-bar { display: flex; flex-direction: column; gap: var(--space-2); }
+.jr-chips { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+.jr-date { display: inline-flex; align-items: center; gap: var(--space-1); font-size: 13px; color: var(--text-secondary); }
+.jr-date .tc-input { width: auto; }
+.jr-status { margin: 0; font-size: 13px; }
+.jr-fresh, .jr-more { display: flex; justify-content: center; }
+.jr-box { overflow: auto; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); }
+.jr-box:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.jr-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.jr-table th, .jr-table td { text-align: left; vertical-align: top; padding: var(--space-2) var(--space-3); border-top: 1px solid var(--border-subtle); }
+.jr-table thead th { border-top: 0; color: var(--text-muted); font-weight: 400; background: var(--surface-sunken); position: sticky; top: 0; }
+.jr-when { white-space: nowrap; }
+.jr-toggle { all: unset; cursor: pointer; border-radius: 4px; }
+.jr-toggle:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.jr-toggle[aria-expanded="true"] { font-weight: 600; }
+.jr-type, .jr-kind { font-size: 12px; }
+.jr-only { font-size: 12px; margin-left: var(--space-1); }
+.jr-audit td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+.jr-detail td { background: var(--surface-sunken); }
+.jr-ids { display: grid; grid-template-columns: max-content 1fr; gap: 2px var(--space-3); margin: 0 0 var(--space-2); }
+.jr-ids dt { color: var(--text-muted); }
+.jr-ids dd { margin: 0; overflow-wrap: anywhere; }
+.jr-payload { margin: 0; max-height: 360px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; }

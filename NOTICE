@@ -1,0 +1,9 @@
+Taimen Console
+Copyright 2026 Aleksandr Pereboev and Taimen contributors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+Third-party components and their licences are listed in THIRD_PARTY.md.
+
+This product bundles the IBM Plex fonts, Copyright © 2017 IBM Corp., licensed under
+the SIL Open Font License 1.1 (design-system/fonts/OFL.txt), and Lucide icons,
+licensed under the ISC License (design-system/assets/Icons/LICENSE).

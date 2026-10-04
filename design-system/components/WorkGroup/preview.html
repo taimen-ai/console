@@ -1,0 +1,25 @@
+<!-- @dsCard group="Работа" height=300 subtitle="группа работы по нужде; сворачивается" width=1200 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>WorkGroup — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  function Demo() {
+    var s = React.useState(true);
+    return h(T.WorkGroup, { title: 'Ждёт вас', count: 2, human: true, hint: 'решения и приёмки, где нужна ваша подпись', open: s[0], onToggle: function () { s[1](!s[0]); } },
+      h(T.WorkRow, { mine: true, status: 'waiting_human', statusLabel: 'ждёт вас', title: 'Согласовать оплату счёта №417 «Альфа-Снаб», 184 500 ₽', number: 'TASK-000840', href: '#',
+        readiness: 'Счёт сверен с актом из 1С; нужна ваша подпись — сумма выше порога', age: '1 ч 25 мин', action: 'Решить',
+        seals: { origin: { kind: 'rule', text: 'правило «Счёт получен»' }, executor: { kind: 'process', name: 'Оплата счетов', label: 'ОС' }, evidence: { method: 'auto', text: 'автопроверкой 3/3' }, signature: { pending: true, who: 'вы' } } }));
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h(Demo));
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- @dsCard group="Пульт" height=280 subtitle="одна фраза с числами-ссылками + полоса «Изменилось»" width=1200 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Summary — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 24px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.Summary, { verified: 31, submitted: 35, waiting: 4, broken: 1, unit: 'работу',
+      changes: [
+        { title: h('span', null, 'Оплачено ', h('b', null, '12'), ' счетов · ', h('b', null, '2 418 300 ₽')), method: 'external', methodText: 'внешним состоянием', evidence: 'Платежи в банке' },
+        { title: h('span', null, 'Подано ', h('b', null, '3'), ' заявки на тендеры'), method: 'human', methodText: 'человеком: Ирина', evidence: 'Квитанции ЕИС' },
+        { title: h('span', null, 'Влито ', h('b', null, '7'), ' изменений'), method: 'auto', methodText: 'автопроверкой 3/3', evidence: 'Критерии приёмки' },
+        { small: true, title: 'Сверено с реальностью: 2 сняты' }
+      ] })
+  );
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- @dsCard group="Статусы и печати" height=222 subtitle="Откуда · Кто делал · Чем доказано · Кто подписал" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Seals — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'flex', flexDirection: 'column', gap: 20 } },
+      h(T.Seals, { labelled: true,
+        origin: { kind: 'rule', text: 'правило «Счёт получен» по факту из 1С' },
+        executor: { kind: 'process', name: 'Оплата счетов', label: 'ОС', meta: 'v2' },
+        evidence: { method: 'external', text: 'внешним состоянием: платёж в банке' },
+        signature: { who: 'Ирина', channel: 'Telegram', at: '12:41' } }),
+      h(T.Seals, {
+        origin: { kind: 'process', text: 'шаг «Проверить документы»' },
+        executor: { kind: 'agent', name: 'Сверщик', label: 'Св', meta: 'r7' },
+        evidence: { method: 'failed', text: 'не пройдено 2/3' },
+        signature: { pending: true, who: 'Ирина' } }),
+      h(T.Seals, {
+        origin: { kind: 'human', name: 'Антон', text: 'поручил Антон' },
+        executor: null,
+        evidence: { method: 'model', text: 'оценкой модели' },
+        signature: null }))
+  );
+</script>
+</body>
+</html>

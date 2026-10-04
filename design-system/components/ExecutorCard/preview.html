@@ -1,0 +1,29 @@
+<!-- @dsCard group="Пульт" height=450 subtitle="Парк: люди, агенты, процессы одной анатомией; «что доверено»" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>ExecutorCard — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 12, maxWidth: 720 } },
+      h(T.ExecutorCard, { kind: 'agent', name: 'Сверщик счетов', label: 'Св', meta: 'r7', state: 'failed', stateLabel: 'падает при запуске', problem: true,
+        now: 'Не запускается с 13:12: нет машины для агентов', trusted: 'сверяет счета до 500 000 ₽; без человека не платит' }),
+      h(T.ExecutorCard, { kind: 'human', name: 'Ирина Котова', meta: 'Финансовый директор', state: 'waiting_human', stateLabel: 'решает 2',
+        trusted: 'согласует оплату от 100 000 ₽', channel: 'Telegram' }),
+      h(T.ExecutorCard, { kind: 'process', name: 'Оплата счетов', label: 'ОС', meta: 'v2', state: 'running', stateLabel: '5 дел',
+        now: '1 дело на шаге «Согласование» 3 ч — дольше нормы', trusted: 'объявлен пакетом invoice-approval 0.4.0' }),
+      h(T.ExecutorCard, { kind: 'agent', name: 'Подготовщик заявок', label: 'Пз', meta: 'r4', state: 'running', stateLabel: 'работает',
+        now: 'делает «Заявка №0373200041» · 12 мин', trusted: null }),
+      h(T.ExecutorCard, { vacant: true, role: 'юрист', now: '2 работы ждут роль «Юрист» с 10:15' }))
+  );
+</script>
+</body>
+</html>

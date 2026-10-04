@@ -1,0 +1,30 @@
+/* «База знаний» (docs/screens/knowledge.md): две колонки, таблица вида, источники и изменения. */
+.kb { container-type: inline-size; }
+.kb .tc-pagehead { margin-bottom: var(--space-4); }
+.kb-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, var(--layout-rail)); gap: var(--zone-pad); align-items: start; }
+.kb-col { display: flex; flex-direction: column; gap: var(--zone-pad); min-width: 0; }
+.kb-attn { display: flex; flex-direction: column; gap: 8px; }
+.kb-kinds { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--space-3); }
+.kb-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.kb-list li { padding: 10px 0; border-bottom: 1px solid var(--border-subtle); }
+.kb-list li:last-child { border-bottom: 0; }
+.kb-src { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-2); font-size: 14px; }
+.kb-note { display: block; font-size: 12px; line-height: 16px; color: var(--text-muted); margin-top: 2px; }
+.kb-z-table .tc-table-wrap { overflow-x: auto; }
+.kb-z-table .tc-cell-sub { display: block; }
+
+@container (max-width: 1100px) { .kb-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 300px); } }
+@container (max-width: 880px) {
+  .kb-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 720px) {
+  /* Виды знаний — одной строкой с прокруткой, таблица остаётся под рукой. */
+  .kb-kinds { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--zone-pad)); padding-inline: var(--zone-pad); }
+  .kb-kinds > * { flex: none; }
+}
+
+/* Страница документа. */
+.kb-callout { margin-bottom: var(--zone-pad); }
+.kb-key { overflow-wrap: anywhere; font-size: 12px; }
+.kb .tc-props dd { overflow-wrap: anywhere; }
+.kb-template { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); font-size: 13px; }

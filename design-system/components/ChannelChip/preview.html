@@ -1,0 +1,24 @@
+<!-- @dsCard group="Статусы и печати" height=72 subtitle="работа дошла до человека в его инструменте" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>ChannelChip — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'flex', gap: 8, flexWrap: 'wrap' } },
+      h(T.ChannelChip, { channel: 'Telegram', state: 'delivered', at: '12:40' }),
+      h(T.ChannelChip, { channel: 'Telegram', state: 'opened', at: '12:41' }),
+      h(T.ChannelChip, { channel: 'Telegram', state: 'decided', at: '12:41' }),
+      h(T.ChannelChip, { channel: 'Telegram', state: 'failed', reason: 'бот заблокирован' }))
+  );
+</script>
+</body>
+</html>

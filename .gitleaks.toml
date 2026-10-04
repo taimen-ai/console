@@ -1,0 +1,10 @@
+# Allowlist for gitleaks (oss_check of the open-source distribution).
+# A path- or content-based rule, not commit fingerprints: the public mirror is a
+# snapshot with different commit SHAs, so .gitleaksignore entries would not match.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "RFC 6455 sample Sec-WebSocket-Key in BFF tests (a public value from the standard, not a secret)"
+regexTarget = "line"
+regexes = ['''dGhlIHNhbXBsZSBub25jZQ==''']

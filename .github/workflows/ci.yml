@@ -1,0 +1,75 @@
+name: CI
+
+# The suite is self-contained: unit tests run in process, and the end-to-end tests run
+# the production build of the SPA behind the real BFF on the devstack (apps/devstack),
+# which fakes the identity provider, IAM, Control Plane and harness launcher. No
+# platform stand and no secrets are needed, so every push to main and every pull
+# request runs it in full.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      # pnpm in the exact version of `packageManager`, through npm as in the Dockerfile
+      # (pnpm 12 ships a native binary that corepack does not always find).
+      - name: Install pnpm
+        run: npm install -g --no-fund --no-audit "pnpm@$(node -p "require('./package.json').packageManager.split('@')[1]")"
+      - name: Cache the pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/pnpm/store
+          key: pnpm-store-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: pnpm-store-${{ runner.os }}-
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm -r typecheck
+      - run: pnpm run lint
+      - run: pnpm -r test
+      - name: Translation coverage
+        run: pnpm --filter @console/web i18n:check
+      - name: THIRD_PARTY.md is up to date
+        run: pnpm third-party:check
+
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Install pnpm
+        run: npm install -g --no-fund --no-audit "pnpm@$(node -p "require('./package.json').packageManager.split('@')[1]")"
+      - name: Cache the pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/pnpm/store
+          key: pnpm-store-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: pnpm-store-${{ runner.os }}-
+      - run: pnpm install --frozen-lockfile
+      - name: Install Chromium
+        run: pnpm --filter @console/e2e exec playwright install --with-deps chromium
+      - name: End-to-end tests (devstack; builds the SPA and the packages it imports first)
+        run: pnpm e2e
+      - name: Playwright traces of failed tests
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-traces
+          path: apps/e2e/test-results/
+          retention-days: 7

@@ -1,0 +1,22 @@
+<!-- @dsCard group="Каркас" height=300 subtitle="зона экрана; human — accent, problem — error" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Zone — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 16 } },
+      h(T.Zone, { title: 'Материалы', count: 3 }, h('p', { className: 'tc-secondary', style: { margin: 0 } }, 'Обычная зона.')),
+      h(T.Zone, { title: 'Ждёт вашей подписи', count: 2, tone: 'human' }, h('p', { className: 'tc-secondary', style: { margin: 0 } }, 'Здесь нужен человек.')),
+      h(T.Zone, { title: 'Сломано / застряло', count: 1, tone: 'problem' }, h('p', { className: 'tc-secondary', style: { margin: 0 } }, 'Только пока есть проблема.'))));
+</script>
+</body>
+</html>

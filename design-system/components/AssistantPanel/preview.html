@@ -1,0 +1,27 @@
+<!-- @dsCard group="Поверхности" height=820 subtitle="⌘J: видимая плашка контекста; исход — работа в ядре, не сообщение" width=440 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>AssistantPanel — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.AssistantPanel, {
+      context: 'история «Сверить счёт №421», попытка №3',
+      messages: [
+        { from: 'user', text: 'Почему стоит?' },
+        { from: 'asst', text: 'Проверка «сумма совпадает с актом» не прошла трижды: в акте сверки из 1С сумма 96 000 ₽, в счёте 99 600 ₽. Работа передана бухгалтерии.', source: { source: 'authoritative' } },
+        { from: 'user', text: 'Поручи Ивану запросить у поставщика исправленный счёт' },
+        { proposal: 'Запросить исправленный счёт у «Вектор»', detail: 'Выполняет: Иван Лебедев · срок 1 день · основание: работа «Сверить счёт №421»' }
+      ] })
+  );
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!-- @dsCard group="Формы" height=330 subtitle="«Будет заведено» до кнопки" width=420 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>WorkPreview — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.WorkPreview, { title: 'Сверить счёт №421 «Вектор»', fields: [['Тип', 'Сверка счёта'], ['Результат', 'Счёт сверен с актом из 1С; расхождения устранены или описаны'], ['Выполняет', 'агент «Сверщик»'], ['Отвечает', 'вы'], ['Срок', 'сегодня, 18:00'], ['Приёмка', '4 критерия · последний — человеком']],
+      seals: { origin: { kind: 'human', text: 'поручили вы' }, executor: { kind: 'agent', name: 'Сверщик', label: 'Св' }, evidence: { method: 'none', text: 'проверка впереди' }, signature: { pending: true, who: 'вы' } } }));
+</script>
+</body>
+</html>

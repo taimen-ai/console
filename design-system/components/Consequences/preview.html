@@ -1,0 +1,23 @@
+<!-- @dsCard group="Действия" height=230 subtitle="что произойдёт → охват → обратимо ли → что уже сделано вовне" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Consequences — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.Consequences, { items: [
+      { tone: 'info', k: 'Текущая попытка', v: 'остановится после текущего шага; протокол сохранится' },
+      { tone: 'ok', k: 'Что уже сделано вовне', v: 'ничего не менялось: агент только читал 1С' },
+      { tone: 'warn', k: 'Внешние действия', v: 'платёж уже передан в банк — снятие работы его не отменит' },
+      { tone: 'ok', k: 'Можно ли повторить', v: 'да — новой попыткой с теми же данными' }] }));
+</script>
+</body>
+</html>

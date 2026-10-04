@@ -1,0 +1,23 @@
+<!-- @dsCard group="Работа" height=170 subtitle="критерии приёмки с видом проверки и состоянием" width=640 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Criteria — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.Criteria, { items: [
+      { text: 'Сумма в счёте совпадает с актом сверки — нет: 99 600 ₽ против 96 000 ₽', kind: 'автопроверка', state: 'bad' },
+      { text: 'Реквизиты поставщика совпадают с договором', kind: 'автопроверка', state: 'ok' },
+      { text: 'Договор № В-07 действует', kind: 'автопроверка', state: 'ok' },
+      { text: 'Сверку принимает человек: вы', kind: 'человек', state: 'wait' }] }));
+</script>
+</body>
+</html>

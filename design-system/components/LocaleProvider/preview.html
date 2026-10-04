@@ -1,0 +1,55 @@
+<!-- @dsCard group="Основа" height=640 subtitle="язык встроенных строк: en — основной, ru — второй; данные приходят на языке экрана" width=1000 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>LocaleProvider — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  .lp-col { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+  .lp-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  /* Один и тот же набор компонентов; встроенные строки — из словаря локали, данные — на языке колонки. */
+  var DATA = {
+    en: {
+      kind: 'Sign-off', title: 'Approve payment of the “Alfa-Snab” invoice, 184,500 ₽',
+      requester: { kind: 'process', name: 'Invoice payment', label: 'IP', meta: 'step “Sign-off”' },
+      why: 'the amount is over the 150,000 ₽ threshold in the approval table.',
+      yes: 'Accounting is notified and the work moves to “Being paid”.',
+      no: 'The invoice is withdrawn and the supplier gets an email with the reason.',
+      evidence: ['Invoice #417 (PDF)', 'Reconciliation act from 1C'],
+      seals: { origin: { kind: 'rule', text: 'rule “Invoice received”' }, executor: { kind: 'agent', name: 'Reconciler', label: 'Rc', meta: 'r7' },
+        evidence: { method: 'external' }, signature: { pending: true, who: 'Irina' } }
+    },
+    ru: {
+      kind: 'Согласование', title: 'Согласовать оплату счёта «Альфа-Снаб», 184 500 ₽',
+      requester: { kind: 'process', name: 'Оплата счетов', label: 'ОС', meta: 'шаг «Согласование»' },
+      why: 'сумма выше порога 150 000 ₽ по таблице согласования.',
+      yes: 'Бухгалтерия получит уведомление, работа перейдёт в «Оплачивается».',
+      no: 'Счёт будет отозван, поставщику уйдёт письмо с причиной.',
+      evidence: ['Счёт №417 (PDF)', 'Акт сверки из 1С'],
+      seals: { origin: { kind: 'rule', text: 'правило «Счёт получен»' }, executor: { kind: 'agent', name: 'Сверщик', label: 'Св', meta: 'r7' },
+        evidence: { method: 'external' }, signature: { pending: true, who: 'Ирина' } }
+    }
+  };
+  function Column(locale) {
+    var d = DATA[locale];
+    return h(T.LocaleProvider, { locale: locale },
+      h('div', { className: 'lp-col' },
+        h('span', { className: 'tc-mono' }, 'locale: "' + locale + '"'),
+        h('div', { className: 'lp-row' },
+          h(T.StatusMark, { status: 'running' }), h(T.StatusMark, { status: 'waiting_human', mine: true }), h(T.StatusMark, { status: 'verified' }),
+          h(T.LiveChip, { live: false, at: '13:40' })),
+        h(T.Seals, Object.assign({ labelled: true }, d.seals)),
+        h(T.Summary, { verified: 1, submitted: 4, waiting: 2, broken: 0, compact: true }),
+        h(T.DecisionCard, { kind: d.kind, holds: true, title: d.title, requester: d.requester, why: d.why, yes: d.yes, no: d.no,
+          evidence: d.evidence, compact: true })));
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, Column('en'), Column('ru')));
+</script>
+</body>
+</html>

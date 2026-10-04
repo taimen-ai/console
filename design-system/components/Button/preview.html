@@ -1,0 +1,31 @@
+<!-- @dsCard group="Основа" height=150 subtitle="human — одно главное действие на экран" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Button — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'flex', flexDirection: 'column', gap: 12 } },
+      h('div', { style: { display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' } },
+        h(T.Button, { variant: 'human', kbd: 'E' }, 'Согласовать оплату'),
+        h(T.Button, { variant: 'brand' }, 'Установить ровно этот план'),
+        h(T.Button, { variant: 'secondary' }, 'Отклонить…'),
+        h(T.Button, { variant: 'ghost' }, 'Открыть историю'),
+        h(T.Button, { variant: 'danger' }, 'Принудительно остановить')),
+      h('div', { style: { display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' } },
+        h(T.Button, { variant: 'human', size: 'sm' }, 'Принять'),
+        h(T.Button, { variant: 'secondary', size: 'sm' }, 'Повторить как было'),
+        h(T.Button, { variant: 'ghost', size: 'sm' }, 'Передать человеку'),
+        h(T.Button, { variant: 'human', disabled: true }, 'Пока нельзя подписать')))
+  );
+</script>
+</body>
+</html>

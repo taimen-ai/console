@@ -1,0 +1,27 @@
+<!-- @dsCard group="Формы" height=360 subtitle="поиск исполнителя и пространства" width=560 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Combobox — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; display: grid; gap: 16px; max-width: 420px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  function Demo() {
+    var p = React.useState('ivan'), w = React.useState('fin');
+    return h(React.Fragment, null,
+      h(T.Field, { label: 'Исполняет' }, h(T.Combobox, { label: 'Исполняет', value: p[0], onChange: p[1], clearLabel: 'пока не назначено', defaultOpen: true, options: [
+        { value: 'ivan', label: 'Иван Сорокин', kind: 'human', meta: 'Бухгалтер' },
+        { value: 'irina', label: 'Ирина Котова', kind: 'human', meta: 'нет роли «Бухгалтер»', warn: true },
+        { value: 'rec', label: 'Сверщик счетов', kind: 'agent', meta: 'агент' }] })),
+      h(T.Field, { label: 'Пространство' }, h(T.Combobox, { label: 'Пространство', value: w[0], onChange: w[1], options: [
+        { value: 'org', label: 'Полярис' }, { value: 'fin', label: 'Финансы', depth: 1, meta: 'Полярис' }, { value: 'pay', label: 'Оплата счетов', depth: 2, meta: 'Полярис / Финансы' }] })));
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h(Demo));
+</script>
+</body>
+</html>

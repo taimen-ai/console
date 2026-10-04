@@ -1,0 +1,35 @@
+<!-- @dsCard group="Пульт" height=270 subtitle="пять стадий цикла и ворота между ними — не канбан" width=1200 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>WorkPath — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.WorkPath, {
+      stages: [
+        { label: 'Возникло', count: 42, byKind: { human: 6, agent: 3, process: 33 }, origin: 'правило 28 · процесс 8 · человек 6' },
+        { label: 'Поручено', count: 39, byKind: { human: 14, agent: 17, process: 8 } },
+        { label: 'Исполняется', count: 11, byKind: { human: 3, agent: 6, process: 2 } },
+        { label: 'Проверено', count: 31, byKind: { human: 9, agent: 16, process: 6 } },
+        { label: 'Изменило', count: 24, origin: 'счета, заявки, изменения' },
+        { label: 'Сверено / снято', count: 2, tail: true }
+      ],
+      gates: [
+        { count: 3, reason: 'некому поручить' },
+        { count: 0 },
+        { count: 4, reason: 'ждёт приёмки человеком', mine: true },
+        { count: 1, reason: 'проверка не пройдена трижды' },
+        { count: 0 }
+      ] })
+  );
+</script>
+</body>
+</html>

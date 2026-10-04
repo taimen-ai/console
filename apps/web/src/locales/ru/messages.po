@@ -1,0 +1,5972 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-10-02 01:10+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ru\n"
+
+#. placeholder {0}: form.step
+#. placeholder {1}: form.process
+#: src/forms/StepForm.tsx:110
+msgid "“{0}” of the process “{1}” is completed with these answers"
+msgstr "«{0}» процесса «{1}» завершится с этими ответами"
+
+#: src/lib/format.ts:57
+msgid "“{text}”"
+msgstr "«{text}»"
+
+#. placeholder {0}: criteria.length
+#: src/screens/work/AssignDialog.tsx:185
+msgid "{0, plural, one {# criterion} other {# criteria}}"
+msgstr "{0, plural, one {# критерий} few {# критерия} many {# критериев} other {# критерия}}"
+
+#. placeholder {0}: -days
+#: src/screens/knowledge/Entry.tsx:45
+#: src/screens/knowledge/Knowledge.tsx:168
+msgid "{0, plural, one {# day ago} other {# days ago}}"
+msgstr "{0, plural, one {# день назад} few {# дня назад} many {# дней назад} other {# дня назад}}"
+
+#. placeholder {0}: submittedIds.size
+#: src/screens/today/Today.tsx:318
+msgid "{0, plural, one {No verified results today yet — # work item is being checked.} other {No verified results today yet — # work items are being checked.}}"
+msgstr "{0, plural, one {Проверенных результатов за сегодня ещё нет — # работа на проверке.} few {Проверенных результатов за сегодня ещё нет — # работы на проверке.} many {Проверенных результатов за сегодня ещё нет — # работ на проверке.} other {Проверенных результатов за сегодня ещё нет — # работы на проверке.}}"
+
+#. placeholder {0}: verifiedIds.size
+#: src/screens/today/Today.tsx:318
+msgid "{0, plural, one {work item} other {work items}}"
+msgstr "{0, plural, one {работа} few {работы} many {работ} other {работы}}"
+
+#. placeholder {0}: agents.join(', ')
+#: src/screens/settings/Connections.tsx:387
+msgid "{0} — are refused from the next request"
+msgstr "{0} — получат отказ со следующего запроса"
+
+#. placeholder {0}: (connection.agents ?? []).join(', ')
+#: src/screens/settings/Connections.tsx:346
+msgid "{0} — get access within a few minutes"
+msgstr "{0} — получат доступ в течение нескольких минут"
+
+#. placeholder {0}: g.title
+#: src/screens/knowledge/Entry.tsx:159
+msgid "{0} (reverse)"
+msgstr "{0} (обратная)"
+
+#. placeholder {0}: e.displayName
+#. placeholder {0}: p.displayName
+#: src/screens/settings/People.tsx:77
+#: src/screens/task/TaskActions.tsx:246
+#: src/screens/task/TaskActions.tsx:307
+#: src/screens/work/AssignDialog.tsx:162
+msgid "{0} (you)"
+msgstr "{0} (вы)"
+
+#. placeholder {0}: person.displayName
+#: src/screens/settings/People.tsx:188
+msgid "{0} already holds this role there."
+msgstr "Эта роль там уже есть: {0}."
+
+#. placeholder {0}: person.displayName
+#: src/screens/settings/People.tsx:190
+msgid "{0} can take work that requires “{name}” — {place}"
+msgstr "{0} сможет брать работу, которой нужна роль «{name}», — {place}"
+
+#. placeholder {0}: person.displayName
+#: src/screens/settings/People.tsx:230
+msgid "{0} cannot take new work that requires “{name}” — {place}"
+msgstr "{0} не сможет брать новую работу, которой нужна роль «{name}», — {place}"
+
+#. placeholder {0}: target.displayName
+#. placeholder {1}: roleNames(lacking)
+#: src/screens/task/TaskActions.tsx:258
+msgid "{0} does not have the role {1}"
+msgstr "Нет роли {1}: {0}"
+
+#. placeholder {0}: f.title
+#: src/screens/view/ViewScreen.tsx:196
+msgid "{0} from"
+msgstr "{0}: от"
+
+#. placeholder {0}: target.displayName
+#. placeholder {1}: roleNames(lacking)
+#: src/screens/task/TaskActions.tsx:231
+msgid "{0} gets {1} in this space — for other work there too"
+msgstr "Роль {1} получит {0} — в этом пространстве, и для другой работы в нём тоже"
+
+#. placeholder {0}: target.displayName
+#: src/screens/task/TaskActions.tsx:228
+msgid "{0} gets the work with its history and materials"
+msgstr "{0} получит работу с историей и материалами"
+
+#. placeholder {0}: person.displayName
+#: src/screens/settings/PersonPage.tsx:360
+msgid "{0} participates nowhere and will not see any work"
+msgstr "{0} нигде не участвует и не увидит никакой работы"
+
+#. placeholder {0}: person.displayName
+#: src/screens/settings/PersonPage.tsx:366
+msgid "{0} sees the work of all workspaces — what the rights allow"
+msgstr "{0} видит работу всех пространств — в пределах прав"
+
+#. placeholder {0}: f.title
+#: src/screens/view/ViewScreen.tsx:198
+msgid "{0} to"
+msgstr "{0}: до"
+
+#. placeholder {0}: who.name
+#: src/screens/task/history.ts:118
+msgid "{0} took the work"
+msgstr "Взято в работу: {0}"
+
+#. placeholder {0}: person.displayName
+#. placeholder {1}: memberNames.join(', ')
+#: src/screens/settings/PersonPage.tsx:361
+msgid "{0} will see only: {1} and the nested workspaces"
+msgstr "{0} будет видеть только: {1} и вложенные пространства"
+
+#. placeholder {0}: stepTitle(s.name)
+#. placeholder {1}: stepError(s.error)
+#: src/screens/settings/AddPerson.tsx:68
+msgid "{0}: {1}"
+msgstr "{0}: {1}"
+
+#. placeholder {0}: stepTitle(s.name)
+#: src/screens/settings/AddPerson.tsx:69
+msgid "{0}: already there"
+msgstr "{0}: уже было"
+
+#. placeholder {0}: stepTitle(s.name)
+#: src/screens/settings/AddPerson.tsx:70
+msgid "{0}: not reached"
+msgstr "{0}: не дошли"
+
+#: src/screens/document/Document.tsx:57
+#: src/screens/task/Task.tsx:288
+msgid "{bytes} B"
+msgstr "{bytes} Б"
+
+#: src/screens/task/Protocol.tsx:55
+msgid "{calls, plural, one {# tool call} other {# tool calls}}"
+msgstr "{calls, plural, one {# вызов инструмента} few {# вызова инструментов} many {# вызовов инструментов} other {# вызова инструментов}}"
+
+#: src/screens/today/Today.tsx:148
+msgid "{count, plural, one {the attempt failed} other {# attempts failed}}"
+msgstr "{count, plural, one {попытка не удалась} few {# попытки не удались} many {# попыток не удались} other {# попытки не удались}}"
+
+#: src/screens/knowledge/Entry.tsx:49
+#: src/screens/knowledge/Knowledge.tsx:171
+#: src/screens/knowledge/Knowledge.tsx:196
+msgid "{days, plural, one {in # day} other {in # days}}"
+msgstr "{days, plural, one {через # день} few {через # дня} many {через # дней} other {через # дня}}"
+
+#: src/screens/task/history.ts:54
+msgid "{days} d"
+msgstr "{days} дн"
+
+#: src/screens/task/Protocol.tsx:56
+msgid "{errors, plural, one {# error} other {# errors}}"
+msgstr "{errors, plural, one {# ошибка} few {# ошибки} many {# ошибок} other {# ошибки}}"
+
+#: src/screens/document/PdfPreview.tsx:226
+msgid "{found} found"
+msgstr "найдено: {found}"
+
+#: src/screens/task/TaskActions.tsx:227
+msgid "{holder} stops holding the work"
+msgstr "{holder} перестаёт держать работу"
+
+#: src/screens/task/history.ts:52
+msgid "{hours} h"
+msgstr "{hours} ч"
+
+#: src/screens/task/history.ts:52
+msgid "{hours} h {rest} min"
+msgstr "{hours} ч {rest} мин"
+
+#: src/screens/document/Document.tsx:59
+#: src/screens/task/Task.tsx:290
+msgid "{kb} KB"
+msgstr "{kb} КБ"
+
+#: src/forms/SchemaForm.tsx:155
+msgid "{label} — {n}"
+msgstr "{label} — {n}"
+
+#: src/screens/document/Document.tsx:61
+#: src/screens/task/Task.tsx:292
+msgid "{mb} MB"
+msgstr "{mb} МБ"
+
+#: src/screens/task/history.ts:49
+msgid "{minutes} min"
+msgstr "{minutes} мин"
+
+#: src/screens/today/Today.tsx:299
+msgid "{myReview, plural, one {awaits your acceptance} other {await your acceptance}}"
+msgstr "{myReview, plural, one {ждёт вашей приёмки} other {ждут вашей приёмки}}"
+
+#: src/screens/knowledge/Knowledge.tsx:217
+msgid "{n, plural, one {# entry} other {# entries}}"
+msgstr "{n, plural, one {# запись} few {# записи} many {# записей} other {# записи}}"
+
+#: src/screens/task/Task.tsx:232
+msgid "{name} (you)"
+msgstr "{name} (вы)"
+
+#: src/screens/settings/PersonPage.tsx:482
+msgid "{name} can sign in again and is active"
+msgstr "{name} — снова вход и доступ к организации"
+
+#: src/screens/settings/PersonPage.tsx:238
+msgid "{name} has full access (admin). The console neither gives nor takes it away."
+msgstr "У {name} полный доступ (admin). Консоль его не выдаёт и не снимает."
+
+#: src/screens/document/PdfPreview.tsx:284
+#: src/screens/document/PdfPreview.tsx:288
+msgid "{name}, page {n} of {total}"
+msgstr "{name}, страница {n} из {total}"
+
+#: src/screens/document/PdfPreview.tsx:226
+msgid "{position} of {found}"
+msgstr "{position} из {found}"
+
+#: src/screens/knowledge/Knowledge.tsx:169
+msgid "{title} expired on {date} — {ago}"
+msgstr "{title}: срок истёк {date} — {ago}"
+
+#: src/screens/knowledge/Knowledge.tsx:172
+msgid "{title} expires on {date} — {left}"
+msgstr "{title}: срок до {date} — {left}"
+
+#: src/screens/knowledge/Knowledge.tsx:166
+msgid "{title} expires today"
+msgstr "{title}: срок истекает сегодня"
+
+#: src/screens/today/Today.tsx:202
+msgid "{title} is blocked"
+msgstr "{title}: заблокирована"
+
+#: src/screens/today/Today.tsx:186
+msgid "{title} is near its due date and nobody has started it"
+msgstr "{title} у срока, а к ней не приступили"
+
+#: src/screens/today/Today.tsx:185
+msgid "{title} is stuck"
+msgstr "{title} стоит"
+
+#: src/screens/today/Today.tsx:184
+msgid "{title} keeps failing: {reason}"
+msgstr "{title} не удаётся: {reason}"
+
+#: src/screens/today/Today.tsx:184
+msgid "{title} keeps failing: attempts fail in a row"
+msgstr "{title} не удаётся: попытки подряд заканчиваются неудачей"
+
+#: src/screens/today/Today.tsx:149
+msgid "{work}: {attempts}"
+msgstr "{work}: {attempts}"
+
+#: src/screens/today/Today.tsx:149
+msgid "{work}: {attempts} — {message}"
+msgstr "{work}: {attempts} — {message}"
+
+#: src/screens/knowledge/Entry.tsx:87
+msgid "← Knowledge"
+msgstr "← База знаний"
+
+#: src/screens/settings/PersonPage.tsx:58
+msgid "← People and roles"
+msgstr "← Люди и роли"
+
+#: src/screens/document/Document.tsx:87
+#: src/screens/task/Task.tsx:64
+msgid "← Work"
+msgstr "← Работа"
+
+#: src/screens/task/history.ts:48
+msgid "< 1 min"
+msgstr "< 1 мин"
+
+#: src/screens/settings/People.tsx:251
+msgid "2–63 lower-case Latin letters, digits and dashes"
+msgstr "2–63 строчные латинские буквы, цифры и дефисы"
+
+#: src/screens/knowledge/DocumentDialog.tsx:98
+msgid "a “knowledge document” work is raised with the file and its history; you decide on it"
+msgstr "заводится работа «документ в базу знаний» с файлом и историей; решаете по ней вы"
+
+#: src/screens/knowledge/ImportDialog.tsx:132
+msgid "a “knowledge import” work is raised with the file, the plan and its history"
+msgstr "заводится работа «Загрузка в базу знаний» — с файлом, планом и историей"
+
+#: src/screens/settings/PackageSettings.tsx:38
+msgid "a chosen object no longer exists — see the fields"
+msgstr "выбранного объекта больше нет — см. поля"
+
+#: src/screens/settings/Connections.tsx:289
+msgid "a connection is not deleted, but can be revoked"
+msgstr "подключение не удаляется, но его можно отозвать"
+
+#: src/screens/settings/Connections.tsx:71
+msgid "a connection with this key already exists"
+msgstr "подключение с таким ключом уже есть"
+
+#: src/screens/task/ImportPlan.tsx:95
+msgid "A decision on the current plan is pending"
+msgstr "По текущему плану ждёт решение"
+
+#: src/screens/task/ImportPlan.tsx:96
+msgid "A decision on the current plan is pending — decide or cancel it first."
+msgstr "По текущему плану ждёт решение — сначала примите или отмените его."
+
+#: src/screens/settings/PersonPage.tsx:160
+msgid "a name is required"
+msgstr "имя обязательно"
+
+#: src/screens/settings/PackageSettings.tsx:140
+msgid "a new version with your name; the previous one stays in the history"
+msgstr "новая версия с вашим именем; прежняя остаётся в истории"
+
+#: src/screens/work/AssignDialog.tsx:27
+msgid "a person"
+msgstr "человеком"
+
+#: src/screens/task/history.ts:101
+msgid "A person"
+msgstr "Человек"
+
+#: src/screens/task/history.ts:95
+msgid "A process raised the work"
+msgstr "Работу завёл процесс"
+
+#: src/screens/settings/PersonPage.tsx:113
+msgid "A role is a rule for picking who does work; authority is separate."
+msgstr "Роль — правило подбора исполнителя; полномочия — отдельно."
+
+#: src/screens/settings/People.tsx:63
+msgid "A role is a rule for picking who does work: work can require a role, and whoever lacks it cannot take the work. Authority is separate — a role does not give it. People are added here by an administrator of people; agents get roles from their description."
+msgstr "Роль — правило подбора исполнителя: работа может требовать роль, и без неё её не взять. Полномочия — отдельно, роль их не даёт. Людей добавляет здесь администратор людей; агентам роли задаёт их описание."
+
+#: src/screens/settings/People.tsx:285
+msgid "A role of a workspace can be given only there and in its nested workspaces."
+msgstr "Роль пространства выдаётся только в нём и во вложенных пространствах."
+
+#: src/screens/settings/People.tsx:33
+msgid "a role with this key already exists there"
+msgstr "роль с таким ключом там уже есть"
+
+#: src/screens/task/history.ts:88
+msgid "A rule raised the work"
+msgstr "Работу завело правило"
+
+#: src/screens/settings/PersonPage.tsx:42
+msgid "a value looks like a secret — secrets do not belong here"
+msgstr "значение похоже на секрет — секретам здесь не место"
+
+#: src/screens/settings/Connections.tsx:75
+#: src/screens/settings/PackageSettings.tsx:39
+msgid "a value looks like a secret — secrets do not belong in settings"
+msgstr "значение похоже на секрет — секретам не место в настройках"
+
+#: src/screens/settings/People.tsx:53
+#: src/screens/settings/PersonPage.tsx:109
+msgid "a workspace"
+msgstr "пространство"
+
+#: src/screens/document/Document.tsx:104
+msgid "About the document"
+msgstr "О документе"
+
+#: src/screens/task/Task.tsx:253
+#: src/screens/today/Today.tsx:107
+#: src/screens/work/Work.tsx:179
+msgid "Accept"
+msgstr "Принять"
+
+#: src/screens/task/Task.tsx:246
+#: src/screens/today/Today.tsx:92
+#: src/screens/work/AssignDialog.tsx:185
+msgid "Acceptance"
+msgstr "Приёмка"
+
+#: src/screens/work/AssignDialog.tsx:174
+msgid "Acceptance criteria"
+msgstr "Критерии приёмки"
+
+#: src/screens/task/TaskActions.tsx:275
+msgid "acceptance runs again on the next hand-in"
+msgstr "приёмка пройдёт заново при следующей сдаче"
+
+#: src/decisions/useDecision.ts:27
+msgid "Accepted — recorded in the core"
+msgstr "Принято — записано в ядре"
+
+#: src/decisions/useDecision.ts:24
+msgid "Accepting…"
+msgstr "Принимаю…"
+
+#: src/screens/settings/Connections.tsx:386
+#: src/screens/settings/PersonPage.tsx:78
+msgid "Access"
+msgstr "Доступ"
+
+#: src/screens/settings/Connections.tsx:59
+msgid "access key"
+msgstr "ключ доступа"
+
+#: src/screens/settings/Connections.tsx:38
+msgid "access lost"
+msgstr "доступ потерян"
+
+#: src/screens/settings/Connections.tsx:47
+msgid "access was declined in the other system"
+msgstr "во внешней системе отказали в доступе"
+
+#: src/screens/settings/Connections.tsx:214
+#: src/screens/settings/Connections.tsx:334
+msgid "Account"
+msgstr "Учётная запись"
+
+#: src/screens/settings/AddPerson.tsx:26
+msgid "Account in IAM"
+msgstr "Учётка в IAM"
+
+#: src/screens/settings/Connections.tsx:119
+msgid "Accounts of the organization in other systems: agents and connectors act through them. Keys and secrets go straight to the secret store — nobody sees them after entry, the console neither."
+msgstr "Учётные записи организации во внешних системах: через них действуют агенты и коннекторы. Ключи и секреты уходят прямо в хранилище секретов — после ввода их не видит никто, и консоль тоже."
+
+#: src/screens/settings/People.tsx:105
+msgid "Actions"
+msgstr "Действия"
+
+#: src/screens/settings/PersonPage.tsx:395
+msgid "Active"
+msgstr "Активен"
+
+#. placeholder {0}: where(role.workspaceId)
+#: src/screens/settings/People.tsx:290
+msgid "Acts: {0}. The key and the place do not change."
+msgstr "Действует: {0}. Ключ и место не меняются."
+
+#: src/forms/SchemaForm.tsx:161
+#: src/screens/settings/AddPerson.tsx:130
+#: src/screens/settings/PersonPage.tsx:351
+msgid "Add"
+msgstr "Добавить"
+
+#: src/screens/knowledge/DocumentDialog.tsx:70
+#: src/screens/knowledge/Knowledge.tsx:102
+msgid "Add a document"
+msgstr "Добавить документ"
+
+#: src/screens/settings/AddPerson.tsx:127
+#: src/screens/settings/People.tsx:96
+msgid "Add a person"
+msgstr "Добавить человека"
+
+#: src/screens/knowledge/DocumentDialog.tsx:81
+msgid "Add and read the fields"
+msgstr "Добавить и прочитать поля"
+
+#: src/forms/SchemaForm.tsx:26
+msgid "Add at least {n}"
+msgstr "Добавьте не меньше {n}"
+
+#: src/api/people.ts:28
+msgid "add materials"
+msgstr "добавлять материалы"
+
+#: src/screens/settings/PersonPage.tsx:349
+msgid "add to a workspace"
+msgstr "добавить в пространство"
+
+#: src/screens/settings/PersonPage.tsx:349
+msgid "Add to a workspace"
+msgstr "Добавить в пространство"
+
+#. js-lingui-explicit-id
+#: src/screens/knowledge/Knowledge.tsx:304
+msgid "knowledge.counter.created"
+msgstr "добавлено"
+
+#: src/screens/document/Document.tsx:106
+msgid "Added"
+msgstr "Добавлен"
+
+#: src/screens/settings/PersonPage.tsx:351
+msgid "Added — recorded in the core"
+msgstr "Добавлено — записано в ядре"
+
+#: src/screens/task/TaskActions.tsx:196
+msgid "Adding the comment…"
+msgstr "Добавляю комментарий…"
+
+#: src/screens/settings/AddPerson.tsx:104
+msgid "Adding the person…"
+msgstr "Добавляем человека…"
+
+#: src/screens/settings/PersonPage.tsx:351
+msgid "Adding to the workspace…"
+msgstr "Добавляем в пространство…"
+
+#: src/screens/settings/AddPerson.tsx:211
+msgid "Additions that stopped midway. Finishing repeats the flow: what is done is not done twice."
+msgstr "Добавления, остановившиеся посередине. «Довести» повторяет поток: сделанное второй раз не делается."
+
+#: src/screens/settings/AddPerson.tsx:157
+msgid "Administrator (everything)"
+msgstr "Администратор (всё)"
+
+#: src/api/executors.ts:139
+#: src/screens/journal/Journal.tsx:253
+msgid "agent"
+msgstr "агент"
+
+#: src/screens/settings/Secrets.tsx:185
+#: src/screens/settings/Secrets.tsx:186
+msgid "Agent"
+msgstr "Агент"
+
+#. placeholder {0}: quote(who.displayName)
+#: src/screens/today/Today.tsx:203
+msgid "agent {0}"
+msgstr "агент {0}"
+
+#: src/screens/journal/Journal.tsx:83
+msgid "agent description published"
+msgstr "опубликовано описание агента"
+
+#: src/screens/journal/Journal.tsx:84
+msgid "agent retired"
+msgstr "агент выведен"
+
+#: src/screens/journal/Journal.tsx:85
+msgid "agent state changed"
+msgstr "состояние агента изменено"
+
+#: src/screens/settings/Connections.tsx:225
+#: src/screens/settings/Connections.tsx:346
+#: src/screens/settings/Connections.tsx:387
+msgid "Agents"
+msgstr "Агенты"
+
+#: src/screens/journal/journal.ts:22
+msgid "Agents and skills"
+msgstr "Агенты и скиллы"
+
+#: src/screens/task/history.ts:156
+msgid "ahead"
+msgstr "впереди"
+
+#: src/screens/view/ViewScreen.tsx:189
+#: src/screens/work/Work.tsx:236
+msgid "all"
+msgstr "все"
+
+#: src/screens/journal/Journal.tsx:255
+msgid "all about it"
+msgstr "всё об объекте"
+
+#: src/screens/work/Work.tsx:223
+msgid "All the organization's work — people, agents and processes — by what it needs now."
+msgstr "Вся работа организации — людей, агентов и процессов — по тому, что ей нужно сейчас."
+
+#: src/api/scope.tsx:137
+#: src/api/scope.tsx:137
+msgid "All workspaces"
+msgstr "Все пространства"
+
+#: src/assistant/AssistantDock.tsx:90
+msgid "Allow"
+msgstr "Разрешить"
+
+#: src/assistant/AssistantDock.tsx:22
+msgid "Allowed"
+msgstr "Разрешено"
+
+#: src/screens/settings/PersonPage.tsx:454
+msgid "Already active in the organization"
+msgstr "Доступ к организации уже был включён"
+
+#: src/screens/settings/People.tsx:181
+msgid "already held"
+msgstr "уже есть"
+
+#: src/screens/settings/PersonPage.tsx:43
+msgid "already participates there"
+msgstr "уже участвует там"
+
+#: src/screens/settings/PersonPage.tsx:218
+msgid "also rules, roles, people, workspaces and types of work"
+msgstr "плюс правила, роли, люди, пространства и типы работы"
+
+#: src/screens/settings/PersonPage.tsx:217
+msgid "also takes and does work, decides approvals, adds materials"
+msgstr "плюс берёт и делает работу, решает согласования, добавляет материалы"
+
+#: src/screens/settings/AddPerson.tsx:127
+msgid "An account in IAM, the sign-in, rights, the workspace and roles — in one go. Repeating it finishes what stopped."
+msgstr "Учётка в IAM, вход, права, пространство и роли — за один раз. Повтор доводит то, что остановилось."
+
+#: src/screens/settings/Connections.tsx:274
+msgid "An account of the organization in another system"
+msgstr "Учётная запись организации во внешней системе"
+
+#: src/screens/settings/PersonPage.tsx:44
+msgid "an agent is described by its package"
+msgstr "агента описывает его пакет"
+
+#: src/screens/settings/AddPerson.tsx:51
+msgid "an agent is enabled by its package"
+msgstr "агента включает его пакет"
+
+#: src/screens/settings/AddPerson.tsx:50
+msgid "an agent is retired by its package"
+msgstr "агента выводит его пакет"
+
+#: src/screens/task/history.ts:99
+msgid "An agent raised the work during its own work"
+msgstr "Работу завёл агент по ходу своей работы"
+
+#. placeholder {0}: errors.length - ROW_ERRORS_SHOWN
+#: src/screens/task/ImportPlan.tsx:87
+msgid "And {0} more rows with errors."
+msgstr "И ещё строк с ошибками: {0}."
+
+#: src/screens/document/OfficePreview.tsx:112
+msgid "And {more} more rows — download the file to see all."
+msgstr "И ещё строк: {more} — скачайте файл, чтобы увидеть всё."
+
+#: src/screens/settings/Connections.tsx:79
+msgid "another write happened at the same time — try again"
+msgstr "одновременно прошла другая запись — попробуйте ещё раз"
+
+#: src/forms/StepForm.tsx:86
+msgid "Answers recorded in the core"
+msgstr "Ответы записаны в ядре"
+
+#: src/screens/work/Work.tsx:241
+msgid "any"
+msgstr "любой"
+
+#: src/screens/journal/Journal.tsx:211
+#: src/screens/work/Work.tsx:238
+#: src/screens/work/Work.tsx:239
+msgid "anyone"
+msgstr "все"
+
+#: src/screens/journal/Journal.tsx:72
+msgid "API key created"
+msgstr "создан API-ключ"
+
+#: src/screens/journal/Journal.tsx:73
+msgid "API key revoked"
+msgstr "API-ключ отозван"
+
+#: src/screens/knowledge/importFlow.ts:146
+msgid "Apply the load plan to the knowledge base"
+msgstr "Применить план загрузки в базу знаний"
+
+#: src/screens/task/Task.tsx:246
+#: src/screens/today/Today.tsx:92
+msgid "Approval"
+msgstr "Согласование"
+
+#: src/screens/task/DocumentFields.tsx:117
+msgid "Approval writes these fields into the knowledge base."
+msgstr "Одобрение запишет эти поля в базу знаний."
+
+#: src/screens/task/Task.tsx:253
+#: src/screens/today/Today.tsx:107
+msgid "Approve"
+msgstr "Согласовать"
+
+#: src/screens/journal/Journal.tsx:56
+#: src/screens/today/Today.tsx:54
+msgid "approved"
+msgstr "согласовал"
+
+#: src/decisions/useDecision.ts:27
+msgid "Approved — recorded in the core"
+msgstr "Согласовано — записано в ядре"
+
+#: src/decisions/useDecision.ts:24
+msgid "Approving…"
+msgstr "Согласую…"
+
+#: src/screens/settings/Connections.tsx:461
+msgid "are lost: the connection keeps the saved settings"
+msgstr "пропадут: у подключения останутся сохранённые настройки"
+
+#: src/screens/settings/PackageSettings.tsx:158
+msgid "are lost: the package keeps acting by the saved values"
+msgstr "пропадут: пакет продолжит работать по сохранённым значениям"
+
+#: src/routes.tsx:124
+msgid "Are we cleared for fire-safety installation work?"
+msgstr "Есть ли у нас допуск к монтажу пожарной сигнализации?"
+
+#: src/screens/view/ViewScreen.tsx:203
+msgid "as is"
+msgstr "как есть"
+
+#: src/shell/Failure.tsx:18
+msgid "Ask the organization owner for access."
+msgstr "Попросите доступ у владельца организации."
+
+#: src/assistant/AssistantDock.tsx:42
+msgid "Asked to confirm: {reason} — {word} in Telegram."
+msgstr "Просил подтвердить: {reason} — {word} в Telegram."
+
+#: src/assistant/AssistantDock.tsx:43
+msgid "Asked to confirm: {reason} — {word} in the window."
+msgstr "Просил подтвердить: {reason} — {word} в окне."
+
+#: src/assistant/AssistantDock.tsx:44
+msgid "Asked to confirm: {reason} — {word}."
+msgstr "Просил подтвердить: {reason} — {word}."
+
+#: src/screens/knowledge/importFlow.ts:145
+msgid "Asking for your decision…"
+msgstr "Запрашиваю ваше решение…"
+
+#: src/screens/settings/Connections.tsx:196
+msgid "Asking the core for the sign-in address…"
+msgstr "Запрашиваем у ядра адрес входа…"
+
+#: src/screens/task/TaskActions.tsx:130
+msgid "Asking the executor to stop the attempt…"
+msgstr "Прошу исполнителя остановить попытку…"
+
+#: src/screens/work/Work.tsx:260
+msgid "Assign"
+msgstr "Назначить"
+
+#: src/screens/task/TaskActions.tsx:260
+msgid "Assign without the role — the requirement is removed from this work and the history shows it"
+msgstr "Назначить без роли — требование роли снимется с этой работы, это будет видно в истории"
+
+#: src/screens/work/AssignDialog.tsx:139
+#: src/screens/work/Work.tsx:224
+msgid "Assign work"
+msgstr "Поручить работу"
+
+#: src/screens/task/TaskActions.tsx:168
+msgid "Assigned without the role {names}."
+msgstr "Назначено без роли {names}."
+
+#: src/screens/task/TaskActions.tsx:160
+msgid "Assigning…"
+msgstr "Назначаю…"
+
+#: src/forms/SchemaForm.tsx:22
+msgid "At least {n}"
+msgstr "Не меньше {n}"
+
+#: src/forms/SchemaForm.tsx:24
+msgid "At least {n} characters"
+msgstr "Не короче {n} символов"
+
+#: src/forms/SchemaForm.tsx:23
+msgid "At most {n}"
+msgstr "Не больше {n}"
+
+#: src/forms/SchemaForm.tsx:25
+msgid "At most {n} characters"
+msgstr "Не длиннее {n} символов"
+
+#: src/forms/SchemaForm.tsx:27
+msgid "At most {n} items"
+msgstr "Не больше {n} элементов"
+
+#: src/screens/task/history.ts:128
+msgid "Attempt"
+msgstr "Попытка"
+
+#. placeholder {0}: r.attempt
+#: src/screens/today/Today.tsx:312
+msgid "Attempt #{0}"
+msgstr "Попытка №{0}"
+
+#: src/screens/task/history.ts:131
+msgid "Attempt #{attempt} — in progress"
+msgstr "Попытка №{attempt} — идёт"
+
+#: src/screens/task/history.ts:131
+msgid "Attempt #{attempt} · {length}"
+msgstr "Попытка №{attempt} · {length}"
+
+#: src/screens/task/history.ts:211
+msgid "Attempt #{attempt} finished"
+msgstr "Попытка №{attempt} завершена"
+
+#: src/screens/task/history.ts:210
+msgid "Attempt #{attempt} started: {who}"
+msgstr "Попытка №{attempt} начата: {who}"
+
+#. placeholder {0}: who.name
+#: src/screens/task/history.ts:128
+msgid "Attempt by {0}"
+msgstr "Попытка: {0}"
+
+#: src/screens/journal/Journal.tsx:48
+msgid "attempt failed"
+msgstr "попытка не удалась"
+
+#: src/screens/today/Today.tsx:57
+msgid "attempt failed:"
+msgstr "попытка не удалась:"
+
+#: src/screens/journal/Journal.tsx:47
+msgid "attempt started"
+msgstr "попытка начата"
+
+#: src/screens/journal/Journal.tsx:49
+msgid "attempt succeeded"
+msgstr "попытка удалась"
+
+#: src/screens/settings/People.tsx:191
+msgid "Authority"
+msgstr "Полномочия"
+
+#: src/screens/journal/Journal.tsx:75
+msgid "authority delegated"
+msgstr "полномочия делегированы"
+
+#: src/screens/work/AssignDialog.tsx:25
+msgid "auto-check"
+msgstr "автопроверка"
+
+#: src/screens/today/Today.tsx:134
+msgid "Awaiting your sign-off"
+msgstr "Ждёт вашей подписи"
+
+#: src/screens/settings/PackageSettings.tsx:95
+msgid "back to default"
+msgstr "вернуть по умолчанию"
+
+#: src/screens/view/ViewScreen.tsx:223
+msgid "Back to the first page"
+msgstr "К первой странице"
+
+#: src/screens/work/AssignDialog.tsx:172
+msgid "Basis and materials"
+msgstr "Основание и материалы"
+
+#: src/screens/work/AssignDialog.tsx:60
+msgid "Basis: {basis}"
+msgstr "Основание: {basis}"
+
+#: src/screens/settings/PackageSettings.tsx:268
+msgid "become as in version {n}; it is recorded as a new version"
+msgstr "станут как в версии {n}; это запишется новой версией"
+
+#. placeholder {0}: retryTarget.displayName
+#: src/screens/task/TaskActions.tsx:271
+msgid "becomes “{0}”; {executorName} takes the work again"
+msgstr "станет «{0}»; {executorName} снова возьмёт работу"
+
+#. placeholder {0}: cancelTarget.displayName
+#: src/screens/task/TaskActions.tsx:286
+msgid "becomes “{0}”; the work leaves the lists"
+msgstr "станет «{0}»; работа уйдёт из списков"
+
+#: src/screens/task/TaskActions.tsx:264
+msgid "Becomes a comment on the work."
+msgstr "Станет комментарием к работе."
+
+#: src/screens/work/AssignDialog.tsx:139
+msgid "Before the work is raised you see exactly what will be created. You can also assign work in words — to the assistant."
+msgstr "Перед созданием видно, что именно будет заведено. Работу можно поручить и словами — ассистенту."
+
+#: src/screens/work/rows.ts:67
+msgid "Blocked"
+msgstr "Заблокирована"
+
+#: src/screens/task/Task.tsx:298
+msgid "blocked by this"
+msgstr "ждёт эту работу"
+
+#: src/screens/work/Work.tsx:183
+msgid "blocked, failed verification or nobody is moving it"
+msgstr "заблокирована, не прошла проверку или её никто не двигает"
+
+#: src/screens/task/Task.tsx:298
+msgid "blocks this"
+msgstr "держит эту работу"
+
+#: src/screens/view/ViewScreen.tsx:137
+msgid "Board"
+msgstr "Доска"
+
+#: src/screens/today/Today.tsx:329
+msgid "Broken / stuck"
+msgstr "Сломано / застряло"
+
+#: src/screens/task/ImportPlan.tsx:95
+msgid "Build the plan"
+msgstr "Построить план"
+
+#: src/screens/task/ImportPlan.tsx:95
+msgid "Build the plan again"
+msgstr "Построить план заново"
+
+#: src/screens/knowledge/importFlow.ts:104
+msgid "Building the load plan…"
+msgstr "Строится план загрузки…"
+
+#: src/screens/document/Document.tsx:107
+msgid "By"
+msgstr "Кем"
+
+#: src/screens/today/Today.tsx:70
+msgid "by a model's assessment"
+msgstr "оценкой модели"
+
+#: src/screens/today/Today.tsx:69
+msgid "by a person"
+msgstr "человеком"
+
+#: src/screens/work/rows.ts:97
+msgid "by a process"
+msgstr "процессом"
+
+#: src/screens/work/rows.ts:94
+msgid "by a rule"
+msgstr "правилом"
+
+#: src/screens/today/Today.tsx:71
+msgid "by an automatic check"
+msgstr "автопроверкой"
+
+#: src/screens/work/Work.tsx:219
+msgid "by due date"
+msgstr "по сроку"
+
+#: src/screens/today/Today.tsx:68
+msgid "by external state"
+msgstr "внешним состоянием"
+
+#: src/screens/work/Work.tsx:219
+msgid "by start date"
+msgstr "по началу"
+
+#: src/screens/work/AssignDialog.tsx:185
+msgid "by the owner"
+msgstr "отвечающим"
+
+#: src/screens/settings/AddPerson.tsx:173
+msgid "can be changed later on the person's page"
+msgstr "можно поменять позже на странице человека"
+
+#: src/screens/settings/PersonPage.tsx:396
+msgid "can sign in"
+msgstr "может входить"
+
+#: src/decisions/DeclineDialog.tsx:15
+#: src/screens/knowledge/DocumentDialog.tsx:80
+#: src/screens/knowledge/ImportDialog.tsx:107
+#: src/screens/settings/AddPerson.tsx:130
+#: src/screens/settings/Connections.tsx:275
+#: src/screens/settings/Connections.tsx:330
+#: src/screens/settings/Connections.tsx:382
+#: src/screens/settings/Connections.tsx:528
+#: src/screens/settings/PackageSettings.tsx:265
+#: src/screens/settings/People.tsx:175
+#: src/screens/settings/People.tsx:227
+#: src/screens/settings/People.tsx:273
+#: src/screens/settings/PersonPage.tsx:471
+#: src/screens/settings/Rules.tsx:82
+#: src/screens/settings/Secrets.tsx:137
+#: src/screens/settings/Secrets.tsx:180
+#: src/screens/task/TaskActions.tsx:330
+#: src/screens/work/AssignDialog.tsx:143
+msgid "Cancel"
+msgstr "Отмена"
+
+#: src/screens/today/Today.tsx:56
+msgid "cancelled the sign-off request on"
+msgstr "отменил запрос подписи по"
+
+#: src/assistant/AssistantDock.tsx:24
+msgid "Cancelled: the turn was interrupted"
+msgstr "Отменено: ход прерван"
+
+#. placeholder {0}: p.instanceKey
+#: src/screens/task/Task.tsx:326
+msgid "Case {0}"
+msgstr "Дело {0}"
+
+#: src/screens/task/Task.tsx:311
+msgid "case cancelled"
+msgstr "дело отменено"
+
+#: src/screens/task/Task.tsx:309
+msgid "case closed"
+msgstr "дело закрыто"
+
+#: src/screens/task/Task.tsx:310
+msgid "case failed"
+msgstr "дело не удалось"
+
+#: src/screens/task/Task.tsx:313
+msgid "case in progress"
+msgstr "дело идёт"
+
+#: src/screens/task/Task.tsx:312
+msgid "case suspended"
+msgstr "дело приостановлено"
+
+#: src/api/people.ts:32
+msgid "change goals"
+msgstr "менять цели"
+
+#: src/api/people.ts:36
+msgid "change people: details, rights, visibility"
+msgstr "менять людей: сведения, права, видимость"
+
+#: src/api/people.ts:39
+msgid "change types of work"
+msgstr "менять типы работы"
+
+#: src/screens/today/Today.tsx:59
+msgid "changed"
+msgstr "изменил"
+
+#. js-lingui-explicit-id
+#: src/screens/knowledge/Knowledge.tsx:305
+msgid "knowledge.counter.updated"
+msgstr "изменено"
+
+#: src/screens/task/ImportPlan.tsx:70
+msgid "Changed"
+msgstr "Изменится"
+
+#: src/screens/settings/PackageSettings.tsx:93
+msgid "changed, not saved yet"
+msgstr "изменено, ещё не сохранено"
+
+#: src/screens/settings/PackageSettings.tsx:225
+msgid "changed: {changed}"
+msgstr "изменено: {changed}"
+
+#: src/screens/task/history.ts:240
+msgid "Changed: {who}"
+msgstr "Изменено: {who}"
+
+#: src/screens/settings/Connections.tsx:461
+#: src/screens/settings/PackageSettings.tsx:158
+msgid "Changes"
+msgstr "Изменения"
+
+#: src/screens/task/TaskActions.tsx:275
+msgid "Check"
+msgstr "Проверка"
+
+#: src/shell/Failure.tsx:32
+msgid "Check the address or go back to Today."
+msgstr "Проверьте адрес или вернитесь на «Сегодня»."
+
+#: src/screens/settings/AddPerson.tsx:118
+msgid "check the fields"
+msgstr "проверьте поля"
+
+#: src/screens/settings/Connections.tsx:143
+msgid "checked {checked}"
+msgstr "проверено {checked}"
+
+#: src/screens/knowledge/importFlow.ts:123
+msgid "Checking the table and building the plan…"
+msgstr "Проверяю таблицу и строю план…"
+
+#: src/screens/task/Task.tsx:224
+msgid "checks passed {passed}/{total}"
+msgstr "пройдено {passed}/{total}"
+
+#: src/screens/document/Document.tsx:110
+msgid "Checksum"
+msgstr "Контрольная сумма"
+
+#: src/screens/task/TaskActions.tsx:241
+msgid "choose a person or an agent"
+msgstr "выберите человека или агента"
+
+#: src/screens/settings/People.tsx:180
+#: src/screens/settings/People.tsx:190
+msgid "choose a role"
+msgstr "выберите роль"
+
+#: src/forms/SchemaForm.tsx:29
+msgid "Choose one of the options"
+msgstr "Выберите один из вариантов"
+
+#: src/screens/task/TaskActions.tsx:228
+msgid "choose who gets the work"
+msgstr "выберите, кто получит работу"
+
+#: src/screens/task/TaskActions.tsx:253
+msgid "Choose who gets the work: you can give them the role, or assign without the role."
+msgstr "Выберите, кому передать работу: роль можно дать или назначить без роли."
+
+#: src/forms/SchemaForm.tsx:206
+msgid "choose…"
+msgstr "выберите…"
+
+#: src/screens/journal/Journal.tsx:50
+msgid "claim expired"
+msgstr "захват истёк"
+
+#: src/screens/journal/Journal.tsx:51
+msgid "claim released"
+msgstr "захват снят"
+
+#: src/screens/settings/Connections.tsx:532
+msgid "Client id"
+msgstr "Client id"
+
+#: src/screens/settings/Connections.tsx:535
+msgid "Client secret"
+msgstr "Client secret"
+
+#: src/screens/knowledge/DocumentDialog.tsx:74
+#: src/screens/knowledge/ImportDialog.tsx:101
+#: src/screens/settings/AddPerson.tsx:129
+#: src/screens/settings/Connections.tsx:329
+#: src/screens/settings/Connections.tsx:381
+#: src/screens/settings/Connections.tsx:527
+#: src/screens/settings/PackageSettings.tsx:264
+#: src/screens/settings/People.tsx:174
+#: src/screens/settings/People.tsx:226
+#: src/screens/settings/People.tsx:272
+#: src/screens/settings/PersonPage.tsx:470
+#: src/screens/settings/Rules.tsx:81
+#: src/screens/settings/Secrets.tsx:136
+#: src/screens/settings/Secrets.tsx:179
+#: src/screens/task/TaskActions.tsx:327
+msgid "Close"
+msgstr "Закрыть"
+
+#: src/screens/task/ImportPlan.tsx:71
+msgid "Closed"
+msgstr "Закроется"
+
+#: src/screens/work/rows.ts:116
+msgid "closed without verification"
+msgstr "закрыта без проверки"
+
+#: src/screens/task/ImportPlan.tsx:80
+msgid "Column"
+msgstr "Колонка"
+
+#: src/screens/journal/Journal.tsx:44
+msgid "comment"
+msgstr "комментарий"
+
+#: src/screens/task/TaskActions.tsx:198
+msgid "Comment added"
+msgstr "Комментарий добавлен"
+
+#: src/screens/task/Task.tsx:379
+msgid "Comment on the work"
+msgstr "Комментарий к работе"
+
+#: src/screens/task/history.ts:222
+#: src/screens/task/history.ts:241
+msgid "Comment: {who}"
+msgstr "Комментарий: {who}"
+
+#: src/assistant/proposals.tsx:80
+msgid "Complete"
+msgstr "Дополнить"
+
+#: src/forms/StepForm.tsx:114
+msgid "Complete the step"
+msgstr "Завершить шаг"
+
+#: src/forms/StepForm.tsx:87
+msgid "Completing the step…"
+msgstr "Завершаю шаг…"
+
+#: src/screens/knowledge/Knowledge.tsx:293
+msgid "configured the kinds of knowledge"
+msgstr "настройка видов знаний:"
+
+#: src/screens/settings/Connections.tsx:229
+#: src/screens/settings/Connections.tsx:330
+msgid "Connect"
+msgstr "Подключить"
+
+#: src/screens/settings/Connections.tsx:229
+msgid "Connect again"
+msgstr "Подключить заново"
+
+#: src/screens/settings/Connections.tsx:36
+msgid "connected"
+msgstr "подключено"
+
+#: src/screens/settings/Connections.tsx:216
+msgid "Connected by"
+msgstr "Кто подключил"
+
+#: src/screens/settings/Connections.tsx:143
+msgid "connected by {who}"
+msgstr "кто подключил: {who}"
+
+#: src/screens/settings/Connections.tsx:215
+msgid "Connected with"
+msgstr "Способ"
+
+#: src/screens/settings/Connections.tsx:317
+msgid "Connected with the key — it is in the secret store; the console does not show it"
+msgstr "Подключено по ключу — он в хранилище секретов; консоль его не показывает"
+
+#: src/screens/settings/Connections.tsx:169
+msgid "Connected: {name}. Agents of the connection get access within a few minutes."
+msgstr "Подключено: {name}. Агенты подключения получат доступ в течение нескольких минут."
+
+#: src/screens/settings/Settings.tsx:46
+#: src/screens/settings/Settings.tsx:66
+msgid "Connections"
+msgstr "Подключения"
+
+#: src/routes.tsx:64
+msgid "Console"
+msgstr "Консоль"
+
+#: src/screens/settings/AddPerson.tsx:183
+msgid "Copy the link"
+msgstr "Скопировать ссылку"
+
+#: src/screens/settings/AddPerson.tsx:189
+msgid "Copy the password"
+msgstr "Скопировать пароль"
+
+#: src/screens/knowledge/Knowledge.tsx:276
+#: src/screens/task/history.ts:204
+msgid "core"
+msgstr "ядро"
+
+#: src/screens/settings/AddPerson.tsx:205
+msgid "Could not check unfinished additions."
+msgstr "Не удалось проверить недоведённые добавления."
+
+#: src/screens/settings/People.tsx:82
+#: src/screens/settings/PersonPage.tsx:114
+msgid "could not load"
+msgstr "не загрузилось"
+
+#: src/screens/settings/Connections.tsx:122
+msgid "Could not load the connections: no connection to the core."
+msgstr "Не удалось загрузить подключения: нет связи с ядром."
+
+#: src/screens/document/Document.tsx:143
+msgid "Could not load the content of the document."
+msgstr "Содержимое документа не загрузилось."
+
+#: src/assistant/AssistantDock.tsx:105
+msgid "Could not load the conversation history."
+msgstr "Историю беседы загрузить не удалось."
+
+#: src/screens/document/Document.tsx:76
+msgid "Could not load the document: no connection to the core."
+msgstr "Документ не загрузился: нет связи с ядром."
+
+#: src/screens/settings/PackageSettings.tsx:214
+msgid "Could not load the history."
+msgstr "Не удалось загрузить историю."
+
+#: src/screens/knowledge/Entry.tsx:89
+#: src/screens/knowledge/Knowledge.tsx:111
+msgid "Could not load the knowledge base: no connection to the core."
+msgstr "База знаний не загрузилась: нет связи с ядром."
+
+#: src/screens/settings/Settings.tsx:55
+msgid "Could not load the packages."
+msgstr "Не удалось загрузить пакеты."
+
+#: src/screens/settings/People.tsx:68
+msgid "Could not load the people: no connection to the core."
+msgstr "Не удалось загрузить людей: нет связи с ядром."
+
+#: src/screens/settings/People.tsx:100
+msgid "Could not load the roles: no connection to the core."
+msgstr "Не удалось загрузить роли: нет связи с ядром."
+
+#: src/screens/settings/Rules.tsx:30
+msgid "Could not load the rules: no connection to the core."
+msgstr "Не удалось загрузить правила: нет связи с ядром."
+
+#: src/screens/view/ViewScreen.tsx:45
+msgid "Could not load the screen: no connection to the core."
+msgstr "Экран не загрузился: нет связи с ядром."
+
+#: src/screens/settings/PackageSettings.tsx:55
+msgid "Could not load the settings: no connection to the core."
+msgstr "Не удалось загрузить настройки: нет связи с ядром."
+
+#: src/screens/task/Task.tsx:54
+msgid "Could not load the work: no connection to the core."
+msgstr "Работа не загрузилась: нет связи с ядром."
+
+#: src/screens/work/Work.tsx:256
+msgid "Could not load this group: no connection to the core."
+msgstr "Группа не загрузилась: нет связи с ядром."
+
+#: src/screens/task/DocumentFields.tsx:93
+msgid "Could not put the proposed fields into the work."
+msgstr "Не удалось перенести предложенные поля в работу."
+
+#: src/screens/journal/Journal.tsx:230
+msgid "Could not read the journal: no connection to the core."
+msgstr "Не удалось прочитать журнал: нет связи с ядром."
+
+#: src/screens/settings/StageRoles.tsx:107
+msgid "Could not read the pipelines of the connection from the knowledge base."
+msgstr "Не удалось прочитать воронки подключения из базы знаний."
+
+#: src/screens/task/ImportPlan.tsx:64
+msgid "Could not read the plan."
+msgstr "Не удалось прочитать план."
+
+#: src/screens/document/PdfPreview.tsx:216
+msgid "Could not read the text of the document."
+msgstr "Не удалось прочитать текст документа."
+
+#: src/screens/document/OfficePreview.tsx:56
+msgid "Could not show the document — download it or open it in a new tab."
+msgstr "Не удалось показать документ — скачайте его или откройте в новой вкладке."
+
+#: src/screens/document/PdfPreview.tsx:189
+msgid "Could not show the PDF — download it or open it in a new tab."
+msgstr "Не удалось показать PDF — скачайте его или откройте в новой вкладке."
+
+#: src/screens/document/OfficePreview.tsx:180
+msgid "Could not show the presentation — download it or open it in a new tab."
+msgstr "Не удалось показать презентацию — скачайте её или откройте в новой вкладке."
+
+#: src/screens/document/OfficePreview.tsx:84
+msgid "Could not show the spreadsheet — download it or open it in a new tab."
+msgstr "Не удалось показать таблицу — скачайте её или откройте в новой вкладке."
+
+#: src/screens/settings/Connections.tsx:275
+#: src/screens/settings/People.tsx:273
+msgid "Create"
+msgstr "Создать"
+
+#: src/screens/settings/AddPerson.tsx:140
+msgid "Create the user at the identity provider (login — the e-mail, a temporary password)"
+msgstr "Завести пользователя у провайдера входа (логин — e-mail, временный пароль)"
+
+#: src/api/people.ts:22
+msgid "create, change and comment work"
+msgstr "заводить, менять и комментировать работу"
+
+#: src/screens/settings/People.tsx:259
+msgid "Created — recorded in the core"
+msgstr "Заведено — записано в ядре"
+
+#: src/screens/settings/Connections.tsx:262
+msgid "Creating the connection…"
+msgstr "Создаём подключение…"
+
+#: src/screens/settings/People.tsx:255
+msgid "Creating the role…"
+msgstr "Заводим роль…"
+
+#: src/screens/settings/PackageSettings.tsx:227
+msgid "current"
+msgstr "текущая"
+
+#: src/screens/task/TaskActions.tsx:213
+#: src/screens/task/TaskActions.tsx:214
+msgid "Current attempt"
+msgstr "Текущая попытка"
+
+#: src/screens/work/Work.tsx:179
+msgid "Decide"
+msgstr "Решить"
+
+#: src/api/people.ts:25
+msgid "decide approvals"
+msgstr "решать согласования"
+
+#: src/api/people.ts:24
+#: src/screens/journal/journal.ts:19
+msgid "Decisions"
+msgstr "Решения"
+
+#: src/screens/today/Today.tsx:348
+msgid "Decisions and executors"
+msgstr "Решения и исполнители"
+
+#: src/screens/work/AssignDialog.tsx:174
+msgid "Declared by the type of work. The work is done only when all of them pass."
+msgstr "Объявлены типом работы. Работа считается сделанной, только когда пройдены все."
+
+#: src/assistant/AssistantDock.tsx:91
+#: src/decisions/DeclineDialog.tsx:15
+#: src/screens/task/Task.tsx:254
+#: src/screens/today/Today.tsx:108
+msgid "Decline"
+msgstr "Отклонить"
+
+#: src/decisions/DeclineDialog.tsx:14
+msgid "Decline?"
+msgstr "Отклонить?"
+
+#: src/screens/journal/Journal.tsx:57
+#: src/screens/today/Today.tsx:55
+msgid "declined"
+msgstr "отклонил"
+
+#: src/assistant/AssistantDock.tsx:23
+msgid "Declined"
+msgstr "Отклонено"
+
+#: src/decisions/useDecision.ts:27
+msgid "Declined — recorded in the core"
+msgstr "Отклонено — записано в ядре"
+
+#: src/screens/task/history.ts:171
+msgid "Declined: {name}"
+msgstr "Отклонено: {name}"
+
+#: src/decisions/useDecision.ts:24
+msgid "Declining…"
+msgstr "Отклоняю…"
+
+#: src/screens/settings/PackageSettings.tsx:89
+msgid "default"
+msgstr "по умолчанию"
+
+#: src/screens/journal/Journal.tsx:76
+msgid "delegation revoked"
+msgstr "делегирование отозвано"
+
+#: src/screens/settings/Secrets.tsx:94
+#: src/screens/settings/Secrets.tsx:180
+msgid "Delete"
+msgstr "Удалить"
+
+#: src/screens/settings/Secrets.tsx:177
+msgid "Delete the secret"
+msgstr "Удалить секрет"
+
+#: src/screens/settings/Secrets.tsx:167
+msgid "Deleted with all its versions"
+msgstr "Удалён со всеми версиями"
+
+#: src/screens/settings/Secrets.tsx:163
+msgid "Deleting the secret…"
+msgstr "Удаляем секрет…"
+
+#: src/screens/task/Task.tsx:297
+msgid "depends on it"
+msgstr "зависит от неё"
+
+#: src/screens/task/Task.tsx:297
+msgid "depends on this"
+msgstr "зависит от этой работы"
+
+#: src/screens/knowledge/Entry.tsx:122
+#: src/screens/settings/PersonPage.tsx:81
+#: src/screens/task/Task.tsx:172
+msgid "Details"
+msgstr "Сведения"
+
+#: src/screens/task/Problem.tsx:56
+msgid "Did not pass the acceptance check"
+msgstr "Не прошла приёмочную проверку"
+
+#: src/screens/task/Problem.tsx:54
+msgid "Did not pass the check “{what}”"
+msgstr "Не прошла проверку «{what}»"
+
+#: src/screens/task/Problem.tsx:54
+msgid "Did not pass the check “{what}”: {why}"
+msgstr "Не прошла проверку «{what}»: {why}"
+
+#: src/screens/task/history.ts:238
+msgid "Did not pass verification"
+msgstr "Не прошла проверку"
+
+#: src/screens/task/history.ts:145
+#: src/screens/work/rows.ts:70
+msgid "Did not pass verification (attempt {attempt})"
+msgstr "Не прошла проверку (попытка {attempt})"
+
+#: src/screens/task/history.ts:238
+msgid "Did not pass verification: {reason}"
+msgstr "Не прошла проверку: {reason}"
+
+#: src/screens/settings/PersonPage.tsx:402
+#: src/screens/settings/PersonPage.tsx:471
+msgid "Disable"
+msgstr "Отключить"
+
+#: src/screens/settings/PersonPage.tsx:468
+msgid "Disable {name}"
+msgstr "Отключить: {name}"
+
+#: src/screens/settings/People.tsx:79
+#: src/screens/settings/PersonPage.tsx:73
+msgid "disabled"
+msgstr "отключён"
+
+#: src/screens/settings/PersonPage.tsx:395
+msgid "Disabled"
+msgstr "Отключён"
+
+#: src/screens/settings/PersonPage.tsx:439
+msgid "Disabled in the organization"
+msgstr "Доступ к организации отключён"
+
+#: src/screens/settings/PersonPage.tsx:447
+msgid "Disabled in the organization — rights revoked, sessions closed"
+msgstr "Доступ к организации отключён — права отозваны, сессии закрыты"
+
+#: src/screens/settings/PersonPage.tsx:431
+msgid "Disabling: closing the sign-in in IAM, revoking rights, closing sessions, releasing work…"
+msgstr "Отключаем: закрываем вход в IAM, отзываем права, закрываем сессии, снимаем работу…"
+
+#: src/screens/settings/Connections.tsx:454
+#: src/screens/settings/PackageSettings.tsx:147
+#: src/screens/settings/PersonPage.tsx:195
+#: src/screens/settings/PersonPage.tsx:278
+msgid "Discard changes"
+msgstr "Отменить изменения"
+
+#: src/routes.tsx:143
+#: src/screens/document/Document.tsx:75
+#: src/screens/document/Document.tsx:101
+msgid "Document"
+msgstr "Документ"
+
+#: src/screens/task/Task.tsx:148
+msgid "Document fields"
+msgstr "Поля документа"
+
+#: src/screens/knowledge/documentFlow.ts:110
+msgid "Document into the knowledge base: {filename}"
+msgstr "Документ в базу знаний: {filename}"
+
+#: src/screens/document/Document.tsx:76
+#: src/screens/knowledge/Entry.tsx:94
+msgid "Document not found"
+msgstr "Документ не найден"
+
+#: src/screens/knowledge/documentFlow.ts:120
+msgid "Document read"
+msgstr "Документ прочитан"
+
+#: src/screens/knowledge/Knowledge.tsx:230
+msgid "Documents"
+msgstr "Документы"
+
+#: src/screens/knowledge/ImportDialog.tsx:133
+msgid "does not change until you approve the plan"
+msgstr "не меняется, пока вы не одобрите план"
+
+#: src/screens/settings/People.tsx:191
+msgid "does not change: rights to actions are checked by the core separately"
+msgstr "не меняются: права на действия ядро проверяет отдельно"
+
+#: src/screens/settings/Connections.tsx:334
+msgid "does not fit this type"
+msgstr "не подходит к этому типу"
+
+#: src/forms/SchemaForm.tsx:28
+msgid "Does not match the expected format"
+msgstr "Не подходит под ожидаемый формат"
+
+#: src/screens/work/rows.ts:63
+msgid "Done"
+msgstr "Сделано"
+
+#. js-lingui-explicit-id
+#: src/screens/task/Task.tsx:184
+msgid "task.details.done"
+msgstr "Сделана"
+
+#: src/screens/work/Work.tsx:200
+msgid "Done and verified today"
+msgstr "Сделано и проверено сегодня"
+
+#: src/screens/work/rows.ts:63
+msgid "Done at {at}"
+msgstr "Сделано в {at}"
+
+#: src/screens/document/Document.tsx:91
+msgid "Download"
+msgstr "Скачать"
+
+#: src/screens/journal/Journal.tsx:201
+msgid "Download CSV"
+msgstr "Выгрузить CSV"
+
+#: src/screens/knowledge/ImportDialog.tsx:87
+msgid "Downloaded: {name}"
+msgstr "Скачан: {name}"
+
+#: src/assistant/proposals.tsx:71
+#: src/screens/task/Task.tsx:181
+#: src/screens/task/TaskActions.tsx:304
+#: src/screens/work/AssignDialog.tsx:164
+#: src/screens/work/AssignDialog.tsx:183
+#: src/screens/work/Work.tsx:240
+msgid "Due"
+msgstr "Срок"
+
+#: src/lib/format.ts:44
+msgid "due {when}"
+msgstr "до {when}"
+
+#: src/screens/task/Task.tsx:300
+msgid "duplicate"
+msgstr "дубликат"
+
+#: src/screens/settings/AddPerson.tsx:135
+msgid "E-mail"
+msgstr "E-mail"
+
+#: src/screens/settings/People.tsx:115
+#: src/screens/task/TaskActions.tsx:77
+msgid "Edit"
+msgstr "Изменить"
+
+#: src/screens/settings/People.tsx:270
+msgid "Edit the role"
+msgstr "Изменить роль"
+
+#: src/screens/task/TaskActions.tsx:293
+msgid "Edit the work"
+msgstr "Изменить работу"
+
+#: src/screens/journal/Journal.tsx:74
+msgid "emergency key issued"
+msgstr "выдан аварийный ключ"
+
+#: src/screens/task/DocumentFields.tsx:108
+msgid "Empty — derived from the fields."
+msgstr "Пусто — выводится из полей."
+
+#: src/screens/settings/PersonPage.tsx:401
+#: src/screens/settings/PersonPage.tsx:471
+msgid "Enable"
+msgstr "Включить"
+
+#: src/screens/settings/PersonPage.tsx:468
+msgid "Enable {name}"
+msgstr "Включить: {name}"
+
+#: src/screens/settings/PersonPage.tsx:454
+msgid "Enabled in the organization"
+msgstr "Доступ к организации включён"
+
+#: src/screens/settings/PersonPage.tsx:460
+msgid "enabling needs an administrator of people (IAM group people-admins)"
+msgstr "включает только администратор людей (группа IAM people-admins)"
+
+#: src/screens/settings/PersonPage.tsx:449
+msgid "Enabling: opening the sign-in in IAM, enabling, giving rights…"
+msgstr "Включаем: открываем вход в IAM, включаем, выдаём права…"
+
+#: src/screens/settings/Connections.tsx:494
+#: src/screens/settings/Secrets.tsx:93
+msgid "Enter"
+msgstr "Ввести"
+
+#: src/screens/settings/Connections.tsx:231
+#: src/screens/settings/Connections.tsx:327
+msgid "Enter a key"
+msgstr "Ввести ключ"
+
+#: src/forms/SchemaForm.tsx:21
+msgid "Enter a number"
+msgstr "Введите число"
+
+#: src/screens/settings/Connections.tsx:525
+msgid "Enter the OAuth application"
+msgstr "Ввести приложение OAuth"
+
+#: src/screens/settings/Secrets.tsx:134
+msgid "Enter the secret"
+msgstr "Ввести секрет"
+
+#: src/screens/settings/Secrets.tsx:91
+msgid "entered"
+msgstr "введено"
+
+#: src/screens/settings/Secrets.tsx:88
+msgid "entered {at}"
+msgstr "введено {at}"
+
+#: src/screens/settings/Secrets.tsx:88
+msgid "entered {at} · {who}"
+msgstr "введено {at} · {who}"
+
+#: src/screens/knowledge/format.tsx:43
+msgid "entered manually"
+msgstr "внесено вручную"
+
+#: src/screens/knowledge/Knowledge.tsx:229
+msgid "Entered manually"
+msgstr "Внесено вручную"
+
+#. placeholder {0}: app.data?.clientId ?? ''
+#. placeholder {1}: updated !== undefined ? ` · ${updated}` : ''
+#: src/screens/settings/Connections.tsx:491
+msgid "entered: {0}{1}"
+msgstr "введено: {0}{1}"
+
+#: src/assistant/AssistantDock.tsx:36
+msgid "error"
+msgstr "ошибка"
+
+#: src/screens/task/Task.tsx:382
+msgid "Everyone involved in the work will see the comment"
+msgstr "Комментарий увидят все, кто связан с работой"
+
+#: src/screens/journal/Journal.tsx:207
+msgid "Everything"
+msgstr "Всё"
+
+#: src/screens/work/Work.tsx:278
+msgid "Everything raised has been started."
+msgstr "Всё заведённое уже начато."
+
+#: src/screens/settings/AddPerson.tsx:173
+msgid "everything, including managing people and rights"
+msgstr "всё, включая управление людьми и правами"
+
+#: src/assistant/proposals.tsx:69
+#: src/screens/task/Task.tsx:176
+#: src/screens/work/AssignDialog.tsx:154
+#: src/screens/work/AssignDialog.tsx:155
+#: src/screens/work/AssignDialog.tsx:181
+#: src/screens/work/Work.tsx:238
+msgid "Executes"
+msgstr "Выполняет"
+
+#: src/screens/today/Today.tsx:360
+msgid "executing"
+msgstr "исполняет"
+
+#: src/screens/task/TaskActions.tsx:227
+#: src/screens/task/TaskActions.tsx:296
+#: src/screens/today/Today.tsx:359
+msgid "Executor"
+msgstr "Исполнитель"
+
+#. placeholder {0}: quote(who.displayName)
+#: src/screens/today/Today.tsx:203
+msgid "executor {0}"
+msgstr "исполнитель {0}"
+
+#: src/screens/work/AssignDialog.tsx:159
+msgid "Expected result"
+msgstr "Ожидаемый результат"
+
+#: src/screens/knowledge/Knowledge.tsx:196
+msgid "expired"
+msgstr "истёк"
+
+#: src/screens/knowledge/Entry.tsx:46
+msgid "Expired on {date} — {ago}"
+msgstr "Срок истёк {date} — {ago}"
+
+#: src/screens/knowledge/Entry.tsx:48
+msgid "Expires today"
+msgstr "Срок истекает сегодня"
+
+#: src/screens/work/AssignDialog.tsx:26
+msgid "external state"
+msgstr "внешнее состояние"
+
+#: src/screens/today/Today.tsx:51
+msgid "failed verification:"
+msgstr "не прошла проверку:"
+
+#: src/screens/task/Task.tsx:222
+#: src/screens/work/rows.ts:120
+msgid "failed, attempt {attempt}"
+msgstr "не пройдено, попытка {attempt}"
+
+#: src/screens/task/Problem.tsx:67
+msgid "failure {row} of {limit} — the executor retries by itself; after {limit} the work stops and waits for a person"
+msgstr "провал {row} из {limit} — исполнитель повторит сам; после {limit} работа остановится и будет ждать человека"
+
+#: src/screens/task/Problem.tsx:66
+msgid "failures in a row: {row} — returned to the executor; the next failure stops the work again"
+msgstr "провалов подряд: {row} — работа возвращена исполнителю; следующий провал снова её остановит"
+
+#: src/screens/task/Problem.tsx:64
+msgid "failures in a row: {row} — the core stopped the work"
+msgstr "провалов подряд: {row} — ядро остановило работу"
+
+#: src/screens/knowledge/DocumentDialog.tsx:99
+msgid "Fields"
+msgstr "Поля"
+
+#: src/screens/knowledge/documentFlow.ts:123
+msgid "Fields proposed — check them on the work page and decide"
+msgstr "Поля предложены — проверьте их на странице работы и решите"
+
+#: src/screens/knowledge/DocumentDialog.tsx:90
+#: src/screens/knowledge/ImportDialog.tsx:123
+msgid "File"
+msgstr "Файл"
+
+#: src/screens/knowledge/importFlow.ts:115
+msgid "File attached to the work"
+msgstr "Файл приложен к работе"
+
+#: src/screens/knowledge/documentFlow.ts:107
+msgid "File uploaded"
+msgstr "Файл загружен"
+
+#: src/screens/task/DocumentFields.tsx:41
+msgid "File:"
+msgstr "Файл:"
+
+#: src/screens/view/ViewScreen.tsx:287
+msgid "Fill in the step"
+msgstr "Заполнить шаг"
+
+#: src/screens/work/AssignDialog.tsx:142
+msgid "Fill in what to do, the expected result and the due date"
+msgstr "Заполните, что сделать, ожидаемый результат и срок"
+
+#: src/screens/work/Work.tsx:232
+msgid "Filters"
+msgstr "Фильтры"
+
+#: src/screens/journal/Journal.tsx:205
+msgid "Filters of the journal"
+msgstr "Фильтры журнала"
+
+#: src/screens/settings/People.tsx:66
+#: src/screens/settings/People.tsx:66
+msgid "Find a person or a role"
+msgstr "Найти человека или роль"
+
+#: src/screens/work/Work.tsx:229
+msgid "Find by title or number"
+msgstr "Найти по названию или номеру"
+
+#: src/screens/document/PdfPreview.tsx:212
+#: src/screens/document/PdfPreview.tsx:212
+msgid "Find in the document"
+msgstr "Найти в документе"
+
+#: src/screens/knowledge/Knowledge.tsx:135
+msgid "Find in the knowledge base"
+msgstr "Найти в базе знаний"
+
+#: src/screens/work/Work.tsx:229
+msgid "Find work"
+msgstr "Найти работу"
+
+#: src/screens/knowledge/Knowledge.tsx:135
+msgid "Find: agreement, organization, document"
+msgstr "Найти: договор, организацию, документ"
+
+#: src/screens/settings/AddPerson.tsx:130
+#: src/screens/settings/AddPerson.tsx:216
+msgid "Finish"
+msgstr "Довести"
+
+#. placeholder {0}: hits.length
+#: src/screens/document/PdfPreview.tsx:218
+msgid "Found {found} times on {0} of the first {SEARCH_PAGES} pages:"
+msgstr "Найдено {found} раз на {0} из первых {SEARCH_PAGES} страниц:"
+
+#. placeholder {0}: hits.length
+#: src/screens/document/PdfPreview.tsx:218
+msgid "Found {found} times on {0} pages:"
+msgstr "Найдено {found} раз на страницах ({0}):"
+
+#: src/assistant/proposals.tsx:59
+#: src/screens/work/AssignDialog.tsx:151
+#: src/screens/work/AssignDialog.tsx:151
+#: src/screens/work/AssignDialog.tsx:179
+msgid "Free-form work"
+msgstr "Свободная работа"
+
+#: src/screens/view/ViewScreen.tsx:196
+msgid "from"
+msgstr "от"
+
+#: src/screens/journal/Journal.tsx:212
+msgid "From"
+msgstr "С"
+
+#: src/screens/work/rows.ts:100
+msgid "from {ref}"
+msgstr "из {ref}"
+
+#: src/screens/work/rows.ts:100
+msgid "from an external system"
+msgstr "из внешней системы"
+
+#: src/screens/settings/PersonPage.tsx:273
+msgid "from the next request of {name}; work already taken stays"
+msgstr "со следующего запроса человека; уже взятая работа остаётся"
+
+#: src/screens/settings/Connections.tsx:532
+msgid "From the settings of the integration in the other system."
+msgstr "Из настроек интеграции во внешней системе."
+
+#: src/screens/settings/AddPerson.tsx:134
+#: src/screens/settings/PersonPage.tsx:180
+msgid "Full name"
+msgstr "Имя"
+
+#: src/screens/journal/Journal.tsx:225
+msgid "Further back — with “Show earlier”."
+msgstr "Дальше назад — кнопкой «Показать раньше»."
+
+#: src/screens/settings/People.tsx:175
+msgid "Give"
+msgstr "Дать"
+
+#. placeholder {0}: target.displayName
+#. placeholder {1}: roleNames(lacking)
+#: src/screens/task/TaskActions.tsx:259
+msgid "Give {0} the role {1}"
+msgstr "Дать роль {1} — {0}"
+
+#: src/screens/settings/People.tsx:91
+#: src/screens/settings/People.tsx:172
+#: src/screens/settings/PersonPage.tsx:126
+msgid "Give a role"
+msgstr "Дать роль"
+
+#: src/api/people.ts:35
+msgid "give and revoke roles"
+msgstr "выдавать и отзывать роли"
+
+#: src/screens/settings/People.tsx:159
+msgid "Given — recorded in the core"
+msgstr "Выдано — записано в ядре"
+
+#: src/screens/task/TaskActions.tsx:151
+msgid "Giving the role “{name}”…"
+msgstr "Даём роль «{name}»…"
+
+#: src/screens/settings/People.tsx:156
+msgid "Giving the role…"
+msgstr "Даём роль…"
+
+#: src/screens/settings/Connections.tsx:200
+msgid "Going to the other system for consent…"
+msgstr "Переходим во внешнюю систему за согласием…"
+
+#: src/screens/task/Problem.tsx:75
+#: src/screens/task/TaskActions.tsx:75
+#: src/screens/task/TaskActions.tsx:236
+msgid "Hand over"
+msgstr "Передать"
+
+#: src/screens/task/TaskActions.tsx:224
+msgid "Hand over the work"
+msgstr "Передать работу"
+
+#: src/screens/task/TaskActions.tsx:164
+msgid "Handed over — recorded in the core"
+msgstr "Передано — записано в ядре"
+
+#: src/screens/task/TaskActions.tsx:164
+msgid "Handed over without the role — the requirement is removed from this work"
+msgstr "Передано без роли — требование снято с этой работы"
+
+#: src/screens/view/ViewScreen.tsx:287
+msgid "Hide the form"
+msgstr "Скрыть форму"
+
+#: src/screens/settings/PersonPage.tsx:248
+msgid "Hide the rights one by one"
+msgstr "Скрыть права по отдельности"
+
+#: src/screens/settings/PackageSettings.tsx:140
+#: src/screens/task/Task.tsx:193
+#: src/screens/task/TaskActions.tsx:295
+#: src/screens/view/ViewScreen.tsx:296
+msgid "History"
+msgstr "История"
+
+#: src/screens/settings/PackageSettings.tsx:213
+msgid "History of changes"
+msgstr "История изменений"
+
+#: src/screens/settings/Connections.tsx:280
+msgid "How people see the connection; by default — the name of the type."
+msgstr "Как подключение видят люди; по умолчанию — название типа."
+
+#: src/screens/settings/PersonPage.tsx:422
+msgid "IAM"
+msgstr "IAM"
+
+#: src/screens/settings/AddPerson.tsx:43
+msgid "IAM cannot tell whose sign-in this is — update IAM"
+msgstr "IAM не может сказать, чей это вход, — обновите IAM"
+
+#: src/screens/settings/AddPerson.tsx:145
+msgid "Identifier at the identity provider"
+msgstr "Идентификатор у провайдера входа"
+
+#: src/screens/task/history.ts:98
+msgid "Imported from {ref}"
+msgstr "Пришла из {ref}"
+
+#: src/screens/task/history.ts:98
+msgid "Imported from an external system"
+msgstr "Пришла из внешней системы"
+
+#: src/screens/settings/People.tsx:183
+msgid "In a workspace the role acts there and in its nested workspaces."
+msgstr "В пространстве роль действует в нём и во вложенных."
+
+#. js-lingui-explicit-id
+#: src/screens/work/Work.tsx:188
+msgid "work.group.active"
+msgstr "В работе"
+
+#: src/screens/today/Today.tsx:289
+msgid "In progress"
+msgstr "Исполняется"
+
+#: src/screens/today/Today.tsx:350
+msgid "In progress now"
+msgstr "Сейчас в работе"
+
+#: src/screens/today/Today.tsx:307
+msgid "in Telegram"
+msgstr "в Telegram"
+
+#: src/screens/task/Task.tsx:193
+msgid "In the journal"
+msgstr "В журнале"
+
+#: src/screens/task/Task.tsx:299
+msgid "includes this"
+msgstr "включает эту работу"
+
+#: src/screens/task/TaskActions.tsx:325
+msgid "Irreversible"
+msgstr "Необратимо"
+
+#: src/routes.tsx:143
+msgid "Is anything in it inconsistent with the work?"
+msgstr "Есть ли в нём расхождения с работой?"
+
+#: src/screens/settings/PersonPage.tsx:476
+msgid "is closed in IAM and revoked in the organization at once; open sessions of the assistant and plugins are closed"
+msgstr "закрывается в IAM и отзывается в организации сразу; открытые сессии ассистента и плагинов закрываются"
+
+#: src/decisions/DeclineDialog.tsx:27
+msgid "is declined; what waited for it does not go on"
+msgstr "отклоняется; то, что его ждало, дальше не идёт"
+
+#: src/screens/settings/Connections.tsx:386
+msgid "is deleted from the secret store at once, with all its versions"
+msgstr "сразу удаляется из хранилища секретов со всеми версиями"
+
+#: src/screens/settings/Secrets.tsx:183
+msgid "is destroyed with all its versions; it cannot be returned"
+msgstr "уничтожается со всеми версиями; вернуть его нельзя"
+
+#: src/screens/settings/Connections.tsx:540
+#: src/screens/settings/Secrets.tsx:146
+msgid "is kept in the secret store only"
+msgstr "хранится только в хранилище секретов"
+
+#: src/decisions/DeclineDialog.tsx:23
+msgid "is not accepted; the work goes back to the executor with your note"
+msgstr "не принят; работа возвращается исполнителю с вашим замечанием"
+
+#: src/screens/task/TaskActions.tsx:215
+msgid "is not rolled back: the core does not undo actions in other systems"
+msgstr "не откатывается: ядро не отменяет действий в других системах"
+
+#: src/screens/settings/PersonPage.tsx:477
+msgid "is released: the work stays assigned to {name} — hand it over"
+msgstr "снимается с исполнения: работа остаётся назначенной — передайте её ({name})"
+
+#: src/screens/settings/Connections.tsx:337
+#: src/screens/settings/Connections.tsx:535
+#: src/screens/settings/Secrets.tsx:141
+msgid "It goes straight to the secret store. After saving nobody sees it — the console neither."
+msgstr "Уходит прямо в хранилище секретов. После сохранения его не видит никто — и консоль тоже."
+
+#: src/screens/settings/People.tsx:35
+msgid "it is already gone — reopen the section"
+msgstr "этого уже нет — откройте раздел заново"
+
+#: src/screens/knowledge/Entry.tsx:95
+msgid "It may have been removed at the source, or the link is out of date."
+msgstr "Возможно, его убрали в источнике, или ссылка устарела."
+
+#: src/screens/document/Document.tsx:76
+msgid "It may have been removed, or you have no access to it."
+msgstr "Возможно, его убрали, или у вас нет к нему доступа."
+
+#: src/screens/task/Task.tsx:53
+msgid "It may have been removed, or you have no access to its workspace."
+msgstr "Возможно, её убрали, или у вас нет доступа к её пространству."
+
+#: src/forms/SchemaForm.tsx:155
+msgid "Item {n}"
+msgstr "Элемент {n}"
+
+#: src/screens/settings/Secrets.tsx:186
+msgid "its description no longer names this secret"
+msgstr "его описание больше не называет этот секрет"
+
+#: src/routes.tsx:116
+#: src/screens/journal/Journal.tsx:190
+#: src/screens/journal/Journal.tsx:198
+#: src/shell/Shell.tsx:75
+msgid "Journal"
+msgstr "Журнал"
+
+#: src/screens/journal/Journal.tsx:87
+msgid "journal archived"
+msgstr "журнал архивирован"
+
+#: src/screens/journal/Journal.tsx:88
+msgid "journal pruned"
+msgstr "журнал усечён"
+
+#: src/screens/journal/Journal.tsx:202
+msgid "JSON Lines"
+msgstr "JSON Lines"
+
+#: src/screens/task/TaskActions.tsx:313
+msgid "keep as is"
+msgstr "оставить как есть"
+
+#: src/screens/task/TaskActions.tsx:296
+msgid "keeps working; to change the executor, hand the work over"
+msgstr "продолжает работу; сменить исполнителя — через «Передать»"
+
+#: src/screens/knowledge/Entry.tsx:171
+#: src/screens/settings/Connections.tsx:213
+#: src/screens/settings/Connections.tsx:283
+#: src/screens/settings/Connections.tsx:337
+#: src/screens/settings/People.tsx:282
+msgid "Key"
+msgstr "Ключ"
+
+#: src/screens/task/ImportPlan.tsx:74
+msgid "Key conflicts"
+msgstr "Конфликты ключей"
+
+#: src/screens/settings/Connections.tsx:221
+msgid "Key expires"
+msgstr "Ключ действует до"
+
+#: src/screens/task/DocumentFields.tsx:108
+msgid "Key of the record"
+msgstr "Ключ записи"
+
+#: src/screens/knowledge/Entry.tsx:169
+msgid "Kind"
+msgstr "Вид"
+
+#: src/screens/knowledge/Entry.tsx:167
+msgid "Kind of knowledge"
+msgstr "Вид знаний"
+
+#: src/screens/knowledge/Knowledge.tsx:144
+msgid "Kinds come from the knowledge packs enabled for the organization."
+msgstr "Виды знаний приходят из пакетов знаний, включённых для организации."
+
+#: src/screens/knowledge/Knowledge.tsx:136
+msgid "Kinds of knowledge"
+msgstr "Виды знаний"
+
+#: src/routes.tsx:124
+#: src/screens/journal/journal.ts:23
+#: src/screens/knowledge/Entry.tsx:89
+#: src/screens/knowledge/Knowledge.tsx:97
+#: src/screens/knowledge/Knowledge.tsx:134
+#: src/shell/Shell.tsx:74
+msgid "Knowledge"
+msgstr "База знаний"
+
+#: src/screens/knowledge/DocumentDialog.tsx:100
+#: src/screens/knowledge/ImportDialog.tsx:133
+msgid "Knowledge base"
+msgstr "База знаний"
+
+#: src/screens/journal/Journal.tsx:86
+msgid "knowledge changed"
+msgstr "знания изменены"
+
+#: src/screens/knowledge/Knowledge.tsx:285
+msgid "knowledge changed from"
+msgstr "знания изменились:"
+
+#: src/routes.tsx:134
+msgid "Knowledge document"
+msgstr "Документ базы знаний"
+
+#: src/screens/knowledge/Entry.tsx:173
+msgid "Known since"
+msgstr "Сведения от"
+
+#: src/shell/Shell.tsx:192
+msgid "Language"
+msgstr "Язык"
+
+#: src/screens/settings/Connections.tsx:220
+msgid "Last check"
+msgstr "Последняя проверка"
+
+#: src/screens/knowledge/Knowledge.tsx:218
+msgid "last reconciliation {at}"
+msgstr "последняя сверка {at}"
+
+#: src/screens/settings/Connections.tsx:460
+#: src/screens/settings/PackageSettings.tsx:156
+msgid "Leave without saving"
+msgstr "Уйти без сохранения"
+
+#: src/screens/knowledge/ImportDialog.tsx:97
+#: src/screens/knowledge/Knowledge.tsx:101
+msgid "Load a table"
+msgstr "Загрузить таблицу"
+
+#: src/screens/knowledge/ImportDialog.tsx:108
+msgid "Load and build the plan"
+msgstr "Загрузить и построить план"
+
+#. placeholder {0}: target.kindTitle
+#: src/screens/knowledge/importFlow.ts:103
+msgid "Load into the knowledge base: {0} from {filename}"
+msgstr "Загрузка в базу знаний: {0} из {filename}"
+
+#: src/screens/task/Task.tsx:141
+msgid "Load plan"
+msgstr "План загрузки"
+
+#: src/screens/knowledge/importFlow.ts:135
+msgid "Load plan {version}"
+msgstr "План загрузки {version}"
+
+#: src/screens/document/Document.tsx:70
+msgid "Loading the document…"
+msgstr "Загружаю документ…"
+
+#: src/screens/settings/StageRoles.tsx:109
+msgid "Loading the pipelines…"
+msgstr "Загружаем воронки…"
+
+#: src/screens/task/Protocol.tsx:46
+msgid "Loading the protocol…"
+msgstr "Загружаю протокол…"
+
+#: src/screens/task/Task.tsx:46
+msgid "Loading the work…"
+msgstr "Загружаю работу…"
+
+#: src/screens/document/Document.tsx:142
+#: src/screens/knowledge/Entry.tsx:94
+#: src/screens/knowledge/Entry.tsx:152
+#: src/screens/knowledge/Knowledge.tsx:177
+#: src/screens/knowledge/Knowledge.tsx:206
+#: src/screens/knowledge/Knowledge.tsx:267
+#: src/screens/settings/Connections.tsx:121
+#: src/screens/settings/Connections.tsx:187
+#: src/screens/settings/Connections.tsx:491
+#: src/screens/settings/PackageSettings.tsx:54
+#: src/screens/settings/People.tsx:67
+#: src/screens/settings/People.tsx:99
+#: src/screens/settings/PersonPage.tsx:59
+#: src/screens/settings/PersonPage.tsx:85
+#: src/screens/settings/PersonPage.tsx:114
+#: src/screens/settings/PersonPage.tsx:336
+#: src/screens/settings/Rules.tsx:29
+#: src/screens/settings/Secrets.tsx:70
+#: src/screens/settings/Secrets.tsx:78
+#: src/screens/settings/Settings.tsx:53
+#: src/screens/task/Task.tsx:267
+#: src/screens/task/Task.tsx:322
+#: src/screens/task/Task.tsx:339
+#: src/screens/view/ViewScreen.tsx:39
+#: src/screens/view/ViewScreen.tsx:92
+msgid "Loading…"
+msgstr "Загружаю…"
+
+#: src/api/fieldErrors.ts:20
+msgid "looks like a secret"
+msgstr "похоже на секрет"
+
+#: src/screens/settings/StageRoles.tsx:122
+msgid "lost"
+msgstr "не реализовано"
+
+#: src/screens/settings/Connections.tsx:258
+msgid "lower-case letters, digits and dashes; starts with a letter or a digit"
+msgstr "строчные латинские буквы, цифры и дефисы; начинается с буквы или цифры"
+
+#: src/screens/settings/AddPerson.tsx:156
+#: src/screens/settings/PersonPage.tsx:493
+msgid "Manage"
+msgstr "Управление"
+
+#: src/api/people.ts:35
+msgid "manage workspaces and participation"
+msgstr "управлять пространствами и участием"
+
+#: src/screens/settings/PersonPage.tsx:218
+msgid "Manages the organization"
+msgstr "Управляет организацией"
+
+#: src/screens/journal/Journal.tsx:52
+msgid "material added"
+msgstr "добавлен материал"
+
+#: src/screens/journal/Journal.tsx:54
+msgid "material content deleted"
+msgstr "содержимое материала удалено"
+
+#: src/screens/journal/Journal.tsx:53
+msgid "material content read"
+msgstr "прочитано содержимое материала"
+
+#: src/screens/task/Task.tsx:167
+#: src/screens/view/ViewScreen.tsx:338
+msgid "Materials"
+msgstr "Материалы"
+
+#: src/api/people.ts:27
+msgid "Materials and knowledge"
+msgstr "Материалы и знания"
+
+#: src/screens/work/Work.tsx:216
+msgid "me"
+msgstr "я"
+
+#. placeholder {0}: missing(p)
+#: src/screens/settings/AddPerson.tsx:215
+msgid "missing: {0}"
+msgstr "не хватает: {0}"
+
+#: src/screens/work/AssignDialog.tsx:28
+msgid "model assessment"
+msgstr "оценка модели"
+
+#: src/screens/today/Today.tsx:60
+msgid "moved to a new type"
+msgstr "перевёл на новый тип"
+
+#: src/forms/StepForm.tsx:111
+msgid "moves to the next step by its rules"
+msgstr "перейдёт к следующему шагу по своим правилам"
+
+#: src/screens/knowledge/Knowledge.tsx:184
+#: src/screens/settings/Connections.tsx:280
+#: src/screens/settings/People.tsx:277
+#: src/screens/view/ViewScreen.tsx:214
+msgid "Name"
+msgstr "Название"
+
+#: src/screens/knowledge/Knowledge.tsx:116
+msgid "Needs attention"
+msgstr "Требует внимания"
+
+#: src/screens/settings/PersonPage.tsx:396
+msgid "never signed in"
+msgstr "ещё не входил"
+
+#: src/screens/task/ImportPlan.tsx:69
+msgid "New"
+msgstr "Откроется"
+
+#: src/screens/settings/Connections.tsx:156
+#: src/screens/settings/Connections.tsx:274
+msgid "New connection"
+msgstr "Новое подключение"
+
+#: src/screens/task/TaskActions.tsx:228
+msgid "New executor"
+msgstr "Новый исполнитель"
+
+#: src/screens/settings/People.tsx:122
+#: src/screens/settings/People.tsx:270
+msgid "New role"
+msgstr "Новая роль"
+
+#: src/screens/settings/Connections.tsx:541
+msgid "new sign-ins of connections of this type; existing connections keep their access"
+msgstr "новые входы подключений этого типа; у существующих подключений доступ сохраняется"
+
+#: src/screens/settings/PackageSettings.tsx:269
+msgid "new steps of processes, rules and views of the package"
+msgstr "новые шаги процессов, правила и экраны пакета"
+
+#: src/screens/settings/PackageSettings.tsx:139
+msgid "new steps of processes, rules and views of the package; decisions already taken do not change"
+msgstr "новые шаги процессов, правила и экраны пакета; уже принятые решения не меняются"
+
+#: src/screens/work/Work.tsx:219
+msgid "newest first"
+msgstr "сначала новые"
+
+#: src/screens/document/PdfPreview.tsx:225
+msgid "Next"
+msgstr "Следующее"
+
+#: src/screens/knowledge/format.tsx:28
+msgid "no"
+msgstr "нет"
+
+#: src/decisions/DeclineDialog.tsx:28
+msgid "no — a new approval is requested again"
+msgstr "нет — согласование запрашивают заново"
+
+#: src/forms/StepForm.tsx:112
+msgid "no — the process does not return to a completed step"
+msgstr "нет — процесс не возвращается к завершённому шагу"
+
+#: src/screens/task/TaskActions.tsx:287
+msgid "no — to continue, raise the work again"
+msgstr "нет — чтобы продолжить, работу заводят заново"
+
+#: src/assistant/AssistantDock.tsx:34
+msgid "no access to the assistant"
+msgstr "нет доступа к ассистенту"
+
+#: src/screens/settings/PersonPage.tsx:446
+msgid "No account in IAM — nothing to close"
+msgstr "Учётки в IAM нет — закрывать нечего"
+
+#: src/screens/settings/Secrets.tsx:71
+msgid "No agent declares secrets."
+msgstr "Ни один агент не объявляет секретов."
+
+#: src/screens/settings/Connections.tsx:225
+msgid "no agent uses it yet"
+msgstr "пока не использует ни один агент"
+
+#: src/screens/settings/Connections.tsx:387
+msgid "no agent uses the connection"
+msgstr "подключение не использует ни один агент"
+
+#: src/screens/settings/Connections.tsx:346
+msgid "no agent uses the connection yet"
+msgstr "подключение пока не использует ни один агент"
+
+#: src/screens/knowledge/Knowledge.tsx:271
+msgid "No changes yet."
+msgstr "Изменений пока нет."
+
+#: src/assistant/AssistantDock.tsx:31
+#: src/screens/settings/AddPerson.tsx:118
+msgid "no connection"
+msgstr "нет связи"
+
+#: src/assistant/AssistantDock.tsx:101
+msgid "No connection to the assistant — reconnecting"
+msgstr "Нет связи с ассистентом — переподключаюсь"
+
+#: src/forms/StepForm.tsx:55
+#: src/screens/knowledge/DocumentDialog.tsx:29
+#: src/screens/knowledge/ImportDialog.tsx:40
+#: src/screens/settings/Connections.tsx:62
+#: src/screens/settings/PackageSettings.tsx:34
+#: src/screens/settings/People.tsx:29
+#: src/screens/settings/PersonPage.tsx:37
+#: src/screens/settings/Rules.tsx:71
+#: src/screens/settings/Secrets.tsx:40
+#: src/screens/task/DocumentFields.tsx:79
+#: src/screens/task/ImportPlan.tsx:46
+#: src/screens/task/TaskActions.tsx:33
+msgid "no connection to the core"
+msgstr "нет связи с ядром"
+
+#: src/screens/settings/Connections.tsx:123
+msgid "No connections yet. Connection types come with packages; connect the first account below."
+msgstr "Подключений пока нет. Типы подключений приходят с пакетами; подключите первую учётную запись ниже."
+
+#: src/screens/view/ViewScreen.tsx:125
+msgid "No data for the chart."
+msgstr "Для графика нет данных."
+
+#: src/screens/knowledge/Entry.tsx:125
+msgid "No details are known."
+msgstr "Сведений нет."
+
+#: src/screens/task/Task.tsx:181
+msgid "no due date"
+msgstr "без срока"
+
+#: src/screens/knowledge/Knowledge.tsx:195
+msgid "no end date"
+msgstr "бессрочно"
+
+#: src/screens/view/ViewScreen.tsx:297
+msgid "No events yet."
+msgstr "Событий пока нет."
+
+#: src/screens/task/ImportPlan.tsx:62
+msgid "No file is attached to the work."
+msgstr "К работе не приложен файл."
+
+#: src/screens/task/DocumentFields.tsx:91
+msgid "No file is attached yet — the work waits for it."
+msgstr "Файл ещё не приложен — работа ждёт его."
+
+#: src/screens/settings/Settings.tsx:56
+msgid "No installed package has settings."
+msgstr "Ни у одного установленного пакета нет настроек."
+
+#: src/screens/knowledge/Knowledge.tsx:144
+msgid "No kinds of knowledge are enabled"
+msgstr "Виды знаний не включены"
+
+#: src/screens/task/Task.tsx:268
+#: src/screens/view/ViewScreen.tsx:339
+msgid "No materials yet."
+msgstr "Материалов пока нет."
+
+#: src/screens/view/ViewScreen.tsx:256
+msgid "No open steps: nothing is waiting."
+msgstr "Открытых шагов нет: ничего не ждёт."
+
+#: src/screens/settings/Connections.tsx:157
+msgid "No package brings a connection type yet."
+msgstr "Ни один пакет пока не приносит тип подключения."
+
+#: src/screens/settings/People.tsx:69
+msgid "No people yet."
+msgstr "Людей пока нет."
+
+#: src/screens/knowledge/Knowledge.tsx:209
+msgid "No reconciliations with sources yet."
+msgstr "Сверок с источниками пока не было."
+
+#: src/screens/journal/Journal.tsx:231
+msgid "No records"
+msgstr "Записей нет"
+
+#: src/screens/task/Task.tsx:340
+msgid "No related work."
+msgstr "Связанной работы нет."
+
+#: src/screens/knowledge/Entry.tsx:154
+msgid "No relations are known."
+msgstr "Связей не известно."
+
+#: src/screens/settings/StageRoles.tsx:126
+msgid "no role"
+msgstr "без роли"
+
+#. placeholder {0}: roleNames(missing)
+#: src/screens/task/TaskActions.tsx:245
+msgid "no role {0}"
+msgstr "нет роли {0}"
+
+#: src/screens/settings/People.tsx:83
+#: src/screens/settings/PersonPage.tsx:115
+msgid "no roles"
+msgstr "ролей нет"
+
+#: src/screens/settings/People.tsx:180
+msgid "No roles"
+msgstr "Ролей нет"
+
+#: src/screens/settings/AddPerson.tsx:160
+msgid "No roles in this workspace."
+msgstr "В этом пространстве ролей нет."
+
+#: src/screens/settings/People.tsx:101
+msgid "No roles yet: they come with packages or are created here."
+msgstr "Ролей пока нет: они приходят с пакетами или заводятся здесь."
+
+#: src/screens/settings/PersonPage.tsx:318
+msgid "No sign-in — the person sees nothing; participation still matters for picking executors."
+msgstr "Входа нет — человек ничего не видит; участие всё равно учитывается при подборе исполнителей."
+
+#: src/screens/settings/PersonPage.tsx:87
+msgid "No sign-in to the organization — no rights here. A person gets them with the first sign-in."
+msgstr "Входа в организацию нет — прав здесь нет. Человек получит их при первом входе."
+
+#: src/api/fieldErrors.ts:20
+msgid "no such object in the organization"
+msgstr "такого объекта в организации нет"
+
+#: src/screens/today/Today.tsx:318
+msgid "No verified results today yet."
+msgstr "Проверенных результатов за сегодня ещё нет."
+
+#: src/screens/knowledge/Entry.tsx:143
+msgid "No work has been raised on this document."
+msgstr "Работы по этому документу не заводили."
+
+#: src/screens/knowledge/Entry.tsx:118
+msgid "No work has been raised to renew it yet. The deadline rule raises work for the owner of the role ahead of time; you can also assign it yourself in “Work”."
+msgstr "Работу на продление пока не завели. Правило сроков заводит её заранее на исполнителя роли; можно поручить и самому — в «Работе»."
+
+#: src/screens/knowledge/Knowledge.tsx:122
+msgid "no work raised for it yet"
+msgstr "работа по ней ещё не заведена"
+
+#: src/screens/settings/PersonPage.tsx:337
+msgid "no workspace"
+msgstr "ни в одном пространстве"
+
+#: src/screens/today/Today.tsx:187
+msgid "Nobody can decide on {title}"
+msgstr "Решение по {title} некому принять"
+
+#: src/screens/settings/People.tsx:69
+msgid "Nobody found."
+msgstr "Никого не нашли."
+
+#: src/screens/task/TaskActions.tsx:242
+#: src/screens/work/AssignDialog.tsx:156
+msgid "Nobody here can take this type of work"
+msgstr "Здесь некому брать работу этого типа"
+
+#: src/screens/task/Task.tsx:178
+msgid "nobody holds it"
+msgstr "никто не занимает"
+
+#. placeholder {0}: roleNames(vacant)
+#. placeholder {1}: target.displayName
+#: src/screens/task/TaskActions.tsx:258
+msgid "Nobody holds the role {0}; {1} does not have it either"
+msgstr "Роль {0} никто не занимает, в том числе {1}"
+
+#. placeholder {0}: roleNames(vacant)
+#: src/screens/task/TaskActions.tsx:253
+msgid "Nobody in the organization holds the role {0}."
+msgstr "Роль {0} в организации никто не занимает."
+
+#: src/screens/work/rows.ts:73
+msgid "Nobody is assigned"
+msgstr "Никому не поручена"
+
+#: src/screens/today/Today.tsx:366
+msgid "Nobody is executing anything right now."
+msgstr "Сейчас никто ничего не исполняет."
+
+#: src/screens/today/Today.tsx:297
+msgid "nobody took"
+msgstr "никто не взял"
+
+#: src/screens/task/TaskActions.tsx:214
+msgid "none is running"
+msgstr "не идёт"
+
+#: src/screens/settings/AddPerson.tsx:119
+msgid "Not added: {reason}"
+msgstr "Не добавлено: {reason}"
+
+#: src/screens/task/Task.tsx:176
+msgid "not assigned"
+msgstr "не поручено"
+
+#: src/assistant/proposals.tsx:69
+#: src/screens/work/AssignDialog.tsx:155
+#: src/screens/work/AssignDialog.tsx:155
+#: src/screens/work/AssignDialog.tsx:181
+msgid "not assigned yet"
+msgstr "пока не поручено"
+
+#: src/screens/task/history.ts:156
+msgid "not checked"
+msgstr "не проверялось"
+
+#: src/screens/settings/Connections.tsx:220
+msgid "not checked yet"
+msgstr "ещё не проверялось"
+
+#: src/screens/settings/PackageSettings.tsx:178
+msgid "not chosen"
+msgstr "не выбрано"
+
+#: src/screens/settings/Connections.tsx:37
+msgid "not connected yet"
+msgstr "не подключено"
+
+#: src/screens/settings/Connections.tsx:172
+msgid "Not connected: {name} — {reason}. Nothing changed; try again or enter a key."
+msgstr "Не подключено: {name} — {reason}. Ничего не изменилось; попробуйте ещё раз или введите ключ."
+
+#: src/screens/settings/Connections.tsx:321
+msgid "Not connected: {reason}"
+msgstr "Не подключено: {reason}"
+
+#: src/screens/settings/Connections.tsx:269
+msgid "Not created: {reason}"
+msgstr "Не создано: {reason}"
+
+#: src/screens/settings/Secrets.tsx:91
+msgid "not declared"
+msgstr "не объявлен"
+
+#: src/screens/settings/Secrets.tsx:88
+msgid "not declared by the description any more — delete it if it is not needed"
+msgstr "описание агента его больше не объявляет — удалите, если не нужен"
+
+#: src/screens/settings/Secrets.tsx:171
+msgid "Not deleted: {reason}"
+msgstr "Не удалено: {reason}"
+
+#: src/screens/settings/Secrets.tsx:91
+msgid "not entered"
+msgstr "не введено"
+
+#: src/screens/settings/Connections.tsx:491
+msgid "not entered — connecting over sign-in is not possible yet"
+msgstr "не введено — подключиться через вход пока нельзя"
+
+#: src/screens/settings/Secrets.tsx:72
+msgid "Not entered yet: {missing} — the agents that need them cannot start or work."
+msgstr "Ещё не введено: {missing} — агенты, которым они нужны, не могут запуститься или работать."
+
+#: src/screens/settings/AddPerson.tsx:220
+msgid "Not everything was checked: too many participants."
+msgstr "Проверено не всё: слишком много участников."
+
+#: src/screens/settings/People.tsx:164
+msgid "Not given: {reason}"
+msgstr "Не выдано: {reason}"
+
+#: src/screens/knowledge/ImportDialog.tsx:74
+msgid "Not loaded: {reason}"
+msgstr "Не загружено: {reason}"
+
+#: src/assistant/proposals.tsx:73
+msgid "Not raised"
+msgstr "Не заведено"
+
+#: src/forms/StepForm.tsx:92
+#: src/screens/settings/People.tsx:264
+#: src/screens/settings/PersonPage.tsx:310
+#: src/screens/settings/Rules.tsx:72
+#: src/screens/task/TaskActions.tsx:203
+msgid "Not recorded: {reason}"
+msgstr "Не записано: {reason}"
+
+#: src/screens/settings/PersonPage.tsx:461
+msgid "Not recorded: {text}"
+msgstr "Не записано: {text}"
+
+#: src/screens/settings/PackageSettings.tsx:256
+msgid "Not returned: {reason}"
+msgstr "Не возвращено: {reason}"
+
+#: src/screens/settings/People.tsx:218
+msgid "Not revoked: {reason}"
+msgstr "Не отозвано: {reason}"
+
+#: src/screens/settings/Connections.tsx:373
+msgid "Not revoked: {text}"
+msgstr "Не отозвано: {text}"
+
+#: src/screens/task/DocumentFields.tsx:117
+msgid "Not saved yet."
+msgstr "Ещё не сохранено."
+
+#: src/screens/settings/Connections.tsx:432
+#: src/screens/settings/Connections.tsx:518
+#: src/screens/settings/PackageSettings.tsx:116
+#: src/screens/settings/PersonPage.tsx:171
+#: src/screens/settings/PersonPage.tsx:230
+#: src/screens/settings/Secrets.tsx:127
+#: src/screens/task/DocumentFields.tsx:80
+msgid "Not saved: {reason}"
+msgstr "Не сохранено: {reason}"
+
+#: src/screens/settings/Connections.tsx:445
+msgid "Not secret: the connector and agents of the connection read them. The type of the connection decides what is here."
+msgstr "Не секретные: их читают коннектор и агенты подключения. Что здесь есть, решает тип подключения."
+
+#. placeholder {0}: sendError(o.error)
+#: src/assistant/AssistantDock.tsx:77
+msgid "not sent: {0}"
+msgstr "не отправлено: {0}"
+
+#: src/decisions/useDecision.ts:34
+#: src/screens/task/Task.tsx:373
+#: src/screens/work/AssignDialog.tsx:76
+msgid "Not sent: no connection to the core"
+msgstr "Не отправлено: нет связи с ядром"
+
+#: src/screens/task/Task.tsx:175
+#: src/screens/task/TaskActions.tsx:306
+#: src/screens/task/TaskActions.tsx:306
+msgid "not set"
+msgstr "не задано"
+
+#: src/assistant/proposals.tsx:61
+#: src/assistant/proposals.tsx:68
+msgid "not set — add it"
+msgstr "не указан — дополните"
+
+#. js-lingui-explicit-id
+#: src/screens/work/Work.tsx:194
+msgid "work.group.planned"
+msgstr "Не начата"
+
+#: src/screens/work/rows.ts:74
+msgid "Not started yet"
+msgstr "Ещё не начата"
+
+#: src/screens/settings/Connections.tsx:204
+msgid "Not started: {reason}"
+msgstr "Не начато: {reason}"
+
+#: src/screens/settings/PersonPage.tsx:146
+msgid "Note"
+msgstr "Заметка"
+
+#: src/screens/knowledge/Knowledge.tsx:263
+#: src/screens/knowledge/Knowledge.tsx:288
+msgid "nothing changed"
+msgstr "ничего не изменилось"
+
+#: src/screens/task/TaskActions.tsx:192
+msgid "Nothing changed"
+msgstr "Ничего не изменилось"
+
+#: src/screens/task/TaskActions.tsx:274
+msgid "nothing changed — the result will most likely be the same; say what to do differently"
+msgstr "ничего не менялось — итог, скорее всего, будет тем же; напишите, что сделать иначе"
+
+#: src/screens/work/Work.tsx:269
+msgid "Nothing found"
+msgstr "Ничего не нашлось"
+
+#: src/screens/knowledge/Knowledge.tsx:178
+msgid "Nothing found among “{kindTitle}”."
+msgstr "Среди «{kindTitle}» ничего не нашлось."
+
+#: src/screens/document/PdfPreview.tsx:217
+msgid "Nothing found."
+msgstr "Ничего не найдено."
+
+#: src/screens/settings/PackageSettings.tsx:214
+msgid "Nothing has been changed yet — the default values act."
+msgstr "Ничего ещё не меняли — действуют значения по умолчанию."
+
+#: src/screens/work/Work.tsx:279
+msgid "Nothing has been verified today yet."
+msgstr "Сегодня ещё ничего не проверено."
+
+#: src/screens/view/ViewScreen.tsx:211
+msgid "Nothing here yet."
+msgstr "Здесь пока пусто."
+
+#: src/screens/work/Work.tsx:280
+msgid "Nothing here."
+msgstr "Здесь пусто."
+
+#: src/screens/work/Work.tsx:277
+msgid "Nothing is in progress."
+msgstr "В работе ничего нет."
+
+#: src/screens/knowledge/Knowledge.tsx:178
+msgid "Nothing is known of this kind yet."
+msgstr "Знаний этого вида пока нет."
+
+#: src/screens/work/Work.tsx:276
+msgid "Nothing is stuck."
+msgstr "Ничего не застряло."
+
+#: src/screens/journal/Journal.tsx:231
+msgid "Nothing matches the filters in what was read."
+msgstr "В прочитанном ничего не подходит под фильтры."
+
+#: src/screens/view/ViewScreen.tsx:211
+msgid "Nothing matches the filters."
+msgstr "Под фильтры ничего не подходит."
+
+#: src/screens/view/ViewScreen.tsx:321
+msgid "Nothing related yet."
+msgstr "Связанных записей пока нет."
+
+#: src/screens/view/ViewScreen.tsx:255
+msgid "Now"
+msgstr "Сейчас"
+
+#: src/screens/settings/PersonPage.tsx:246
+msgid "Now: a custom set — rights chosen one by one."
+msgstr "Сейчас — особый набор: права выбраны по отдельности."
+
+#: src/screens/settings/Connections.tsx:474
+msgid "OAuth applications"
+msgstr "Приложения OAuth"
+
+#: src/screens/journal/Journal.tsx:238
+#: src/screens/journal/Journal.tsx:265
+msgid "Object"
+msgstr "Объект"
+
+#. placeholder {0}: search.entityType ?? ''
+#. placeholder {1}: search.entityId.slice(0, 8)
+#: src/screens/journal/Journal.tsx:215
+msgid "Object: {0} {1} ×"
+msgstr "Объект: {0} {1} ×"
+
+#: src/screens/settings/AddPerson.tsx:154
+#: src/screens/settings/PersonPage.tsx:491
+msgid "Observe"
+msgstr "Наблюдение"
+
+#: src/screens/settings/PersonPage.tsx:216
+msgid "Observes"
+msgstr "Наблюдает"
+
+#: src/screens/settings/Rules.tsx:45
+msgid "off"
+msgstr "выключено"
+
+#: src/screens/settings/Rules.tsx:67
+msgid "Off — recorded in the core"
+msgstr "Выключено — записано в ядре"
+
+#: src/screens/settings/Rules.tsx:45
+msgid "on"
+msgstr "включено"
+
+#: src/screens/settings/Rules.tsx:67
+msgid "On — recorded in the core"
+msgstr "Включено — записано в ядре"
+
+#: src/screens/settings/Rules.tsx:19
+msgid "on an event"
+msgstr "по событию"
+
+#: src/screens/settings/Rules.tsx:21
+msgid "on an observation"
+msgstr "по наблюдению"
+
+#: src/screens/settings/Rules.tsx:20
+msgid "on schedule"
+msgstr "по расписанию"
+
+#: src/screens/settings/Rules.tsx:87
+msgid "On whose behalf"
+msgstr "От чьего имени"
+
+#: src/screens/settings/PersonPage.tsx:48
+msgid "only a person can be limited to own workspaces; agents and services get it from their description"
+msgstr "ограничить своими пространствами можно только человека; агентам и службам это задаёт их описание"
+
+#: src/screens/settings/AddPerson.tsx:215
+msgid "only in IAM — finish with the same e-mail as the first time"
+msgstr "только в IAM — доведите с тем же e-mail, что в первый раз"
+
+#: src/screens/work/Work.tsx:235
+msgid "Only mine"
+msgstr "Только моё"
+
+#: src/screens/settings/PersonPage.tsx:328
+msgid "Only own workspaces"
+msgstr "Только свои пространства"
+
+#: src/screens/document/OfficePreview.tsx:193
+msgid "Only the first {MAX_SLIDES} slides are shown."
+msgstr "Показаны только первые {MAX_SLIDES} слайдов."
+
+#: src/screens/settings/Secrets.tsx:147
+msgid "only this agent, from its next start"
+msgstr "только этот агент, со следующего запуска"
+
+#: src/screens/work/AssignDialog.tsx:154
+msgid "Only those who can take this type of work here."
+msgstr "Только те, кто может брать работу этого типа здесь."
+
+#: src/screens/task/TaskActions.tsx:311
+msgid "Only transitions the type of work allows."
+msgstr "Только переходы, которые разрешает тип работы."
+
+#: src/screens/document/Document.tsx:93
+msgid "Open at the source"
+msgstr "Открыть в источнике"
+
+#: src/screens/document/Document.tsx:92
+msgid "Open in a new tab"
+msgstr "Открыть в новой вкладке"
+
+#: src/screens/knowledge/DocumentDialog.tsx:75
+#: src/screens/knowledge/ImportDialog.tsx:102
+#: src/screens/knowledge/Knowledge.tsx:126
+msgid "Open the work"
+msgstr "Открыть работу"
+
+#: src/screens/document/OfficePreview.tsx:55
+msgid "Opening the document…"
+msgstr "Открываю документ…"
+
+#: src/screens/document/PdfPreview.tsx:188
+msgid "Opening the PDF…"
+msgstr "Открываю PDF…"
+
+#: src/screens/document/OfficePreview.tsx:179
+msgid "Opening the presentation…"
+msgstr "Открываем презентацию…"
+
+#: src/screens/document/OfficePreview.tsx:83
+msgid "Opening the spreadsheet…"
+msgstr "Открываю таблицу…"
+
+#: src/screens/settings/PersonPage.tsx:498
+msgid "Optional; recorded in the journal."
+msgstr "Необязательно; записывается в журнал."
+
+#: src/screens/settings/Connections.tsx:392
+msgid "Optional; recorded with the connection."
+msgstr "Необязательно; сохраняется вместе с подключением."
+
+#: src/screens/settings/Connections.tsx:340
+msgid "Optional: the connection turns “access lost” after this day."
+msgstr "Необязательно: после этого дня подключение станет «доступ потерян»."
+
+#: src/screens/task/TaskActions.tsx:280
+msgid "Optional. Becomes a comment on the work; the executor reads it."
+msgstr "Необязательно. Станет комментарием к работе — исполнитель его прочтёт."
+
+#: src/screens/view/ViewScreen.tsx:203
+#: src/screens/work/Work.tsx:243
+msgid "Order"
+msgstr "Порядок"
+
+#: src/api/people.ts:34
+#: src/screens/knowledge/Entry.tsx:174
+#: src/screens/knowledge/Knowledge.tsx:100
+#: src/screens/settings/Settings.tsx:62
+msgid "Organization"
+msgstr "Организация"
+
+#: src/screens/journal/Journal.tsx:89
+msgid "organization set up"
+msgstr "организация заведена"
+
+#: src/lib/format.ts:41
+#: src/screens/task/Task.tsx:181
+#: src/screens/view/values.tsx:68
+#: src/screens/work/Work.tsx:218
+msgid "overdue"
+msgstr "просрочено"
+
+#: src/assistant/proposals.tsx:70
+#: src/screens/task/Task.tsx:175
+#: src/screens/task/TaskActions.tsx:305
+#: src/screens/task/TaskActions.tsx:306
+#: src/screens/work/AssignDialog.tsx:160
+#: src/screens/work/AssignDialog.tsx:161
+#: src/screens/work/AssignDialog.tsx:182
+#: src/screens/work/Work.tsx:239
+msgid "Owner"
+msgstr "Отвечает"
+
+#. placeholder {0}: h.page
+#: src/screens/document/PdfPreview.tsx:219
+msgid "p. {0}"
+msgstr "с. {0}"
+
+#: src/screens/settings/Connections.tsx:212
+#: src/screens/settings/People.tsx:111
+#: src/screens/settings/Rules.tsx:42
+msgid "package"
+msgstr "пакет"
+
+#: src/screens/settings/Settings.tsx:52
+#: src/shell/Shell.tsx:168
+msgid "Packages"
+msgstr "Пакеты"
+
+#. placeholder {0}: type?.spec.defaultKey ?? '…'
+#: src/screens/settings/Connections.tsx:283
+msgid "Packages and agents refer to the connection by this key; it never changes. By default — “{0}”."
+msgstr "По этому ключу на подключение ссылаются пакеты и агенты; он не меняется. По умолчанию — «{0}»."
+
+#: src/screens/settings/People.tsx:282
+msgid "Packages and work refer to the role by this key; it never changes. By default — from the name."
+msgstr "По этому ключу на роль ссылаются пакеты и работа; он не меняется. По умолчанию — из названия."
+
+#: src/screens/document/PdfPreview.tsx:285
+msgid "Page {n} could not be drawn."
+msgstr "Страницу {n} не удалось нарисовать."
+
+#: src/screens/document/PdfPreview.tsx:292
+msgid "Page {n} of {total}"
+msgstr "Страница {n} из {total}"
+
+#: src/screens/work/rows.ts:99
+msgid "part of {ref}"
+msgstr "часть {ref}"
+
+#: src/screens/work/rows.ts:99
+msgid "part of other work"
+msgstr "часть другой работы"
+
+#: src/screens/task/Task.tsx:299
+msgid "part of this work"
+msgstr "часть этой работы"
+
+#: src/screens/document/Document.tsx:107
+#: src/screens/task/history.ts:61
+#: src/screens/task/history.ts:180
+#: src/screens/task/Task.tsx:231
+#: src/screens/today/Today.tsx:34
+#: src/screens/view/values.tsx:77
+#: src/screens/work/rows.ts:110
+msgid "Participant"
+msgstr "Участник"
+
+#: src/screens/journal/Journal.tsx:59
+msgid "participant added"
+msgstr "участник добавлен"
+
+#: src/screens/journal/Journal.tsx:60
+msgid "participant disabled"
+msgstr "участник отключён"
+
+#: src/screens/journal/Journal.tsx:61
+msgid "participant enabled"
+msgstr "участник включён"
+
+#: src/screens/settings/AddPerson.tsx:28
+msgid "Participant of the organization"
+msgstr "Участник организации"
+
+#: src/screens/settings/PersonPage.tsx:334
+msgid "Participates in"
+msgstr "Участвует в"
+
+#: src/screens/settings/PersonPage.tsx:58
+#: src/screens/task/Task.tsx:63
+msgid "Path"
+msgstr "Путь"
+
+#: src/screens/knowledge/DocumentDialog.tsx:90
+msgid "PDF, DOCX, a scan or a photo: the text and the fields are read from it."
+msgstr "PDF, DOCX, скан или фото: из него читаются текст и поля."
+
+#: src/screens/settings/People.tsx:65
+#: src/screens/settings/People.tsx:105
+#: src/screens/settings/People.tsx:114
+msgid "People"
+msgstr "Люди"
+
+#: src/screens/journal/journal.ts:20
+msgid "People and access"
+msgstr "Люди и доступ"
+
+#: src/screens/settings/Settings.tsx:46
+#: src/screens/settings/Settings.tsx:65
+msgid "People and roles"
+msgstr "Люди и роли"
+
+#: src/screens/journal/Journal.tsx:253
+msgid "person"
+msgstr "человек"
+
+#: src/routes.tsx:178
+msgid "Person"
+msgstr "Человек"
+
+#: src/screens/settings/PersonPage.tsx:65
+msgid "Person not found"
+msgstr "Человек не найден"
+
+#: src/screens/settings/PersonPage.tsx:145
+msgid "Phone"
+msgstr "Телефон"
+
+#: src/screens/settings/StageRoles.tsx:103
+msgid "Pipelines come from the observer agent of the connection, and it is not named yet (setting “observerAgent” below)."
+msgstr "Воронки приходят от агента-наблюдателя подключения, а он ещё не указан (настройка «observerAgent» ниже)."
+
+#: src/screens/knowledge/ImportDialog.tsx:134
+msgid "Plan"
+msgstr "План"
+
+#: src/screens/task/ImportPlan.tsx:47
+msgid "Plan not built: {reason}"
+msgstr "План не построен: {reason}"
+
+#: src/screens/knowledge/importFlow.ts:147
+msgid "Plan ready — nothing is written until you approve it"
+msgstr "План готов — ничего не запишется, пока вы его не одобрите"
+
+#: src/screens/knowledge/importFlow.ts:158
+msgid "Plan: {opened} new, {changed} changed, {closed} closed, {unchanged} unchanged"
+msgstr "План: откроется {opened}, изменится {changed}, закроется {closed}, без изменений {unchanged}"
+
+#. placeholder {0}: a.reason
+#: src/assistant/AssistantDock.tsx:86
+msgid "Please confirm: {0}"
+msgstr "Прошу подтвердить: {0}"
+
+#. placeholder {0}: a.reason
+#. placeholder {1}: sendError(a.error)
+#: src/assistant/AssistantDock.tsx:86
+msgid "Please confirm: {0} Failed: {1}."
+msgstr "Прошу подтвердить: {0} Не удалось: {1}."
+
+#: src/screens/settings/PersonPage.tsx:143
+msgid "Position"
+msgstr "Должность"
+
+#: src/screens/settings/StageRoles.tsx:31
+msgid "preparing a proposal"
+msgstr "готовим предложение"
+
+#: src/screens/knowledge/ImportDialog.tsx:84
+msgid "Preparing the template…"
+msgstr "Готовлю шаблон…"
+
+#: src/screens/document/PdfPreview.tsx:224
+msgid "Previous"
+msgstr "Предыдущее"
+
+#: src/screens/settings/PersonPage.tsx:490
+msgid "Previous rights"
+msgstr "Прежние права"
+
+#. placeholder {0}: restore.permissions.length
+#: src/screens/settings/PersonPage.tsx:490
+msgid "Previous rights ({0})"
+msgstr "Прежние права ({0})"
+
+#: src/screens/task/Task.tsx:134
+msgid "Problem"
+msgstr "Проблема"
+
+#: src/screens/journal/Journal.tsx:253
+msgid "process"
+msgstr "процесс"
+
+#: src/forms/StepForm.tsx:111
+msgid "Process"
+msgstr "Процесс"
+
+#. placeholder {0}: p.definitionKey
+#: src/screens/task/Task.tsx:331
+msgid "process {0}, step {step}"
+msgstr "процесс {0}, шаг {step}"
+
+#: src/screens/work/rows.ts:97
+msgid "process {ref}"
+msgstr "процесс {ref}"
+
+#: src/screens/task/history.ts:95
+msgid "Process {ref} raised the work"
+msgstr "Работу завёл процесс {ref}"
+
+#: src/screens/task/Task.tsx:162
+msgid "Process step"
+msgstr "Шаг процесса"
+
+#: src/screens/task/history.ts:93
+msgid "Process step {quoted} raised the work"
+msgstr "Работу завёл шаг процесса {quoted}"
+
+#: src/screens/work/rows.ts:97
+msgid "process step {step}"
+msgstr "шаг процесса {step}"
+
+#: src/api/people.ts:30
+msgid "Processes and goals"
+msgstr "Процессы и цели"
+
+#: src/screens/knowledge/DocumentDialog.tsx:99
+msgid "proposed from the document with quotes; you check and correct them before the decision"
+msgstr "предлагаются по документу с цитатами; вы проверяете и правите их до решения"
+
+#: src/screens/document/Document.tsx:109
+msgid "Proves"
+msgstr "Доказывает"
+
+#: src/screens/knowledge/documentFlow.ts:121
+#: src/screens/task/DocumentFields.tsx:94
+msgid "Putting the proposed fields into the work…"
+msgstr "Переносим предложенные поля в работу…"
+
+#: src/assistant/proposals.tsx:80
+#: src/screens/work/AssignDialog.tsx:144
+msgid "Raise the work"
+msgstr "Завести работу"
+
+#. js-lingui-explicit-id
+#: src/screens/today/Today.tsx:47
+msgid "journal.created.human"
+msgstr "завёл работу"
+
+#. js-lingui-explicit-id
+#: src/screens/today/Today.tsx:47
+msgid "journal.created.process"
+msgstr "завело работу"
+
+#: src/screens/today/Today.tsx:287
+msgid "Raised"
+msgstr "Возникло"
+
+#. js-lingui-explicit-id
+#: src/screens/task/Task.tsx:183
+msgid "task.details.raised"
+msgstr "Заведена"
+
+#: src/screens/task/history.ts:97
+msgid "Raised as part of {ref}"
+msgstr "Заведена как часть {ref}"
+
+#: src/screens/task/history.ts:97
+msgid "Raised as part of other work"
+msgstr "Заведена как часть другой работы"
+
+#. placeholder {0}: who.displayName
+#: src/screens/work/rows.ts:92
+msgid "raised by {0}"
+msgstr "заведено: {0}"
+
+#: src/screens/work/rows.ts:92
+msgid "raised by a person"
+msgstr "заведено человеком"
+
+#: src/screens/work/AssignDialog.tsx:131
+msgid "raised by you"
+msgstr "поручили вы"
+
+#: src/screens/task/history.ts:102
+msgid "Raised by: {who}"
+msgstr "Завёл: {who}"
+
+#: src/screens/work/rows.ts:101
+msgid "raised during an agent's work"
+msgstr "заведено агентом по ходу работы"
+
+#: src/screens/task/history.ts:113
+msgid "Raised, not yet taken"
+msgstr "Заведена, не взята"
+
+#: src/assistant/proposals.tsx:76
+msgid "Raised:"
+msgstr "Заведено:"
+
+#: src/screens/task/history.ts:231
+msgid "Raised: {who}"
+msgstr "Заведено: {who}"
+
+#: src/screens/knowledge/documentFlow.ts:108
+#: src/screens/knowledge/importFlow.ts:100
+msgid "Raising the work…"
+msgstr "Завожу работу…"
+
+#: src/assistant/proposals.tsx:78
+#: src/screens/work/AssignDialog.tsx:144
+msgid "Raising…"
+msgstr "Завожу…"
+
+#. placeholder {0}: fmt(oldest.occurredAt)
+#: src/screens/journal/Journal.tsx:223
+msgid "Read back to {0}."
+msgstr "Прочитано назад до {0}."
+
+#: src/screens/settings/PackageSettings.tsx:124
+msgid "Read only: you have no right to change the settings of this package."
+msgstr "Только чтение: у вас нет права менять настройки этого пакета."
+
+#: src/api/people.ts:42
+msgid "read the journal of events"
+msgstr "читать журнал событий"
+
+#: src/screens/journal/Journal.tsx:223
+msgid "Read to the start of the journal."
+msgstr "Прочитано до начала журнала."
+
+#: src/screens/journal/Journal.tsx:224
+msgid "Reading further…"
+msgstr "Читаем дальше…"
+
+#: src/screens/journal/Journal.tsx:220
+msgid "Reading the journal…"
+msgstr "Читаем журнал…"
+
+#: src/screens/task/ImportPlan.tsx:64
+msgid "Reading the plan…"
+msgstr "Читаю план…"
+
+#: src/screens/knowledge/documentFlow.ts:111
+msgid "Reading the text and the fields of the document…"
+msgstr "Читаем текст и поля документа…"
+
+#: src/screens/task/Protocol.tsx:57
+msgid "reasoning is not stored"
+msgstr "размышления не хранятся"
+
+#: src/screens/knowledge/Knowledge.tsx:289
+msgid "reconciled knowledge with"
+msgstr "сверка знаний:"
+
+#: src/assistant/AssistantDock.tsx:103
+msgid "Reconnect"
+msgstr "Подключиться снова"
+
+#: src/screens/journal/Journal.tsx:263
+msgid "Record"
+msgstr "Запись"
+
+#: src/api/people.ts:28
+msgid "record observations"
+msgstr "записывать наблюдения"
+
+#: src/screens/task/TaskActions.tsx:169
+msgid "Recorded in the history of the work"
+msgstr "Записано в историю работы"
+
+#: src/forms/StepForm.tsx:83
+msgid "Recording the answers…"
+msgstr "Записываю ответы…"
+
+#: src/screens/task/TaskActions.tsx:166
+msgid "Recording why…"
+msgstr "Записываем причину…"
+
+#: src/screens/journal/Journal.tsx:235
+msgid "Records of the journal"
+msgstr "Записи журнала"
+
+#: src/screens/knowledge/Knowledge.tsx:295
+msgid "registered a knowledge pack"
+msgstr "зарегистрирован пакет знаний"
+
+#: src/screens/view/ViewScreen.tsx:320
+msgid "Related"
+msgstr "Связано"
+
+#: src/screens/task/Task.tsx:187
+msgid "Related work"
+msgstr "Связанная работа"
+
+#: src/screens/knowledge/Entry.tsx:150
+msgid "Relations"
+msgstr "Связи"
+
+#: src/screens/task/TaskActions.tsx:137
+msgid "Released — recorded in the core"
+msgstr "Отпущено — записано в ядре"
+
+#: src/screens/task/history.ts:242
+msgid "Released: {who}"
+msgstr "Отпущено: {who}"
+
+#: src/screens/task/TaskActions.tsx:135
+msgid "Releasing the work from the executor…"
+msgstr "Освобождаю работу от исполнителя…"
+
+#. js-lingui-explicit-id
+#: src/screens/settings/PersonPage.tsx:343
+msgid "people.membership.remove"
+msgstr "Убрать"
+
+#: src/forms/SchemaForm.tsx:157
+#: src/screens/settings/StageRoles.tsx:143
+msgid "Remove"
+msgstr "Удалить"
+
+#: src/forms/SchemaForm.tsx:157
+msgid "Remove item {n}"
+msgstr "Удалить элемент {n}"
+
+#. js-lingui-explicit-id
+#: src/screens/knowledge/Knowledge.tsx:306
+msgid "knowledge.counter.removed"
+msgstr "снято"
+
+#: src/screens/settings/PersonPage.tsx:343
+msgid "Removed — recorded in the core"
+msgstr "Убрано — записано в ядре"
+
+#: src/screens/settings/PersonPage.tsx:343
+msgid "Removing from the workspace…"
+msgstr "Убираем из пространства…"
+
+#: src/screens/settings/Connections.tsx:494
+#: src/screens/settings/Secrets.tsx:93
+msgid "Replace"
+msgstr "Заменить"
+
+#: src/screens/settings/Connections.tsx:525
+msgid "Replace the OAuth application"
+msgstr "Заменить приложение OAuth"
+
+#: src/screens/settings/Secrets.tsx:134
+msgid "Replace the secret"
+msgstr "Заменить секрет"
+
+#: src/screens/settings/Connections.tsx:540
+msgid "replaces the previous one; the previous secret is destroyed"
+msgstr "заменяет прежний; прежний секрет уничтожается"
+
+#: src/screens/settings/Secrets.tsx:146
+msgid "replaces the previous one; the previous value is destroyed"
+msgstr "заменяет прежнее; прежнее значение уничтожается"
+
+#: src/api/people.ts:25
+msgid "request and cancel approvals"
+msgstr "запрашивать и отменять согласования"
+
+#: src/screens/today/Today.tsx:53
+msgid "requested a sign-off on"
+msgstr "запросило подпись по"
+
+#: src/forms/SchemaForm.tsx:20
+msgid "Required"
+msgstr "Обязательное поле"
+
+#: src/screens/task/TaskActions.tsx:291
+msgid "Required: it stays in the history of the work."
+msgstr "Обязательно: останется в истории работы."
+
+#: src/decisions/DeclineDialog.tsx:17
+msgid "Required: the executor gets it instead of the result; it stays in the history of the work."
+msgstr "Обязательно: исполнитель получит это вместо результата; останется в истории работы."
+
+#: src/assistant/proposals.tsx:68
+#: src/screens/work/AssignDialog.tsx:180
+msgid "Result"
+msgstr "Результат"
+
+#: src/screens/document/Document.tsx:108
+msgid "result of an executor's attempt"
+msgstr "результат попытки исполнителя"
+
+#: src/screens/task/Protocol.tsx:72
+msgid "Result:"
+msgstr "Итог:"
+
+#: src/assistant/AssistantDock.tsx:79
+#: src/screens/task/TaskActions.tsx:278
+msgid "Retry"
+msgstr "Повторить"
+
+#: src/screens/task/Problem.tsx:74
+#: src/screens/task/TaskActions.tsx:269
+msgid "Retry as it was"
+msgstr "Повторить как было"
+
+#: src/decisions/DeclineDialog.tsx:15
+#: src/screens/settings/PackageSettings.tsx:265
+#: src/screens/task/Task.tsx:254
+#: src/screens/today/Today.tsx:108
+msgid "Return"
+msgstr "Вернуть"
+
+#: src/decisions/DeclineDialog.tsx:14
+msgid "Return the work?"
+msgstr "Вернуть на доработку?"
+
+#: src/screens/settings/PackageSettings.tsx:228
+msgid "Return this version"
+msgstr "Вернуть эту версию"
+
+#: src/screens/settings/PackageSettings.tsx:262
+msgid "Return version {n}"
+msgstr "Вернуть версию {n}"
+
+#: src/screens/task/TaskActions.tsx:182
+msgid "Returned — the executor takes it again"
+msgstr "Возвращена — исполнитель возьмёт её снова"
+
+#: src/screens/settings/PackageSettings.tsx:251
+msgid "Returned — the values of version {n} are now version {next}"
+msgstr "Возвращено — значения версии {n} стали версией {next}"
+
+#: src/screens/settings/PackageSettings.tsx:247
+msgid "Returning the values…"
+msgstr "Возвращаю значения…"
+
+#: src/screens/task/TaskActions.tsx:179
+msgid "Returning the work to the executor…"
+msgstr "Возвращаю работу исполнителю…"
+
+#: src/decisions/DeclineDialog.tsx:24
+#: src/decisions/DeclineDialog.tsx:28
+#: src/forms/StepForm.tsx:112
+#: src/screens/knowledge/ImportDialog.tsx:135
+#: src/screens/settings/Connections.tsx:289
+#: src/screens/settings/Connections.tsx:347
+#: src/screens/settings/Connections.tsx:389
+#: src/screens/settings/PackageSettings.tsx:141
+#: src/screens/settings/PackageSettings.tsx:270
+#: src/screens/settings/People.tsx:192
+#: src/screens/settings/People.tsx:232
+#: src/screens/settings/People.tsx:295
+#: src/screens/settings/People.tsx:299
+#: src/screens/settings/PersonPage.tsx:274
+#: src/screens/settings/PersonPage.tsx:363
+#: src/screens/settings/PersonPage.tsx:367
+#: src/screens/settings/PersonPage.tsx:479
+#: src/screens/settings/Rules.tsx:88
+#: src/screens/settings/Rules.tsx:93
+#: src/screens/task/TaskActions.tsx:234
+#: src/screens/task/TaskActions.tsx:276
+#: src/screens/task/TaskActions.tsx:287
+#: src/screens/task/TaskActions.tsx:297
+msgid "Reversible"
+msgstr "Обратимо ли"
+
+#: src/screens/knowledge/DocumentDialog.tsx:70
+msgid "Reversible: nothing is written until you approve the fields"
+msgstr "Обратимо: ничего не записывается, пока вы не одобрите поля"
+
+#: src/screens/knowledge/ImportDialog.tsx:97
+msgid "Reversible: nothing is written until you approve the plan"
+msgstr "Обратимо: ничего не запишется, пока вы не одобрите план"
+
+#: src/screens/settings/Connections.tsx:232
+#: src/screens/settings/Connections.tsx:382
+#: src/screens/settings/People.tsx:227
+msgid "Revoke"
+msgstr "Отозвать"
+
+#: src/screens/settings/Connections.tsx:379
+msgid "Revoke the connection"
+msgstr "Отозвать подключение"
+
+#: src/screens/settings/People.tsx:224
+msgid "Revoke the role “{name}”"
+msgstr "Отозвать роль «{name}»"
+
+#. placeholder {0}: a.role.name
+#. placeholder {1}: p.displayName
+#. placeholder {1}: person.displayName
+#: src/screens/settings/People.tsx:87
+#: src/screens/settings/PersonPage.tsx:121
+msgid "Revoke the role {0} from {1}"
+msgstr "Отозвать роль «{0}»: {1}"
+
+#: src/screens/settings/Connections.tsx:39
+msgid "revoked"
+msgstr "отозвано"
+
+#: src/screens/settings/People.tsx:213
+msgid "Revoked — recorded in the core"
+msgstr "Отозвано — записано в ядре"
+
+#: src/screens/settings/Connections.tsx:369
+msgid "Revoked — the access is deleted; agents are refused from now on"
+msgstr "Отозвано — доступ удалён; агенты с этого момента получают отказ"
+
+#: src/screens/settings/PersonPage.tsx:483
+msgid "revoked rights do not come back by themselves — they are given anew"
+msgstr "отозванные права сами не возвращаются — их выдают заново"
+
+#: src/screens/settings/People.tsx:210
+msgid "Revoking the role…"
+msgstr "Отзываем роль…"
+
+#: src/screens/settings/Connections.tsx:365
+msgid "Revoking: deleting the access from the secret store…"
+msgstr "Отзываем: удаляем доступ из хранилища секретов…"
+
+#: src/screens/settings/AddPerson.tsx:29
+#: src/screens/settings/AddPerson.tsx:152
+#: src/screens/settings/AddPerson.tsx:173
+#: src/screens/settings/PersonPage.tsx:84
+#: src/screens/settings/PersonPage.tsx:483
+msgid "Rights"
+msgstr "Права"
+
+#: src/screens/settings/PersonPage.tsx:488
+msgid "Rights after enabling"
+msgstr "Права после включения"
+
+#: src/screens/journal/Journal.tsx:63
+msgid "rights changed"
+msgstr "права изменены"
+
+#: src/screens/journal/Journal.tsx:62
+msgid "rights given"
+msgstr "права выданы"
+
+#: src/screens/settings/PersonPage.tsx:455
+msgid "Rights given — act from the next sign-in"
+msgstr "Права выданы — действуют со следующего входа"
+
+#: src/screens/journal/Journal.tsx:64
+msgid "rights revoked"
+msgstr "права отозваны"
+
+#: src/screens/settings/PersonPage.tsx:455
+msgid "Rights were already there"
+msgstr "Права уже были"
+
+#: src/screens/settings/People.tsx:105
+#: src/screens/settings/People.tsx:179
+#: src/screens/settings/People.tsx:180
+#: src/screens/settings/StageRoles.tsx:115
+#: src/screens/task/Task.tsx:178
+#: src/screens/task/TaskActions.tsx:231
+#: src/screens/task/TaskActions.tsx:232
+msgid "Role"
+msgstr "Роль"
+
+#: src/screens/task/TaskActions.tsx:157
+msgid "Role “{name}” given — recorded in the core"
+msgstr "Роль «{name}» выдана — записано в ядре"
+
+#: src/screens/journal/Journal.tsx:68
+msgid "role changed"
+msgstr "роль изменена"
+
+#: src/screens/journal/Journal.tsx:67
+msgid "role created"
+msgstr "роль создана"
+
+#: src/screens/journal/Journal.tsx:65
+msgid "role given"
+msgstr "роль выдана"
+
+#. placeholder {0}: s.name
+#: src/screens/settings/StageRoles.tsx:124
+msgid "Role of the stage “{0}”"
+msgstr "Роль этапа «{0}»"
+
+#: src/screens/journal/Journal.tsx:66
+msgid "role revoked"
+msgstr "роль отозвана"
+
+#: src/screens/settings/AddPerson.tsx:31
+#: src/screens/settings/AddPerson.tsx:160
+#: src/screens/settings/AddPerson.tsx:161
+#: src/screens/settings/People.tsx:98
+#: src/screens/settings/PersonPage.tsx:90
+msgid "Roles"
+msgstr "Роли"
+
+#. placeholder {0}: p.displayName
+#. placeholder {0}: person.displayName
+#: src/screens/settings/People.tsx:81
+#: src/screens/settings/PersonPage.tsx:117
+msgid "Roles of {0}"
+msgstr "Роли: {0}"
+
+#: src/screens/settings/StageRoles.tsx:99
+#: src/screens/settings/StageRoles.tsx:100
+msgid "Roles of pipeline stages"
+msgstr "Роли этапов воронки"
+
+#: src/screens/settings/AddPerson.tsx:160
+msgid "Roles of the organization and of the chosen workspace."
+msgstr "Роли организации и выбранного пространства."
+
+#: src/screens/task/ImportPlan.tsx:80
+msgid "Row"
+msgstr "Строка"
+
+#: src/screens/task/ImportPlan.tsx:73
+msgid "Rows in the file"
+msgstr "Строк в файле"
+
+#: src/screens/task/ImportPlan.tsx:79
+msgid "Rows with errors — fix them in the file and load it again"
+msgstr "Строки с ошибками — исправьте их в файле и загрузите снова"
+
+#: src/screens/work/rows.ts:94
+msgid "rule {ref}"
+msgstr "правило {ref}"
+
+#: src/screens/task/history.ts:88
+msgid "Rule {ref} raised the work"
+msgstr "Работу завело правило {ref}"
+
+#: src/screens/journal/Journal.tsx:81
+msgid "rule archived"
+msgstr "правило в архиве"
+
+#: src/screens/journal/Journal.tsx:78
+msgid "rule changed"
+msgstr "правило изменено"
+
+#: src/screens/journal/Journal.tsx:77
+msgid "rule created"
+msgstr "правило создано"
+
+#: src/screens/journal/Journal.tsx:80
+msgid "rule disabled"
+msgstr "правило выключено"
+
+#: src/screens/journal/Journal.tsx:79
+msgid "rule enabled"
+msgstr "правило включено"
+
+#: src/screens/journal/Journal.tsx:82
+msgid "rule evaluated"
+msgstr "правило сработало"
+
+#: src/screens/settings/Settings.tsx:46
+#: src/screens/settings/Settings.tsx:64
+msgid "Rules"
+msgstr "Правила"
+
+#: src/screens/journal/journal.ts:21
+msgid "Rules and processes"
+msgstr "Правила и процессы"
+
+#: src/api/people.ts:38
+msgid "Rules and types of work"
+msgstr "Правила и типы работы"
+
+#: src/screens/settings/Rules.tsx:34
+msgid "Rules raise work by themselves when their conditions hold. A disabled rule raises nothing; work it has already raised stays."
+msgstr "Правила сами заводят работу, когда выполнены их условия. Выключенное правило ничего не заводит; уже заведённая им работа остаётся."
+
+#: src/api/people.ts:28
+msgid "run skills"
+msgstr "запускать скиллы"
+
+#: src/screens/settings/Connections.tsx:528
+#: src/screens/settings/PackageSettings.tsx:146
+#: src/screens/settings/People.tsx:273
+#: src/screens/settings/Secrets.tsx:137
+#: src/screens/task/TaskActions.tsx:299
+msgid "Save"
+msgstr "Сохранить"
+
+#: src/screens/task/DocumentFields.tsx:117
+msgid "Save before deciding: approval writes the saved fields."
+msgstr "Сохраните до решения: одобрение запишет сохранённые поля."
+
+#: src/screens/settings/PersonPage.tsx:194
+msgid "Save details"
+msgstr "Сохранить сведения"
+
+#: src/screens/settings/PersonPage.tsx:277
+msgid "Save rights"
+msgstr "Сохранить права"
+
+#: src/screens/settings/Connections.tsx:453
+msgid "Save settings"
+msgstr "Сохранить настройки"
+
+#: src/screens/task/DocumentFields.tsx:116
+msgid "Save the fields"
+msgstr "Сохранить поля"
+
+#: src/screens/settings/PersonPage.tsx:370
+msgid "Save visibility"
+msgstr "Сохранить видимость"
+
+#: src/screens/settings/PackageSettings.tsx:93
+msgid "saved"
+msgstr "сохранено"
+
+#: src/screens/settings/PersonPage.tsx:370
+msgid "Saved — acts from the next request"
+msgstr "Сохранено — действует со следующего запроса"
+
+#: src/screens/settings/Connections.tsx:514
+msgid "Saved — new sign-ins of this type use the application"
+msgstr "Сохранено — новые входы этого типа идут через это приложение"
+
+#: src/screens/settings/People.tsx:259
+#: src/screens/task/TaskActions.tsx:192
+msgid "Saved — recorded in the core"
+msgstr "Сохранено — записано в ядре"
+
+#: src/screens/settings/Secrets.tsx:123
+msgid "Saved — the agent reads it on its next start"
+msgstr "Сохранено — агент прочитает его при следующем запуске"
+
+#: src/screens/settings/Connections.tsx:427
+msgid "Saved — the connector and agents read them on their next pass"
+msgstr "Сохранено — коннектор и агенты прочитают их на следующем проходе"
+
+#: src/screens/task/DocumentFields.tsx:76
+msgid "Saved — the decision writes exactly these fields"
+msgstr "Сохранено — решение запишет ровно эти поля"
+
+#: src/screens/settings/PersonPage.tsx:166
+msgid "Saved — the new details are shown everywhere"
+msgstr "Сохранено — новые сведения видны везде"
+
+#: src/screens/settings/PersonPage.tsx:226
+msgid "Saved — they act from the next request of the person"
+msgstr "Сохранено — действуют со следующего запроса человека"
+
+#: src/screens/settings/PackageSettings.tsx:111
+msgid "Saved — version {version}; new steps of the package use it"
+msgstr "Сохранено — версия {version}; новые шаги пакета берут её"
+
+#: src/screens/settings/PersonPage.tsx:163
+msgid "Saving the details…"
+msgstr "Сохраняем сведения…"
+
+#: src/screens/task/DocumentFields.tsx:71
+msgid "Saving the fields…"
+msgstr "Сохраняем поля…"
+
+#: src/screens/settings/PersonPage.tsx:223
+msgid "Saving the rights…"
+msgstr "Сохраняем права…"
+
+#: src/screens/settings/Connections.tsx:424
+#: src/screens/settings/PackageSettings.tsx:107
+msgid "Saving the settings…"
+msgstr "Сохраняю настройки…"
+
+#: src/screens/settings/PersonPage.tsx:370
+msgid "Saving the visibility…"
+msgstr "Сохраняем видимость…"
+
+#: src/screens/settings/People.tsx:255
+#: src/screens/task/TaskActions.tsx:184
+msgid "Saving…"
+msgstr "Сохраняю…"
+
+#: src/routes.tsx:152
+#: src/routes.tsx:160
+#: src/screens/view/ViewScreen.tsx:44
+msgid "Screen"
+msgstr "Экран"
+
+#: src/screens/view/ViewScreen.tsx:44
+msgid "Screen not found"
+msgstr "Экран не найден"
+
+#: src/screens/document/PdfPreview.tsx:215
+msgid "Searching…"
+msgstr "Ищем…"
+
+#: src/screens/settings/Connections.tsx:540
+msgid "Secret"
+msgstr "Секрет"
+
+#. placeholder {0}: agent.displayName
+#: src/screens/settings/Secrets.tsx:79
+msgid "Secrets of {0}"
+msgstr "Секреты: {0}"
+
+#: src/screens/settings/Settings.tsx:46
+#: src/screens/settings/Settings.tsx:67
+msgid "Secrets of agents"
+msgstr "Секреты агентов"
+
+#: src/screens/settings/Settings.tsx:51
+msgid "Sections of settings"
+msgstr "Разделы настроек"
+
+#: src/api/people.ts:36
+msgid "see agents"
+msgstr "видеть агентов"
+
+#: src/api/people.ts:25
+msgid "see approvals"
+msgstr "видеть согласования"
+
+#: src/api/people.ts:32
+msgid "see goals"
+msgstr "видеть цели"
+
+#: src/api/people.ts:28
+msgid "see materials"
+msgstr "видеть материалы"
+
+#: src/api/people.ts:36
+msgid "see people and agents"
+msgstr "видеть людей и агентов"
+
+#: src/api/people.ts:31
+msgid "see processes"
+msgstr "видеть процессы"
+
+#: src/api/people.ts:36
+msgid "see projects"
+msgstr "видеть проекты"
+
+#: src/api/people.ts:35
+msgid "see roles"
+msgstr "видеть роли"
+
+#: src/api/people.ts:39
+msgid "see rules"
+msgstr "видеть правила"
+
+#: src/api/people.ts:39
+msgid "see types of work"
+msgstr "видеть типы работы"
+
+#: src/api/people.ts:22
+msgid "see work"
+msgstr "видеть работу"
+
+#: src/api/people.ts:35
+msgid "see workspaces"
+msgstr "видеть пространства"
+
+#: src/screens/settings/PersonPage.tsx:328
+msgid "sees only the workspaces they participate in, and the nested ones; anything else is “not found” for them"
+msgstr "видит только пространства, где участвует, и вложенные; всё остальное для него «не найдено»"
+
+#: src/screens/settings/PersonPage.tsx:324
+msgid "sees the work of all workspaces — what the rights allow"
+msgstr "видит работу всех пространств — в пределах прав"
+
+#: src/screens/settings/PersonPage.tsx:216
+msgid "sees work, decisions, materials and the organization; changes nothing"
+msgstr "видит работу, решения, материалы и организацию; ничего не меняет"
+
+#: src/screens/task/Task.tsx:383
+msgid "Send"
+msgstr "Отправить"
+
+#: src/screens/settings/AddPerson.tsx:181
+msgid "Send the person this link to sign in for the first time:"
+msgstr "Отправьте человеку ссылку для первого входа:"
+
+#: src/screens/settings/Connections.tsx:509
+msgid "Sending the application to the secret store…"
+msgstr "Отправляем приложение в хранилище секретов…"
+
+#: src/screens/settings/Connections.tsx:312
+msgid "Sending the key to the secret store…"
+msgstr "Отправляем ключ в хранилище секретов…"
+
+#: src/screens/settings/Secrets.tsx:118
+msgid "Sending the secret to the secret store…"
+msgstr "Отправляем секрет в хранилище секретов…"
+
+#: src/assistant/AssistantDock.tsx:77
+msgid "sending…"
+msgstr "отправляю…"
+
+#: src/screens/task/Task.tsx:383
+msgid "Sending…"
+msgstr "Отправляю…"
+
+#: src/api/executors.ts:140
+msgid "service"
+msgstr "сервис"
+
+#: src/screens/journal/Journal.tsx:70
+msgid "session closed"
+msgstr "сессия закрыта"
+
+#: src/screens/journal/Journal.tsx:71
+msgid "session expired"
+msgstr "сессия истекла"
+
+#: src/screens/journal/Journal.tsx:69
+msgid "session opened"
+msgstr "сессия открыта"
+
+#: src/screens/settings/PersonPage.tsx:239
+msgid "Set of rights"
+msgstr "Набор прав"
+
+#: src/routes.tsx:169
+#: src/screens/settings/Connections.tsx:444
+#: src/screens/settings/Settings.tsx:49
+#: src/shell/Shell.tsx:201
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/screens/settings/Connections.tsx:443
+msgid "Settings of the connection"
+msgstr "Настройки подключения"
+
+#: src/screens/journal/journal.ts:24
+msgid "Setup"
+msgstr "Настройка"
+
+#: src/screens/document/OfficePreview.tsx:94
+msgid "Sheets"
+msgstr "Листы"
+
+#. placeholder {0}: Math.min(rest, PAGE_STEP)
+#: src/screens/document/PdfPreview.tsx:232
+msgid "Show {0} more pages of {rest}"
+msgstr "Показать ещё {0} страниц из {rest}"
+
+#: src/screens/journal/Journal.tsx:228
+msgid "Show {pending} new records"
+msgstr "Показать новые записи: {pending}"
+
+#: src/assistant/AssistantDock.tsx:50
+#: src/screens/journal/Journal.tsx:283
+msgid "Show earlier"
+msgstr "Показать раньше"
+
+#: src/screens/view/ViewScreen.tsx:222
+msgid "Show more"
+msgstr "Показать ещё"
+
+#: src/screens/settings/PersonPage.tsx:248
+msgid "Show the rights one by one"
+msgstr "Показать права по отдельности"
+
+#: src/screens/task/Protocol.tsx:71
+msgid "Show the whole protocol"
+msgstr "Показать протокол целиком"
+
+#. placeholder {0}: rows.length
+#. placeholder {1}: all.length
+#: src/screens/journal/Journal.tsx:221
+msgid "Shown: {0} of {1} read."
+msgstr "Показано: {0} из прочитанных {1}."
+
+#: src/shell/Shell.tsx:205
+msgid "Sign out"
+msgstr "Выйти"
+
+#: src/screens/settings/AddPerson.tsx:172
+#: src/screens/settings/PersonPage.tsx:476
+msgid "Sign-in"
+msgstr "Вход"
+
+#: src/api/people.ts:41
+msgid "Sign-in and journal"
+msgstr "Вход и журнал"
+
+#: src/screens/settings/AddPerson.tsx:27
+msgid "Sign-in at the identity provider"
+msgstr "Вход у провайдера"
+
+#: src/screens/settings/PersonPage.tsx:446
+msgid "Sign-in closed in IAM"
+msgstr "Вход в IAM закрыт"
+
+#: src/screens/settings/Connections.tsx:59
+msgid "sign-in in the other system (OAuth)"
+msgstr "вход во внешней системе (OAuth)"
+
+#: src/screens/settings/PersonPage.tsx:453
+msgid "Sign-in opened in IAM"
+msgstr "Вход в IAM открыт"
+
+#: src/screens/settings/PersonPage.tsx:396
+msgid "sign-in revoked"
+msgstr "вход отозван"
+
+#: src/screens/journal/Journal.tsx:58
+msgid "sign-off request cancelled"
+msgstr "запрос подписи отменён"
+
+#: src/screens/task/history.ts:171
+msgid "Sign-off request cancelled"
+msgstr "Запрос подписи отменён"
+
+#: src/screens/journal/Journal.tsx:55
+msgid "sign-off requested"
+msgstr "запрошена подпись"
+
+#: src/screens/task/history.ts:215
+msgid "Sign-off requested: {who}"
+msgstr "Запрошена подпись: {who}"
+
+#: src/screens/task/history.ts:170
+msgid "Signed: {name}"
+msgstr "Подписано: {name}"
+
+#: src/lib/format.ts:34
+msgid "since {when}"
+msgstr "с {when}"
+
+#: src/screens/task/TaskActions.tsx:273
+#: src/screens/task/TaskActions.tsx:274
+msgid "Since the failure"
+msgstr "После провала"
+
+#. placeholder {0}: i + 1
+#: src/screens/document/OfficePreview.tsx:188
+msgid "Slide {0}"
+msgstr "Слайд {0}"
+
+#: src/screens/settings/PersonPage.tsx:41
+msgid "some fields do not fit — see the fields"
+msgstr "часть полей не подходит — см. поля"
+
+#: src/screens/settings/Connections.tsx:74
+msgid "some settings do not fit — see the fields"
+msgstr "часть настроек не подходит — см. поля"
+
+#: src/screens/settings/PackageSettings.tsx:37
+msgid "some values do not fit — see the fields"
+msgstr "некоторые значения не подходят — см. поля"
+
+#: src/screens/settings/Connections.tsx:73
+msgid "someone changed the connection meanwhile — reopen it and try again"
+msgstr "подключение успели изменить — откройте его заново и повторите"
+
+#: src/screens/settings/People.tsx:34
+msgid "someone changed the role meanwhile — reopen it and try again"
+msgstr "роль успели изменить — откройте заново и повторите"
+
+#: src/screens/settings/PackageSettings.tsx:36
+msgid "someone changed the settings meanwhile — reopen them and try again"
+msgstr "настройки успели изменить — откройте заново и повторите"
+
+#: src/forms/StepForm.tsx:57
+#: src/screens/task/TaskActions.tsx:35
+msgid "someone changed the work meanwhile — reopen it and try again"
+msgstr "работу успели изменить — откройте заново и повторите"
+
+#: src/screens/settings/PersonPage.tsx:40
+msgid "someone changed this person meanwhile — reopen and try again"
+msgstr "сведения успели изменить — откройте заново и повторите"
+
+#: src/screens/task/history.ts:168
+msgid "someone with the role"
+msgstr "кто-то с ролью"
+
+#: src/shell/Failure.tsx:17
+msgid "Something went wrong on this screen"
+msgstr "На этом экране что-то пошло не так"
+
+#: src/screens/document/Document.tsx:108
+#: src/screens/knowledge/Entry.tsx:172
+#: src/screens/knowledge/Knowledge.tsx:184
+msgid "Source"
+msgstr "Источник"
+
+#: src/screens/knowledge/Knowledge.tsx:231
+msgid "Spreadsheet import"
+msgstr "Импорт из таблицы"
+
+#: src/screens/settings/StageRoles.tsx:115
+msgid "Stage"
+msgstr "Этап"
+
+#. placeholder {0}: r.stageId
+#. placeholder {1}: r.pipelineId
+#. placeholder {2}: roleLabel(r.role)
+#: src/screens/settings/StageRoles.tsx:142
+msgid "Stage {0} of pipeline {1} — {2}: it is no longer in the CRM"
+msgstr "Этап {0} воронки {1} — {2}: его больше нет в CRM"
+
+#: src/screens/task/Task.tsx:182
+msgid "Start"
+msgstr "Начало"
+
+#: src/api/people.ts:31
+msgid "start processes"
+msgstr "запускать процессы"
+
+#: src/screens/work/AssignDialog.tsx:149
+msgid "Start with a verb: “Reconcile invoice No. 421”"
+msgstr "С глагола: «Сверить счёт №421»"
+
+#: src/screens/today/Today.tsx:58
+msgid "started an attempt on"
+msgstr "начал попытку по"
+
+#: src/screens/task/TaskActions.tsx:271
+#: src/screens/task/TaskActions.tsx:286
+#: src/screens/task/TaskActions.tsx:311
+msgid "Status"
+msgstr "Статус"
+
+#: src/screens/settings/Connections.tsx:460
+#: src/screens/settings/PackageSettings.tsx:156
+msgid "Stay"
+msgstr "Остаться"
+
+#: src/screens/settings/PackageSettings.tsx:159
+msgid "stay and press “Save”"
+msgstr "останьтесь и нажмите «Сохранить»"
+
+#: src/screens/settings/Rules.tsx:92
+msgid "stays and goes on as before"
+msgstr "остаётся и идёт как шла"
+
+#: src/screens/settings/PersonPage.tsx:362
+msgid "stays with them, even outside what they see"
+msgstr "остаётся за человеком, даже вне видимого"
+
+#: src/screens/settings/People.tsx:231
+msgid "stays with them; to move it, hand it over"
+msgstr "остаётся у исполнителя; чтобы забрать — передайте её"
+
+#: src/forms/StepForm.tsx:110
+msgid "Step"
+msgstr "Шаг"
+
+#: src/forms/StepForm.tsx:89
+msgid "Step completed — the process moves on"
+msgstr "Шаг завершён — процесс идёт дальше"
+
+#: src/screens/settings/Secrets.tsx:185
+msgid "still needs it: until it is entered again, the agent falls back to the file on its node, if there is one"
+msgstr "он всё ещё нужен агенту: пока его не введут снова, агент возьмёт файл на своём узле, если он есть"
+
+#: src/screens/task/TaskActions.tsx:132
+msgid "Stop requested — the protocol of the attempt is kept"
+msgstr "Остановка запрошена — протокол попытки сохранится"
+
+#: src/screens/settings/PersonPage.tsx:424
+msgid "Stopped at {where}: {text}. Repeating finishes what is left."
+msgstr "Остановились на шаге «{where}»: {text}. Повтор доведёт остальное."
+
+#: src/screens/task/TaskActions.tsx:131
+msgid "stopped from the console"
+msgstr "остановлено из консоли"
+
+#: src/screens/knowledge/DocumentDialog.tsx:60
+msgid "Stopped: {reason}"
+msgstr "Остановлено: {reason}"
+
+#: src/screens/work/Work.tsx:183
+msgid "Stuck"
+msgstr "Застряла"
+
+#: src/screens/today/Today.tsx:49
+msgid "submitted"
+msgstr "сдал"
+
+#: src/screens/today/Today.tsx:290
+msgid "Submitted"
+msgstr "Сдано"
+
+#: src/screens/task/history.ts:233
+msgid "Submitted for verification: {who}"
+msgstr "Сдано на проверку: {who}"
+
+#: src/screens/work/rows.ts:72
+msgid "Submitted, under verification"
+msgstr "Сдана, идёт проверка"
+
+#: src/screens/today/Today.tsx:326
+msgid "Summary"
+msgstr "Итог"
+
+#: src/api/people.ts:31
+msgid "suspend and cancel processes"
+msgstr "приостанавливать и отменять процессы"
+
+#: src/screens/journal/Journal.tsx:181
+msgid "System"
+msgstr "Система"
+
+#: src/api/people.ts:22
+msgid "take work away from an executor"
+msgstr "забирать работу у исполнителя"
+
+#: src/api/people.ts:22
+msgid "take work to do"
+msgstr "брать работу"
+
+#: src/screens/task/history.ts:118
+#: src/screens/today/Today.tsx:288
+msgid "Taken"
+msgstr "Взято"
+
+#: src/screens/task/history.ts:232
+msgid "Taken: {who}"
+msgstr "Взято: {who}"
+
+#: src/screens/knowledge/ImportDialog.tsx:90
+msgid "Template not prepared: {reason}"
+msgstr "Шаблон не подготовлен: {reason}"
+
+#: src/screens/knowledge/ImportDialog.tsx:118
+msgid "Template with the columns of this kind:"
+msgstr "Шаблон с колонками этого вида:"
+
+#: src/screens/settings/AddPerson.tsx:187
+msgid "Temporary password — shown only now; at the first sign-in the person sets their own:"
+msgstr "Временный пароль — показывается только сейчас; при первом входе человек задаст свой:"
+
+#: src/screens/settings/Connections.tsx:69
+msgid "the account does not fit this type"
+msgstr "учётная запись не подходит к этому типу"
+
+#: src/screens/settings/Connections.tsx:49
+msgid "the account from the other system does not fit this type"
+msgstr "учётная запись из внешней системы не подходит к этому типу"
+
+#: src/screens/settings/PersonPage.tsx:440
+msgid "The account in IAM stays open: closing it needs an administrator of people — without rights it gives nothing"
+msgstr "Учётка в IAM остаётся открытой: закрыть её может администратор людей. Без прав она ничего не даёт"
+
+#: src/screens/settings/Connections.tsx:77
+#: src/screens/settings/Secrets.tsx:44
+msgid "the agent is retired"
+msgstr "агент выведен из работы"
+
+#: src/screens/settings/Secrets.tsx:88
+msgid "the agent needs it"
+msgstr "нужен агенту"
+
+#: src/assistant/AssistantDock.tsx:99
+msgid "The answer failed. Ask again."
+msgstr "Ответ не получился. Повторите вопрос."
+
+#: src/assistant/AssistantDock.tsx:99
+msgid "The answer was interrupted."
+msgstr "Ответ прерван."
+
+#: src/assistant/AssistantDock.tsx:32
+msgid "the assistant did not answer in time"
+msgstr "ассистент не ответил вовремя"
+
+#: src/assistant/AssistantDock.tsx:103
+msgid "The assistant is open in too many tabs."
+msgstr "Ассистент открыт в слишком многих вкладках."
+
+#: src/assistant/AssistantDock.tsx:33
+msgid "the assistant is unavailable"
+msgstr "ассистент недоступен"
+
+#: src/assistant/AssistantDock.tsx:100
+msgid "The assistant is waking up…"
+msgstr "Ассистент просыпается…"
+
+#: src/screens/task/TaskActions.tsx:295
+msgid "the change is recorded with your name"
+msgstr "изменение запишется с вашим именем"
+
+#: src/screens/settings/Connections.tsx:459
+#: src/screens/settings/PackageSettings.tsx:155
+msgid "The changes are not saved"
+msgstr "Изменения не сохранены"
+
+#: src/assistant/AssistantDock.tsx:25
+msgid "The confirmation expired"
+msgstr "Срок подтверждения истёк"
+
+#: src/screens/settings/Connections.tsx:288
+msgid "the connection appears as “not connected yet”; access is given by the next step — sign-in or a key"
+msgstr "подключение появится как «не подключено»; доступ даёт следующий шаг — вход или ключ"
+
+#: src/screens/settings/Connections.tsx:345
+msgid "the connection becomes “connected”"
+msgstr "подключение станет «подключено»"
+
+#: src/screens/settings/Connections.tsx:170
+msgid "The connection link is stale or already used — start connecting again."
+msgstr "Ссылка подключения устарела или уже использована — начните подключение заново."
+
+#: src/assistant/AssistantDock.tsx:103
+msgid "The connection to the assistant is closed."
+msgstr "Связь с ассистентом закрыта."
+
+#: src/screens/settings/Connections.tsx:388
+msgid "the connection, its key, settings and history"
+msgstr "подключение, его ключ, настройки и история"
+
+#: src/screens/settings/AddPerson.tsx:52
+msgid "the console does not create users at the identity provider here — enter the identifier"
+msgstr "консоль здесь не заводит пользователей у провайдера — введите идентификатор"
+
+#: src/screens/settings/AddPerson.tsx:56
+msgid "the console has no right to manage users at the identity provider"
+msgstr "у консоли нет права управлять пользователями у провайдера"
+
+#: src/screens/settings/PersonPage.tsx:422
+msgid "the core"
+msgstr "ядро"
+
+#: src/forms/StepForm.tsx:59
+msgid "the core did not accept the answers"
+msgstr "ядро не приняло ответы"
+
+#: src/screens/task/Task.tsx:373
+msgid "The core did not accept the comment: {reason}"
+msgstr "Ядро не приняло комментарий: {reason}"
+
+#: src/decisions/useDecision.ts:34
+msgid "The core did not accept the decision: {reason}"
+msgstr "Ядро не приняло решение: {reason}"
+
+#: src/screens/settings/PackageSettings.tsx:42
+msgid "the core did not accept the version of the settings — reopen them and try again"
+msgstr "ядро не приняло версию настроек — откройте их заново и повторите"
+
+#: src/screens/work/AssignDialog.tsx:74
+msgid "The core did not accept the work: {reason}"
+msgstr "Ядро не приняло работу: {reason}"
+
+#: src/screens/settings/Settings.tsx:54
+#: src/screens/settings/Settings.tsx:81
+msgid "The core does not keep package settings yet."
+msgstr "Ядро пока не хранит настройки пакетов."
+
+#: src/screens/settings/PersonPage.tsx:178
+msgid "The core does not let change the details of people yet — it comes with the people-access feature."
+msgstr "Ядро пока не даёт менять сведения о людях — это придёт с фичей people-access."
+
+#: src/screens/settings/PersonPage.tsx:319
+msgid "The core does not limit what a person sees yet — it comes with the people-access feature. Participation below already counts for picking executors."
+msgstr "Ядро пока не ограничивает, что видит человек, — это придёт с фичей people-access. Участие ниже уже учитывается при подборе исполнителей."
+
+#: src/screens/settings/Connections.tsx:80
+msgid "the core does not support connections yet"
+msgstr "ядро пока не поддерживает подключения"
+
+#: src/screens/settings/Connections.tsx:114
+msgid "The core does not support connections yet: they come with the secret store and the connections feature of the core."
+msgstr "Ядро пока не поддерживает подключения: они появятся вместе с хранилищем секретов и фичей подключений в ядре."
+
+#: src/screens/settings/Secrets.tsx:46
+msgid "the core does not support secrets of agents yet"
+msgstr "ядро пока не поддерживает секреты агентов"
+
+#: src/screens/settings/PersonPage.tsx:49
+msgid "the core does not support this yet"
+msgstr "ядро пока этого не умеет"
+
+#: src/shell/Failure.tsx:15
+msgid "The core is unavailable"
+msgstr "Ядро недоступно"
+
+#: src/screens/document/Document.tsx:102
+msgid "The core keeps no content for this document."
+msgstr "Содержимого этого документа в ядре нет."
+
+#: src/shell/Failure.tsx:16
+msgid "The core rejected the request"
+msgstr "Ядро отклонило запрос"
+
+#: src/screens/task/TaskActions.tsx:227
+msgid "the current executor stops holding the work"
+msgstr "текущий исполнитель перестаёт держать работу"
+
+#: src/shell/Failure.tsx:19
+msgid "The data could not be loaded. Try again in a minute."
+msgstr "Данные не загрузились. Попробуйте через минуту."
+
+#: src/screens/settings/Connections.tsx:340
+msgid "the date must be in the future"
+msgstr "дата должна быть в будущем"
+
+#: src/screens/task/Task.tsx:251
+#: src/screens/today/Today.tsx:105
+msgid "the decision is assigned to you."
+msgstr "решение назначено вам."
+
+#: src/decisions/DeclineDialog.tsx:24
+msgid "the decision is not — the executor hands in again"
+msgstr "решение — нет; исполнитель сдаёт заново"
+
+#: src/screens/document/PdfPreview.tsx:217
+msgid "The document has no text layer — it is a scan."
+msgstr "В документе нет текстового слоя — это скан."
+
+#: src/screens/document/OfficePreview.tsx:57
+msgid "The document has no text."
+msgstr "В документе нет текста."
+
+#: src/screens/task/DocumentFields.tsx:92
+msgid "The document is being read: the skill executor proposes the fields with quotes."
+msgstr "Документ читается: исполнитель скиллов предложит поля с цитатами."
+
+#: src/screens/knowledge/documentFlow.ts:93
+msgid "the document is still being read — the work page finishes it when the executor hands in"
+msgstr "документ ещё читается — страница работы доведёт, когда исполнитель сдаст"
+
+#: src/screens/document/Document.tsx:138
+msgid "The document is too large to show here — download it or open it in a new tab."
+msgstr "Документ слишком большой для показа здесь — скачайте его или откройте в новой вкладке."
+
+#: src/screens/document/Document.tsx:102
+msgid "The document lives in the source system; the core keeps only a link to it."
+msgstr "Документ хранится в системе-источнике; в ядре — только ссылка на него."
+
+#: src/screens/task/TaskActions.tsx:268
+msgid "the executor"
+msgstr "исполнитель"
+
+#: src/forms/StepForm.tsx:58
+msgid "the executor holds the work — hand it over first"
+msgstr "работу держит исполнитель — сначала передайте её"
+
+#: src/screens/task/TaskActions.tsx:311
+msgid "The executor holds the work: its status changes through them or after “Hand over”."
+msgstr "Работу держит исполнитель: статус меняет он или после «Передать»."
+
+#: src/screens/knowledge/documentFlow.ts:119
+msgid "The executor is reading the document…"
+msgstr "Исполнитель читает документ…"
+
+#: src/screens/task/TaskActions.tsx:36
+msgid "the executor still holds the work"
+msgstr "исполнитель всё ещё держит работу"
+
+#: src/screens/settings/Connections.tsx:70
+msgid "the expiry date must be in the future"
+msgstr "срок действия должен быть в будущем"
+
+#: src/screens/task/DocumentFields.tsx:111
+msgid "The fields of this kind are not known to the console — they are written as proposed."
+msgstr "Поля этого вида консоли неизвестны — запишутся как предложены."
+
+#: src/screens/knowledge/DocumentDialog.tsx:90
+#: src/screens/knowledge/ImportDialog.tsx:123
+msgid "The file is larger than 25 MB."
+msgstr "Файл больше 25 МБ."
+
+#: src/screens/knowledge/DocumentDialog.tsx:30
+#: src/screens/knowledge/ImportDialog.tsx:41
+msgid "the file is too large"
+msgstr "файл слишком большой"
+
+#: src/screens/settings/Rules.tsx:87
+msgid "the identity of the rule; the history of the work shows the rule"
+msgstr "личность правила; в истории работы видно правило"
+
+#: src/screens/settings/AddPerson.tsx:57
+msgid "the identity provider did not answer — try again"
+msgstr "провайдер входа не ответил — повторите"
+
+#: src/screens/settings/AddPerson.tsx:53
+msgid "the identity provider has a user with this login but another e-mail"
+msgstr "у провайдера уже есть пользователь с таким логином, но другим e-mail"
+
+#: src/screens/settings/AddPerson.tsx:54
+msgid "the identity provider has several users with this e-mail"
+msgstr "у провайдера несколько пользователей с этим e-mail"
+
+#: src/screens/settings/Connections.tsx:66
+msgid "the installation has no OAuth return address (CP_OAUTH_REDIRECT_URI, CP_CONNECTIONS_RETURN_URL) — the administrator of the installation sets it"
+msgstr "у инсталляции не задан адрес возврата OAuth (CP_OAUTH_REDIRECT_URI, CP_CONNECTIONS_RETURN_URL) — его задаёт администратор инсталляции"
+
+#: src/screens/today/Today.tsx:344
+msgid "The journal is quiet today so far."
+msgstr "Сегодня в журнале пока тихо."
+
+#: src/screens/settings/Connections.tsx:53
+msgid "the key has expired"
+msgstr "срок ключа истёк"
+
+#: src/screens/settings/Connections.tsx:345
+msgid "the key replaces the previous one; the previous key is destroyed"
+msgstr "ключ заменяет прежний; прежний ключ уничтожается"
+
+#: src/screens/settings/Connections.tsx:345
+msgid "the key replaces the sign-in in the other system; the previous access is deleted"
+msgstr "ключ заменяет вход во внешней системе; прежний доступ удаляется"
+
+#: src/screens/knowledge/Entry.tsx:95
+msgid "The knowledge base is larger than the console reads at once — the entry may be beyond the first 2000."
+msgstr "База знаний больше, чем консоль читает за раз, — запись может быть дальше первых 2000."
+
+#: src/screens/knowledge/Knowledge.tsx:145
+msgid "The knowledge base is larger than the console reads at once: the first 2000 entries are shown."
+msgstr "База знаний больше, чем консоль читает за раз: показаны первые 2000 записей."
+
+#: src/forms/SchemaForm.tsx:149
+msgid "The list is empty."
+msgstr "Список пуст."
+
+#: src/screens/task/ImportPlan.tsx:88
+msgid "The lists of keys are shortened; the counts are full."
+msgstr "Списки ключей сокращены; счёт — полный."
+
+#: src/assistant/AssistantDock.tsx:35
+msgid "the message is too long"
+msgstr "сообщение слишком длинное"
+
+#: src/screens/settings/People.tsx:295
+msgid "the name can be changed; a role is not deleted"
+msgstr "название можно изменить; роль не удаляется"
+
+#: src/screens/settings/Connections.tsx:76
+#: src/screens/settings/Secrets.tsx:45
+msgid "the name may hold lower-case letters, digits and dashes"
+msgstr "в имени — строчные латинские буквы, цифры и дефисы"
+
+#: src/screens/settings/People.tsx:298
+msgid "the new name is shown everywhere; who holds the role does not change"
+msgstr "новое название видно везде; кто занимает роль — не меняется"
+
+#: src/screens/settings/Connections.tsx:65
+msgid "the OAuth application of this type is not entered yet — see “OAuth applications” below"
+msgstr "приложение OAuth этого типа ещё не введено — см. «Приложения OAuth» ниже"
+
+#: src/screens/settings/StageRoles.tsx:105
+msgid "The observer agent “{observer}” is not found — its pipelines cannot be read."
+msgstr "Агент-наблюдатель «{observer}» не найден — его воронки не прочитать."
+
+#: src/screens/settings/Connections.tsx:48
+msgid "the other system answered with an error"
+msgstr "внешняя система ответила ошибкой"
+
+#: src/screens/settings/Connections.tsx:50
+msgid "the other system did not exchange the code for access"
+msgstr "внешняя система не обменяла код на доступ"
+
+#: src/screens/settings/Connections.tsx:54
+msgid "the other system refused to extend access"
+msgstr "внешняя система отказалась продлить доступ"
+
+#: src/screens/settings/PackageSettings.tsx:40
+msgid "the package is no longer installed"
+msgstr "пакет больше не установлен"
+
+#: src/screens/settings/PackageSettings.tsx:41
+msgid "the package no longer declares settings"
+msgstr "у пакета больше нет настроек"
+
+#: src/screens/view/ViewScreen.tsx:45
+msgid "The package that declared it may have been removed, or the screen is not available to your role."
+msgstr "Возможно, пакет, который его объявил, удалён, или экран недоступен вашей роли."
+
+#: src/screens/settings/People.tsx:32
+msgid "the person already holds this role there"
+msgstr "у человека там уже есть эта роль"
+
+#: src/screens/settings/PersonPage.tsx:47
+msgid "the person is disabled — enable them first"
+msgstr "человек отключён — сначала включите его"
+
+#: src/screens/settings/AddPerson.tsx:44
+msgid "the person is disabled — enable them on their page"
+msgstr "человек отключён — включите его на его странице"
+
+#: src/screens/settings/AddPerson.tsx:49
+msgid "the person never signed in — nothing to enable"
+msgstr "человек ни разу не входил — включать нечего"
+
+#: src/screens/settings/AddPerson.tsx:172
+msgid "the person signs in with the link and the temporary password you get at the end"
+msgstr "человек входит по ссылке и временному паролю, которые вы получите в конце"
+
+#: src/screens/settings/AddPerson.tsx:172
+msgid "the person signs in with the link you get at the end"
+msgstr "человек входит по ссылке, которую вы получите в конце"
+
+#: src/screens/settings/PersonPage.tsx:478
+msgid "the person, their roles, history and authorship"
+msgstr "человек, его роли, история и авторство"
+
+#: src/screens/task/ImportPlan.tsx:62
+msgid "The plan is not built yet."
+msgstr "План ещё не построен."
+
+#: src/screens/document/OfficePreview.tsx:181
+msgid "The presentation has no slides."
+msgstr "В презентации нет слайдов."
+
+#: src/screens/task/Task.tsx:321
+msgid "The process case is not available"
+msgstr "Дело процесса недоступно"
+
+#: src/screens/task/Protocol.tsx:73
+msgid "The protocol is shortened: long entries are cut by the executor."
+msgstr "Протокол сокращён: длинные записи обрезает исполнитель."
+
+#: src/screens/task/Protocol.tsx:47
+msgid "The protocol of the attempt could not be read."
+msgstr "Протокол попытки прочитать не удалось."
+
+#: src/screens/knowledge/DocumentDialog.tsx:100
+msgid "the record appears only after you approve; the document itself is kept as the source"
+msgstr "запись появится только после одобрения; сам документ хранится как источник"
+
+#: src/decisions/DeclineDialog.tsx:27
+msgid "The request"
+msgstr "Запрос"
+
+#. placeholder {0}: roleNames(lacking)
+#: src/screens/task/TaskActions.tsx:232
+msgid "the requirement {0} is removed from this work; the history shows who did it and why"
+msgstr "требование роли {0} снимется с этой работы; в истории — кто и почему"
+
+#: src/decisions/DeclineDialog.tsx:23
+msgid "The result"
+msgstr "Результат"
+
+#: src/screens/knowledge/documentFlow.ts:61
+msgid "the result of the extraction has no document key"
+msgstr "в результате извлечения нет ключа документа"
+
+#: src/screens/settings/People.tsx:294
+msgid "the role appears; work can require it and people can be given it"
+msgstr "роль появится: работа сможет её требовать, людям — её выдавать"
+
+#: src/screens/task/TaskActions.tsx:40
+msgid "the role is no longer known in the space of the work"
+msgstr "роль больше не известна в пространстве работы"
+
+#: src/screens/settings/Rules.tsx:86
+msgid "the rule starts raising work by itself when its conditions hold"
+msgstr "правило начнёт само заводить работу, когда выполнены его условия"
+
+#: src/screens/settings/Rules.tsx:91
+msgid "the rule stops raising work"
+msgstr "правило перестанет заводить работу"
+
+#: src/screens/settings/Rules.tsx:91
+msgid "the rule stops raising work; it has been on {since_}"
+msgstr "правило перестанет заводить работу; включено {since_}"
+
+#: src/screens/task/ImportPlan.tsx:96
+msgid "The same file, checked against the knowledge base as it is now."
+msgstr "Тот же файл — сверенный с базой знаний, какая она сейчас."
+
+#: src/screens/settings/Connections.tsx:68
+#: src/screens/settings/Secrets.tsx:43
+msgid "the secret store is unavailable — try again later"
+msgstr "хранилище секретов недоступно — попробуйте позже"
+
+#: src/screens/settings/Connections.tsx:51
+msgid "the secret store was unavailable"
+msgstr "хранилище секретов было недоступно"
+
+#: src/screens/settings/AddPerson.tsx:46
+msgid "the service did not answer — try again, the flow continues where it stopped"
+msgstr "сервис не ответил — повторите, поток продолжится с места остановки"
+
+#: src/screens/document/OfficePreview.tsx:96
+msgid "The sheet is empty."
+msgstr "Лист пуст."
+
+#: src/screens/settings/PersonPage.tsx:453
+msgid "The sign-in in IAM was already open"
+msgstr "Вход в IAM уже был открыт"
+
+#: src/screens/settings/AddPerson.tsx:48
+msgid "the sign-in is closed in IAM; only an administrator opens it"
+msgstr "вход закрыт в IAM; открывает его только администратор"
+
+#: src/screens/knowledge/importFlow.ts:74
+msgid "the skill did not answer in time — the work stays open, build the plan again later"
+msgstr "скилл не ответил вовремя — работа остаётся открытой, постройте план заново позже"
+
+#: src/screens/document/OfficePreview.tsx:87
+msgid "The spreadsheet has no sheets."
+msgstr "В таблице нет листов."
+
+#: src/forms/StepForm.tsx:118
+msgid "The step is completed: these answers were recorded."
+msgstr "Шаг завершён: записаны эти ответы."
+
+#: src/screens/knowledge/importFlow.ts:156
+msgid "The table has errors: {errors} — fix the file and load it again"
+msgstr "В таблице ошибки: {errors} — исправьте файл и загрузите снова"
+
+#: src/screens/knowledge/importFlow.ts:157
+msgid "The table has no rows"
+msgstr "В таблице нет строк"
+
+#: src/screens/task/DocumentFields.tsx:105
+msgid "The text of the document could not be read — fill the fields by hand from the document."
+msgstr "Текст документа прочитать не удалось — заполните поля вручную по документу."
+
+#: src/screens/document/OfficePreview.tsx:184
+msgid "The text of the slides; pictures and design are in the file itself."
+msgstr "Текст слайдов; картинки и оформление — в самом файле."
+
+#: src/screens/task/DocumentFields.tsx:104
+msgid "The text was recognized from a scan — check the values against the document."
+msgstr "Текст распознан со скана — сверьте значения с документом."
+
+#: src/screens/task/Protocol.tsx:67
+msgid "the tool returned an error"
+msgstr "инструмент вернул ошибку"
+
+#: src/screens/task/TaskActions.tsx:38
+msgid "the type of work does not allow this status now"
+msgstr "тип работы не разрешает сейчас этот статус"
+
+#: src/screens/task/TaskActions.tsx:76
+msgid "The type of work has no “withdrawn” status"
+msgstr "У типа работы нет статуса «снята»"
+
+#: src/screens/task/TaskActions.tsx:271
+msgid "the type of work has no status to return the work to"
+msgstr "у типа работы нет статуса, в который её можно вернуть"
+
+#: src/screens/work/AssignDialog.tsx:150
+msgid "The type sets the acceptance criteria. Only types allowed in the workspace."
+msgstr "Тип задаёт критерии приёмки. Только типы, разрешённые в пространстве."
+
+#: src/screens/settings/AddPerson.tsx:193
+msgid "The user at the identity provider already existed — the person signs in with their own password."
+msgstr "Пользователь у провайдера уже был — человек входит со своим паролем."
+
+#: src/screens/settings/AddPerson.tsx:145
+msgid "The user is created at the identity provider beforehand; here goes their identifier there (sub). Not the e-mail: the sign-in is checked by this identifier."
+msgstr "Пользователь у провайдера входа заводится заранее; здесь — его идентификатор там (sub). Не e-mail: вход сверяется по этому идентификатору."
+
+#: src/screens/task/DocumentFields.tsx:79
+msgid "the work changed meanwhile — reload the page"
+msgstr "работа за это время изменилась — обновите страницу"
+
+#: src/screens/task/Problem.tsx:58
+msgid "The work is stopped and waits for a person"
+msgstr "Работа остановлена и ждёт человека"
+
+#. placeholder {0}: roleNames(roles.required)
+#: src/screens/task/TaskActions.tsx:250
+msgid "The work requires the role {0}: whoever lacks it cannot take the work. Authority is separate — the core checks it at the action, assigning does not give it."
+msgstr "Работа требует роль {0}: без неё работу не взять. Полномочия — отдельно: их проверяет ядро при действии, назначение их не даёт."
+
+#: src/screens/knowledge/documentFlow.ts:91
+msgid "the work stopped ({status}) — see its page"
+msgstr "работа остановилась ({status}) — см. её страницу"
+
+#: src/screens/task/history.ts:118
+msgid "The work was taken"
+msgstr "Работу взяли"
+
+#: src/screens/work/AssignDialog.tsx:142
+msgid "The work will appear in “Work” and with the executor"
+msgstr "Работа появится в «Работе» и у исполнителя"
+
+#: src/assistant/AssistantDock.tsx:50
+msgid "There are earlier messages in this conversation."
+msgstr "Раньше в беседе есть ещё сообщения."
+
+#: src/screens/task/TaskActions.tsx:273
+msgid "there are new comments or materials — the executor sees them"
+msgstr "появились комментарии или материалы — исполнитель их увидит"
+
+#: src/screens/settings/Rules.tsx:35
+msgid "There are no rules yet: they come with packages."
+msgstr "Правил пока нет: они приходят с пакетами."
+
+#: src/screens/settings/Connections.tsx:154
+msgid "There is no connection “{open}”."
+msgstr "Подключения «{open}» нет."
+
+#: src/screens/knowledge/Entry.tsx:95
+msgid "There is no such entry in the knowledge base"
+msgstr "Такой записи в базе знаний нет"
+
+#: src/screens/view/ViewScreen.tsx:45
+#: src/shell/Failure.tsx:32
+msgid "There is no such screen"
+msgstr "Такого экрана нет"
+
+#: src/screens/settings/PersonPage.tsx:237
+msgid "These are your own rights: they are not changed here, so that you do not lose access. Another administrator can change them."
+msgstr "Это ваши права: здесь они не меняются, чтобы не потерять доступ. Их может изменить другой администратор."
+
+#: src/screens/settings/PersonPage.tsx:65
+msgid "They may have been removed, or you have no right to see people."
+msgstr "Возможно, его удалили, или у вас нет права видеть людей."
+
+#: src/screens/settings/PersonPage.tsx:73
+msgid "this is you"
+msgstr "это вы"
+
+#: src/screens/settings/Connections.tsx:258
+msgid "this key is taken — give another one"
+msgstr "ключ занят — укажите другой"
+
+#: src/screens/settings/People.tsx:251
+msgid "this key is taken there"
+msgstr "этот ключ там уже занят"
+
+#: src/screens/settings/PackageSettings.tsx:55
+msgid "This package has no settings."
+msgstr "У этого пакета нет настроек."
+
+#: src/screens/view/ViewScreen.tsx:93
+msgid "This part of the screen did not load."
+msgstr "Эта часть экрана не загрузилась."
+
+#: src/screens/view/ViewScreen.tsx:66
+msgid "This part of the screen needs a newer console."
+msgstr "Для этой части экрана нужна более новая консоль."
+
+#: src/screens/settings/PersonPage.tsx:46
+msgid "this person has full access (admin) — only someone with admin can do this"
+msgstr "у человека полный доступ (admin) — это может сделать только тот, у кого есть admin"
+
+#: src/screens/settings/AddPerson.tsx:40
+msgid "this person signs in under another identifier — check the identifier"
+msgstr "этот человек входит под другим идентификатором — проверьте его"
+
+#: src/screens/settings/People.tsx:183
+msgid "This role belongs to a workspace and acts only there."
+msgstr "Эта роль — пространства и действует только в нём."
+
+#: src/screens/settings/AddPerson.tsx:41
+msgid "this sign-in already belongs to another participant"
+msgstr "этот вход уже принадлежит другому участнику"
+
+#: src/screens/settings/AddPerson.tsx:42
+msgid "this sign-in is disabled in IAM"
+msgstr "этот вход отключён в IAM"
+
+#: src/screens/settings/Connections.tsx:67
+msgid "this type of connection does not connect this way"
+msgstr "этот тип подключения так не подключается"
+
+#: src/screens/settings/Connections.tsx:72
+msgid "this type of connection is not available"
+msgstr "этот тип подключения недоступен"
+
+#: src/screens/document/Document.tsx:138
+msgid "This type of document is not shown in the console — download it or open it in a new tab."
+msgstr "Такие документы консоль не показывает — скачайте или откройте в новой вкладке."
+
+#: src/screens/settings/Connections.tsx:78
+msgid "this type's application belongs to another organization of the installation"
+msgstr "приложение этого типа принадлежит другой организации инсталляции"
+
+#: src/screens/work/Work.tsx:218
+msgid "this week"
+msgstr "на этой неделе"
+
+#: src/screens/task/DocumentFields.tsx:107
+msgid "Title of the record"
+msgstr "Название записи"
+
+#: src/screens/view/ViewScreen.tsx:198
+msgid "to"
+msgstr "до"
+
+#: src/screens/journal/Journal.tsx:213
+msgid "To"
+msgstr "По"
+
+#: src/screens/settings/Connections.tsx:475
+msgid "To connect over sign-in, the other system needs an application of the organization: its client id and secret are entered once per type. The secret goes to the secret store; replacing it destroys the previous one."
+msgstr "Чтобы подключаться через вход, внешней системе нужно приложение организации: его client id и secret вводятся один раз на тип. Секрет уходит в хранилище секретов; замена уничтожает прежний."
+
+#: src/screens/settings/PackageSettings.tsx:159
+msgid "To keep them"
+msgstr "Чтобы сохранить"
+
+#: src/screens/task/TaskActions.tsx:240
+#: src/screens/task/TaskActions.tsx:241
+msgid "To whom"
+msgstr "Кому"
+
+#: src/screens/knowledge/Knowledge.tsx:196
+#: src/screens/today/Today.tsx:339
+#: src/screens/work/Work.tsx:218
+msgid "today"
+msgstr "сегодня"
+
+#: src/lib/format.ts:51
+#: src/routes.tsx:79
+#: src/screens/today/Today.tsx:324
+#: src/shell/Shell.tsx:72
+msgid "Today"
+msgstr "Сегодня"
+
+#: src/screens/knowledge/Knowledge.tsx:239
+msgid "today at {time}"
+msgstr "сегодня в {time}"
+
+#: src/lib/format.ts:21
+msgid "Today, {date}"
+msgstr "Сегодня, {date}"
+
+#: src/screens/today/Today.tsx:326
+msgid "Today's journal is longer than the console reads at once: the numbers cover the last hours."
+msgstr "Журнал дня длиннее, чем консоль дочитывает за раз: числа — за последние часы."
+
+#: src/screens/settings/AddPerson.tsx:45
+msgid "too many participants to check — ask the administrator of the platform"
+msgstr "участников слишком много для проверки — обратитесь к администратору платформы"
+
+#: src/screens/today/Today.tsx:48
+msgid "took"
+msgstr "взял в работу"
+
+#: src/screens/task/DocumentFields.tsx:96
+#: src/shell/Failure.tsx:25
+msgid "Try again"
+msgstr "Повторить"
+
+#: src/shell/Failure.tsx:20
+msgid "Try again. If it keeps happening, tell your administrator."
+msgstr "Попробуйте ещё раз. Если повторится — сообщите администратору."
+
+#: src/screens/work/Work.tsx:269
+msgid "Try another word, a work number or fewer filters."
+msgstr "Попробуйте другое слово, номер работы или меньше фильтров."
+
+#: src/screens/settings/Rules.tsx:46
+#: src/screens/settings/Rules.tsx:82
+msgid "Turn off"
+msgstr "Выключить"
+
+#: src/screens/settings/Rules.tsx:46
+#: src/screens/settings/Rules.tsx:82
+msgid "Turn on"
+msgstr "Включить"
+
+#: src/api/people.ts:39
+msgid "turn rules on and off"
+msgstr "включать и выключать правила"
+
+#: src/screens/settings/Rules.tsx:79
+msgid "Turn the rule off"
+msgstr "Выключить правило"
+
+#: src/screens/settings/Rules.tsx:79
+msgid "Turn the rule on"
+msgstr "Включить правило"
+
+#: src/screens/settings/Rules.tsx:64
+msgid "Turning the rule off…"
+msgstr "Выключаю правило…"
+
+#: src/screens/settings/Rules.tsx:64
+msgid "Turning the rule on…"
+msgstr "Включаю правило…"
+
+#: src/assistant/proposals.tsx:67
+#: src/screens/settings/Connections.tsx:212
+#: src/screens/settings/Connections.tsx:277
+#: src/screens/settings/Connections.tsx:278
+#: src/screens/work/AssignDialog.tsx:179
+msgid "Type"
+msgstr "Тип"
+
+#: src/screens/task/Task.tsx:174
+#: src/screens/work/AssignDialog.tsx:150
+#: src/screens/work/AssignDialog.tsx:151
+#: src/screens/work/Work.tsx:236
+msgid "Type of work"
+msgstr "Тип работы"
+
+#: src/screens/task/ImportPlan.tsx:72
+msgid "Unchanged"
+msgstr "Без изменений"
+
+#: src/screens/task/history.ts:147
+msgid "Under verification: {passed} of {total} passed"
+msgstr "Идёт проверка: пройдено {passed} из {total}"
+
+#: src/screens/settings/AddPerson.tsx:210
+msgid "Unfinished"
+msgstr "Не доведены"
+
+#: src/screens/settings/AddPerson.tsx:36
+msgid "unknown error"
+msgstr "неизвестная ошибка"
+
+#: src/screens/settings/Connections.tsx:171
+msgid "unknown reason"
+msgstr "причина неизвестна"
+
+#: src/screens/document/OfficePreview.tsx:188
+msgid "untitled"
+msgstr "без заголовка"
+
+#: src/screens/document/Document.tsx:108
+msgid "uploaded to the core"
+msgstr "загружен в ядро"
+
+#: src/screens/knowledge/documentFlow.ts:100
+#: src/screens/knowledge/importFlow.ts:109
+msgid "Uploading the file…"
+msgstr "Загружаю файл…"
+
+#: src/screens/settings/AddPerson.tsx:25
+msgid "User at the identity provider"
+msgstr "Пользователь у провайдера"
+
+#: src/screens/knowledge/Entry.tsx:41
+msgid "Valid since {since}, no end date"
+msgstr "Действует с {since}, бессрочно"
+
+#: src/screens/knowledge/Knowledge.tsx:184
+#: src/screens/settings/Connections.tsx:340
+msgid "Valid until"
+msgstr "Действует до"
+
+#: src/screens/knowledge/Entry.tsx:50
+msgid "Valid until {date} — {left}"
+msgstr "Действует до {date} — {left}"
+
+#: src/screens/settings/Secrets.tsx:141
+#: src/screens/settings/Secrets.tsx:146
+#: src/screens/settings/Secrets.tsx:183
+msgid "Value"
+msgstr "Значение"
+
+#: src/screens/settings/PackageSettings.tsx:268
+msgid "Values"
+msgstr "Значения"
+
+#: src/screens/task/history.ts:149
+#: src/screens/today/Today.tsx:32
+msgid "Verification"
+msgstr "Проверка"
+
+#: src/screens/work/AssignDialog.tsx:133
+#: src/screens/work/rows.ts:116
+msgid "verification ahead"
+msgstr "проверка впереди"
+
+#: src/screens/work/rows.ts:122
+msgid "verification cancelled"
+msgstr "проверка отменена"
+
+#: src/screens/task/history.ts:146
+msgid "Verification cancelled"
+msgstr "Проверка отменена"
+
+#: src/screens/task/history.ts:234
+msgid "Verification started"
+msgstr "Проверка начата"
+
+#: src/screens/work/rows.ts:117
+msgid "verified"
+msgstr "проверено"
+
+#: src/screens/task/history.ts:235
+#: src/screens/today/Today.tsx:291
+msgid "Verified"
+msgstr "Проверено"
+
+#: src/screens/task/Task.tsx:219
+msgid "verified {passed}/{total}"
+msgstr "проверено {passed}/{total}"
+
+#: src/screens/today/Today.tsx:318
+msgid "Verified today: "
+msgstr "Сегодня проверено "
+
+#: src/screens/today/Today.tsx:50
+msgid "verified:"
+msgstr "проверено:"
+
+#: src/screens/task/history.ts:144
+msgid "Verified: {passed} of {total}"
+msgstr "Проверено: {passed} из {total}"
+
+#: src/screens/settings/PackageSettings.tsx:222
+msgid "Version {n}"
+msgstr "Версия {n}"
+
+#: src/screens/settings/PersonPage.tsx:93
+msgid "Visibility"
+msgstr "Видимость"
+
+#: src/screens/task/history.ts:173
+msgid "Waiting for sign-off"
+msgstr "Ждёт подписи"
+
+#: src/screens/task/history.ts:169
+msgid "Waiting for sign-off: {name}"
+msgstr "Ждёт подписи: {name}"
+
+#: src/screens/settings/StageRoles.tsx:111
+msgid "Waiting for the first snapshot of pipelines: the connector takes it after connecting and then at least once an hour."
+msgstr "Ждём первого снимка воронок: коннектор снимает их после подключения и затем не реже раза в час."
+
+#: src/screens/knowledge/importFlow.ts:129
+msgid "Waiting for the skill executor to pick the plan up…"
+msgstr "Жду, когда исполнитель скиллов возьмёт план…"
+
+#: src/screens/knowledge/documentFlow.ts:118
+msgid "Waiting for the skill executor to read the document…"
+msgstr "Ждём, пока исполнитель скиллов прочитает документ…"
+
+#: src/screens/knowledge/ImportDialog.tsx:86
+msgid "Waiting for the skill executor…"
+msgstr "Жду исполнителя скиллов…"
+
+#: src/screens/task/Task.tsx:124
+msgid "waiting for you"
+msgstr "ждёт вас"
+
+#: src/screens/work/Work.tsx:178
+msgid "Waiting for you"
+msgstr "Ждёт вас"
+
+#: src/screens/task/Task.tsx:155
+msgid "Waiting for your sign-off"
+msgstr "Ждёт вашей подписи"
+
+#: src/routes.tsx:116
+msgid "Were there emergency keys?"
+msgstr "Выдавались ли аварийные ключи?"
+
+#: src/screens/journal/Journal.tsx:206
+#: src/screens/journal/Journal.tsx:238
+msgid "What"
+msgstr "Что"
+
+#: src/screens/settings/PersonPage.tsx:317
+msgid "What an agent or a service sees is set by its description, not here: “only own workspaces” is for people."
+msgstr "Что видит агент или служба, задаёт их описание, а не эта страница: «только свои пространства» — для людей."
+
+#: src/routes.tsx:79
+msgid "What broke today and why?"
+msgstr "Что сегодня сломалось и почему?"
+
+#: src/routes.tsx:178
+msgid "What can this person see and do?"
+msgstr "Что этот человек видит и может?"
+
+#: src/screens/knowledge/Knowledge.tsx:153
+msgid "What changed"
+msgstr "Что изменилось"
+
+#: src/routes.tsx:152
+msgid "What changed today?"
+msgstr "Что изменилось сегодня?"
+
+#: src/routes.tsx:116
+msgid "What did this person do today?"
+msgstr "Что этот человек сделал сегодня?"
+
+#: src/routes.tsx:134
+msgid "What does this document cover?"
+msgstr "Что покрывает этот документ?"
+
+#: src/routes.tsx:143
+msgid "What does this document prove?"
+msgstr "Что доказывает этот документ?"
+
+#: src/routes.tsx:169
+msgid "What does this setting change?"
+msgstr "Что меняет эта настройка?"
+
+#: src/screens/today/Today.tsx:342
+msgid "What happened"
+msgstr "Что произошло"
+
+#: src/screens/settings/Connections.tsx:288
+#: src/screens/settings/Connections.tsx:345
+#: src/screens/settings/People.tsx:190
+#: src/screens/settings/People.tsx:230
+#: src/screens/settings/People.tsx:294
+#: src/screens/settings/People.tsx:298
+#: src/screens/settings/PersonPage.tsx:360
+#: src/screens/settings/PersonPage.tsx:361
+#: src/screens/settings/PersonPage.tsx:366
+#: src/screens/settings/PersonPage.tsx:482
+#: src/screens/settings/Rules.tsx:86
+#: src/screens/settings/Rules.tsx:91
+msgid "What happens"
+msgstr "Что произойдёт"
+
+#: src/routes.tsx:79
+msgid "What happens if I approve the first decision?"
+msgstr "Что будет, если согласовать первое решение?"
+
+#: src/routes.tsx:108
+msgid "What happens if I decline?"
+msgstr "Что будет, если отклонить?"
+
+#: src/routes.tsx:108
+#: src/routes.tsx:160
+msgid "What happens next?"
+msgstr "Что будет дальше?"
+
+#: src/routes.tsx:134
+msgid "What happens when it expires?"
+msgstr "Что будет, когда срок истечёт?"
+
+#: src/screens/task/TaskActions.tsx:215
+msgid "What is already done outside"
+msgstr "Что уже сделано вовне"
+
+#: src/routes.tsx:160
+msgid "What is this waiting for?"
+msgstr "Чего это ждёт?"
+
+#: src/screens/task/ImportPlan.tsx:80
+msgid "What is wrong"
+msgstr "Что не так"
+
+#: src/screens/knowledge/Entry.tsx:170
+msgid "What it is"
+msgstr "Что это"
+
+#: src/routes.tsx:152
+msgid "What needs attention here?"
+msgstr "Что здесь требует внимания?"
+
+#: src/screens/knowledge/ImportDialog.tsx:134
+msgid "what opens, changes and closes; rows with errors are shown before any decision"
+msgstr "что откроется, изменится и закроется; строки с ошибками видны до решения"
+
+#: src/screens/work/AssignDialog.tsx:159
+msgid "What should come out — so that it can be checked"
+msgstr "Что должно получиться — так, чтобы это можно было проверить"
+
+#: src/screens/settings/Connections.tsx:388
+#: src/screens/settings/PersonPage.tsx:478
+msgid "What stays"
+msgstr "Что остаётся"
+
+#: src/screens/knowledge/DocumentDialog.tsx:85
+msgid "What the document is"
+msgstr "Что это за документ"
+
+#: src/screens/knowledge/Knowledge.tsx:97
+msgid "What the organization knows about itself — agreements, credentials, counterparties, offerings — with validity dates."
+msgstr "Что организация знает о себе — договоры, удостоверяющие документы, контрагенты, предложения — со сроками действия."
+
+#: src/screens/settings/Settings.tsx:49
+msgid "What the organization's administrator changes: rules that act by themselves, settings of installed packages, connections to other systems."
+msgstr "Что меняет администратор организации: правила, которые действуют сами, настройки установленных пакетов, подключения к другим системам."
+
+#: src/screens/settings/PersonPage.tsx:321
+msgid "What the person sees"
+msgstr "Что видит человек"
+
+#: src/screens/settings/People.tsx:278
+msgid "What the role is for"
+msgstr "Для чего роль"
+
+#: src/screens/knowledge/ImportDialog.tsx:112
+msgid "What the table holds"
+msgstr "Что в таблице"
+
+#: src/screens/task/TaskActions.tsx:303
+#: src/screens/work/AssignDialog.tsx:149
+msgid "What to do"
+msgstr "Что сделать"
+
+#: src/screens/task/TaskActions.tsx:280
+msgid "What to do differently"
+msgstr "Что сделать иначе"
+
+#: src/decisions/DeclineDialog.tsx:17
+msgid "What to fix"
+msgstr "Что исправить"
+
+#: src/screens/task/TaskActions.tsx:264
+msgid "What to tell them"
+msgstr "Что передать на словах"
+
+#: src/routes.tsx:124
+msgid "What will expire soon?"
+msgstr "Что скоро устареет?"
+
+#: src/routes.tsx:178
+msgid "What work is assigned to this person?"
+msgstr "Какая работа поручена этому человеку?"
+
+#: src/routes.tsx:87
+#: src/routes.tsx:98
+msgid "What work is waiting for me?"
+msgstr "Что из работы ждёт меня?"
+
+#: src/screens/journal/Journal.tsx:238
+#: src/screens/settings/PersonPage.tsx:273
+msgid "When"
+msgstr "Когда"
+
+#: src/screens/journal/Journal.tsx:267
+msgid "When (UTC)"
+msgstr "Когда (UTC)"
+
+#: src/assistant/proposals.tsx:72
+#: src/screens/settings/People.tsx:183
+#: src/screens/settings/People.tsx:184
+#: src/screens/settings/People.tsx:285
+#: src/screens/settings/People.tsx:286
+#: src/screens/work/AssignDialog.tsx:184
+msgid "Where"
+msgstr "Где"
+
+#: src/screens/settings/Connections.tsx:541
+#: src/screens/settings/PackageSettings.tsx:139
+#: src/screens/settings/PackageSettings.tsx:269
+#: src/screens/settings/People.tsx:105
+#: src/screens/settings/People.tsx:113
+msgid "Where it acts"
+msgstr "Где действует"
+
+#: src/screens/knowledge/Knowledge.tsx:150
+msgid "Where knowledge comes from"
+msgstr "Откуда знания"
+
+#: src/routes.tsx:124
+msgid "Which agreements are active?"
+msgstr "Какие договоры действуют?"
+
+#: src/routes.tsx:169
+msgid "Which rules raise work by themselves?"
+msgstr "Какие правила сами заводят работу?"
+
+#: src/screens/settings/Secrets.tsx:69
+msgid "Which secrets an agent needs is declared by its description in the package; the values are entered here. They go straight to the secret store: nobody sees them after entry, the console neither, and each agent reads only its own."
+msgstr "Какие секреты нужны агенту, объявляет его описание в пакете; значения вводятся здесь. Они уходят прямо в хранилище секретов: после ввода их не видит никто, и консоль тоже, а каждый агент читает только свои."
+
+#: src/screens/settings/StageRoles.tsx:101
+msgid "Which stage of which pipeline means what: work starts when a deal reaches a stage with a role."
+msgstr "Какой этап какой воронки что означает: работа заводится, когда сделка доходит до этапа с ролью."
+
+#: src/routes.tsx:134
+msgid "Which work depends on it?"
+msgstr "Какая работа от него зависит?"
+
+#: src/screens/journal/Journal.tsx:211
+#: src/screens/journal/Journal.tsx:238
+#: src/screens/journal/Journal.tsx:264
+msgid "Who"
+msgstr "Кто"
+
+#: src/routes.tsx:98
+msgid "Who can take this work?"
+msgstr "Кто может взять эту работу?"
+
+#: src/routes.tsx:116
+msgid "Who changed rights this week?"
+msgstr "Кто менял права на этой неделе?"
+
+#: src/screens/journal/Journal.tsx:198
+msgid "Who did what and when in the organization — every record of the journal. Records are only appended: nobody changes or deletes them here."
+msgstr "Кто, что и когда сделал в организации — все записи журнала. Записи только дописываются: здесь их никто не меняет и не удаляет."
+
+#: src/routes.tsx:79
+msgid "Who is overloaded right now?"
+msgstr "Кто сейчас перегружен?"
+
+#: src/screens/settings/Secrets.tsx:147
+msgid "Who reads it"
+msgstr "Кто читает"
+
+#: src/screens/settings/Connections.tsx:52
+msgid "whoever started connecting no longer has the right"
+msgstr "у того, кто начал подключение, больше нет права"
+
+#: src/screens/today/Today.tsx:342
+msgid "Whole journal"
+msgstr "Весь журнал"
+
+#: src/screens/settings/People.tsx:53
+#: src/screens/settings/People.tsx:184
+#: src/screens/settings/People.tsx:184
+#: src/screens/settings/People.tsx:286
+#: src/screens/settings/People.tsx:286
+#: src/screens/settings/PersonPage.tsx:109
+msgid "whole organization"
+msgstr "вся организация"
+
+#: src/screens/settings/PersonPage.tsx:324
+msgid "Whole organization"
+msgstr "Вся организация"
+
+#: src/decisions/DeclineDialog.tsx:17
+#: src/screens/settings/Connections.tsx:223
+#: src/screens/settings/Connections.tsx:392
+#: src/screens/settings/PersonPage.tsx:498
+msgid "Why"
+msgstr "Почему"
+
+#: src/routes.tsx:87
+#: src/routes.tsx:108
+msgid "Why is this work stuck?"
+msgstr "Почему эта работа стоит?"
+
+#: src/screens/task/TaskActions.tsx:291
+msgid "Why it is withdrawn"
+msgstr "Почему снимаете"
+
+#: src/screens/work/AssignDialog.tsx:172
+msgid "Why this work is needed: a document, a request, an observation"
+msgstr "Зачем эта работа: документ, просьба, наблюдение"
+
+#: src/screens/settings/PersonPage.tsx:271
+msgid "Will be able to"
+msgstr "Сможет"
+
+#: src/screens/task/TaskActions.tsx:213
+msgid "will be asked to stop; what is already done stays, the protocol is kept"
+msgstr "получит просьбу остановиться; сделанное останется, протокол сохранится"
+
+#: src/screens/work/AssignDialog.tsx:177
+msgid "Will be raised"
+msgstr "Будет заведено"
+
+#: src/screens/settings/PersonPage.tsx:272
+msgid "Will lose"
+msgstr "Потеряет"
+
+#: src/screens/task/Problem.tsx:76
+#: src/screens/task/TaskActions.tsx:76
+#: src/screens/task/TaskActions.tsx:289
+msgid "Withdraw"
+msgstr "Снять"
+
+#: src/screens/task/TaskActions.tsx:282
+msgid "Withdraw the work"
+msgstr "Снять работу"
+
+#: src/screens/task/TaskActions.tsx:173
+msgid "Withdrawing…"
+msgstr "Снимаю…"
+
+#: src/screens/work/rows.ts:55
+msgid "withdrawn"
+msgstr "снята"
+
+#: src/screens/today/Today.tsx:292
+#: src/screens/work/rows.ts:65
+msgid "Withdrawn"
+msgstr "Снято"
+
+#: src/screens/task/TaskActions.tsx:176
+msgid "Withdrawn — recorded in the core"
+msgstr "Снято — записано в ядре"
+
+#: src/screens/today/Today.tsx:52
+msgid "withdrew"
+msgstr "сняло работу"
+
+#: src/screens/work/AssignDialog.tsx:167
+msgid "Within the workspace chosen at the top."
+msgstr "В пределах пространства, выбранного вверху."
+
+#: src/screens/settings/StageRoles.tsx:122
+msgid "won"
+msgstr "успешно"
+
+#: src/screens/today/Today.tsx:41
+msgid "work"
+msgstr "работа"
+
+#: src/api/people.ts:21
+#: src/routes.tsx:87
+#: src/routes.tsx:98
+#: src/routes.tsx:108
+#: src/screens/journal/journal.ts:18
+#: src/screens/knowledge/DocumentDialog.tsx:98
+#: src/screens/knowledge/ImportDialog.tsx:132
+#: src/screens/settings/AddPerson.tsx:155
+#: src/screens/settings/PersonPage.tsx:492
+#: src/screens/today/Today.tsx:147
+#: src/screens/today/Today.tsx:260
+#: src/screens/work/Work.tsx:223
+#: src/shell/Shell.tsx:73
+msgid "Work"
+msgstr "Работа"
+
+#: src/screens/today/Today.tsx:106
+msgid "Work {ref}"
+msgstr "Работа {ref}"
+
+#: src/screens/settings/PersonPage.tsx:362
+msgid "Work already assigned"
+msgstr "Уже назначенная работа"
+
+#: src/screens/settings/Rules.tsx:92
+msgid "Work already raised"
+msgstr "Уже заведённая работа"
+
+#: src/screens/settings/People.tsx:231
+msgid "Work already taken"
+msgstr "Уже взятая работа"
+
+#: src/screens/journal/Journal.tsx:37
+msgid "work changed"
+msgstr "работа изменена"
+
+#: src/screens/journal/Journal.tsx:46
+msgid "work derived by a rule"
+msgstr "работа выведена правилом"
+
+#: src/screens/settings/PersonPage.tsx:144
+msgid "Work email"
+msgstr "Рабочая почта"
+
+#: src/screens/journal/Journal.tsx:42
+msgid "work failed verification"
+msgstr "работа не прошла проверку"
+
+#: src/screens/today/Today.tsx:339
+msgid "Work flow"
+msgstr "Поток работы"
+
+#: src/screens/settings/PersonPage.tsx:477
+msgid "Work in hand"
+msgstr "Работа в руках"
+
+#: src/screens/task/Task.tsx:350
+msgid "Work is not available"
+msgstr "Работа недоступна"
+
+#: src/screens/journal/Journal.tsx:43
+msgid "work moved to a new type"
+msgstr "работа переведена на новый тип"
+
+#: src/screens/task/Task.tsx:53
+msgid "Work not found"
+msgstr "Работа не найдена"
+
+#: src/screens/knowledge/Entry.tsx:127
+msgid "Work on this document"
+msgstr "Работа по документу"
+
+#: src/screens/journal/Journal.tsx:36
+msgid "work raised"
+msgstr "работа заведена"
+
+#. placeholder {0}: task.publicId
+#: src/screens/knowledge/importFlow.ts:108
+msgid "Work raised: {0}"
+msgstr "Работа заведена: {0}"
+
+#: src/screens/knowledge/documentFlow.ts:117
+msgid "Work raised: {ref} — queued for reading"
+msgstr "Работа заведена: {ref} — в очереди на чтение"
+
+#: src/screens/knowledge/Knowledge.tsx:122
+msgid "work raised: {title}"
+msgstr "заведена работа «{title}»"
+
+#: src/screens/knowledge/Knowledge.tsx:122
+msgid "work raised: {title} · {owner}"
+msgstr "заведена работа «{title}» · {owner}"
+
+#: src/screens/journal/Journal.tsx:39
+msgid "work released"
+msgstr "работа освобождена"
+
+#: src/screens/journal/Journal.tsx:40
+msgid "work submitted"
+msgstr "работа сдана"
+
+#: src/screens/journal/Journal.tsx:38
+msgid "work taken"
+msgstr "работа взята"
+
+#: src/api/people.ts:42
+msgid "work through the assistant and plugins"
+msgstr "работать через ассистента и плагины"
+
+#: src/screens/journal/Journal.tsx:41
+msgid "work verified"
+msgstr "работа проверена"
+
+#: src/screens/journal/Journal.tsx:45
+msgid "work withdrawn"
+msgstr "работа снята"
+
+#: src/screens/today/Today.tsx:360
+msgid "working"
+msgstr "в работе"
+
+#: src/screens/settings/PersonPage.tsx:217
+msgid "Works"
+msgstr "Работает"
+
+#: src/api/scope.tsx:136
+#: src/screens/journal/Journal.tsx:238
+#: src/screens/journal/Journal.tsx:266
+#: src/screens/settings/AddPerson.tsx:30
+#: src/screens/settings/AddPerson.tsx:149
+#: src/screens/settings/AddPerson.tsx:150
+#: src/screens/task/Task.tsx:180
+#: src/screens/work/AssignDialog.tsx:167
+#: src/screens/work/AssignDialog.tsx:168
+msgid "Workspace"
+msgstr "Пространство"
+
+#. placeholder {0}: person.displayName
+#: src/screens/settings/PersonPage.tsx:339
+msgid "Workspaces of {0}"
+msgstr "Пространства: {0}"
+
+#: src/screens/task/Task.tsx:379
+msgid "Write a comment…"
+msgstr "Написать комментарий…"
+
+#: src/screens/knowledge/ImportDialog.tsx:123
+msgid "XLSX or CSV filled by the template."
+msgstr "XLSX или CSV, заполненный по шаблону."
+
+#: src/screens/knowledge/format.tsx:28
+#: src/screens/settings/PersonPage.tsx:367
+msgid "yes"
+msgstr "да"
+
+#: src/screens/knowledge/ImportDialog.tsx:135
+msgid "yes — before approval the work can be withdrawn"
+msgstr "да — до одобрения работу можно снять"
+
+#: src/screens/settings/PersonPage.tsx:274
+msgid "yes — change the rights again"
+msgstr "да — изменить права снова"
+
+#: src/screens/settings/Connections.tsx:389
+msgid "yes — connect again under the same key"
+msgstr "да — подключить заново под тем же ключом"
+
+#: src/screens/task/TaskActions.tsx:297
+msgid "yes — edit again"
+msgstr "да — изменить снова"
+
+#: src/screens/settings/PersonPage.tsx:479
+msgid "yes — enable again and name the rights"
+msgstr "да — включить снова и назвать права"
+
+#: src/screens/settings/People.tsx:232
+msgid "yes — give the role again"
+msgstr "да — дать роль снова"
+
+#: src/screens/settings/People.tsx:299
+msgid "yes — rename again"
+msgstr "да — переименовать снова"
+
+#: src/screens/settings/PersonPage.tsx:363
+msgid "yes — return “Whole organization”"
+msgstr "да — вернуть «Вся организация»"
+
+#: src/screens/settings/PackageSettings.tsx:141
+msgid "yes — return any version from the history"
+msgstr "да — верните любую версию из истории"
+
+#: src/screens/settings/Connections.tsx:347
+msgid "yes — revoke the connection or enter another key"
+msgstr "да — отозвать подключение или ввести другой ключ"
+
+#: src/screens/settings/People.tsx:192
+msgid "yes — revoke the role"
+msgstr "да — отозвать роль"
+
+#: src/screens/settings/PackageSettings.tsx:270
+msgid "yes — the current values stay in the history"
+msgstr "да — текущие значения остаются в истории"
+
+#: src/screens/task/TaskActions.tsx:234
+msgid "yes — the work can be handed over again"
+msgstr "да — работу можно передать снова"
+
+#: src/screens/task/TaskActions.tsx:276
+msgid "yes — the work can be handed over or withdrawn"
+msgstr "да — работу можно передать или снять"
+
+#: src/screens/settings/Rules.tsx:88
+msgid "yes — turn it off again"
+msgstr "да — выключите снова"
+
+#: src/screens/settings/Rules.tsx:93
+msgid "yes — turn it on again"
+msgstr "да — включите снова"
+
+#: src/lib/format.ts:52
+msgid "Yesterday"
+msgstr "Вчера"
+
+#: src/assistant/proposals.tsx:60
+#: src/assistant/proposals.tsx:70
+#: src/screens/task/history.ts:168
+#: src/screens/work/AssignDialog.tsx:127
+#: src/screens/work/rows.ts:134
+msgid "you"
+msgstr "вы"
+
+#: src/screens/task/history.ts:61
+msgid "You"
+msgstr "Вы"
+
+#: src/screens/settings/AddPerson.tsx:118
+msgid "you are not an administrator of people (IAM group people-admins)"
+msgstr "вы не администратор людей (группа IAM people-admins)"
+
+#: src/screens/knowledge/DocumentDialog.tsx:104
+msgid "You can close this window: the work page picks the fields up when the document is read."
+msgstr "Окно можно закрыть: страница работы подхватит поля, когда документ прочитается."
+
+#: src/screens/settings/AddPerson.tsx:47
+#: src/screens/settings/PersonPage.tsx:45
+msgid "you cannot disable yourself"
+msgstr "себя отключить нельзя"
+
+#: src/screens/settings/PersonPage.tsx:398
+msgid "You cannot disable yourself."
+msgstr "Себя отключить нельзя."
+
+#: src/screens/settings/PersonPage.tsx:38
+msgid "you cannot give rights you do not have yourself"
+msgstr "нельзя выдать права, которых нет у вас самих"
+
+#. placeholder {0}: (error.missing ?? []).join(', ')
+#: src/screens/settings/AddPerson.tsx:38
+msgid "you cannot give rights you do not hold: {0}"
+msgstr "нельзя выдать права, которых нет у вас: {0}"
+
+#: src/screens/settings/AddPerson.tsx:152
+#: src/screens/settings/PersonPage.tsx:488
+msgid "You cannot give rights you do not hold."
+msgstr "Нельзя выдать права, которых нет у вас."
+
+#: src/shell/Failure.tsx:14
+msgid "You have no access to this screen"
+msgstr "У вас нет доступа к этому экрану"
+
+#: src/screens/knowledge/DocumentDialog.tsx:31
+msgid "you have no right to add to the knowledge base"
+msgstr "у вас нет права добавлять в базу знаний"
+
+#: src/screens/settings/PersonPage.tsx:38
+msgid "you have no right to change people"
+msgstr "у вас нет права менять людей"
+
+#: src/screens/settings/Rules.tsx:71
+msgid "you have no right to change rules"
+msgstr "у вас нет права менять правила"
+
+#: src/screens/settings/PackageSettings.tsx:43
+msgid "you have no right to change these settings"
+msgstr "у вас нет права менять эти настройки"
+
+#: src/screens/settings/AddPerson.tsx:39
+msgid "you have no right to do this"
+msgstr "у вас нет на это права"
+
+#: src/screens/task/TaskActions.tsx:39
+msgid "you have no right to give roles — ask the administrator, or assign without the role"
+msgstr "у вас нет права выдавать роли — попросите администратора или назначьте без роли"
+
+#: src/screens/knowledge/ImportDialog.tsx:42
+msgid "you have no right to load into the knowledge base"
+msgstr "у вас нет права загружать в базу знаний"
+
+#: src/screens/settings/Connections.tsx:63
+msgid "you have no right to manage connections"
+msgstr "у вас нет права управлять подключениями"
+
+#: src/screens/settings/People.tsx:30
+msgid "you have no right to manage roles"
+msgstr "у вас нет права управлять ролями"
+
+#: src/screens/settings/Secrets.tsx:41
+msgid "you have no right to manage secrets of agents"
+msgstr "у вас нет права управлять секретами агентов"
+
+#: src/screens/work/AssignDialog.tsx:75
+msgid "You have no right to raise work here."
+msgstr "У вас нет права заводить здесь работу."
+
+#: src/screens/settings/Connections.tsx:122
+msgid "You have no right to read connections."
+msgstr "У вас нет права читать подключения."
+
+#: src/screens/settings/People.tsx:59
+msgid "You have no right to read roles (org.read)."
+msgstr "У вас нет права читать роли (org.read)."
+
+#: src/screens/journal/Journal.tsx:191
+msgid "You have no right to read the journal (events.read)."
+msgstr "У вас нет права читать журнал (events.read)."
+
+#: src/screens/settings/Rules.tsx:30
+msgid "You have no right to read the rules."
+msgstr "У вас нет права читать правила."
+
+#: src/screens/settings/PersonPage.tsx:335
+msgid "You have no right to see participation."
+msgstr "У вас нет права видеть участие."
+
+#: src/screens/task/TaskActions.tsx:37
+msgid "you have no right to take the work from the executor"
+msgstr "у вас нет права забрать работу у исполнителя"
+
+#: src/screens/task/Task.tsx:251
+#: src/screens/today/Today.tsx:105
+msgid "you hold the role that decides."
+msgstr "у вас роль, которая решает."
+
+#: src/screens/settings/PersonPage.tsx:332
+msgid "Your own visibility is not changed here."
+msgstr "Свою видимость здесь не изменить."

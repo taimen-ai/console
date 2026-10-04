@@ -1,0 +1,28 @@
+/* Экран «Работа»: строка поиска и фильтров, группы (docs/screens/work.md). */
+.work-bar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); }
+.work-filters { display: contents; }
+.work-filters-toggle { display: none; }
+.work-spacer { flex: 1; }
+.work-groups { display: flex; flex-direction: column; gap: var(--zone-pad); }
+
+.work-chipselect { position: relative; }
+.work-chipselect select { position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer; font: inherit; }
+.work-chipselect:focus-within { outline: 2px solid var(--focus-ring); outline-offset: 1px; }
+/* Фильтр-чип с поиском: раскрытый — поле Combobox шириной с длинное имя. */
+.work-chipcombo-edit { display: inline-flex; width: 240px; max-width: 100%; }
+.work-chipcombo-edit .tc-combo-input { height: 32px; }
+
+/* Узкая ширина: поиск и кнопка «Фильтры» в строку, сами фильтры — под кнопкой. */
+@media (max-width: 720px) {
+  .work-bar > .tc-search { flex: 1 1 auto !important; min-width: 0 !important; }
+  .work-filters-toggle { display: inline-flex; }
+  .work-filters-toggle[aria-expanded="true"] { border-color: var(--brand); color: var(--brand); background: var(--surface-hover); }
+  .work-filters { display: none; }
+  .work-filters[data-open="true"] { display: flex; flex-wrap: wrap; gap: var(--space-2); width: 100%; }
+  .work-spacer { display: none; }
+  .work-groups .tc-wgroup-hint { display: none; }
+}
+
+/* «Поручить работу»: форма слева, «Будет заведено» справа; узко — одной колонкой. */
+.work-assign { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--space-5); align-items: start; }
+@media (max-width: 900px) { .work-assign { grid-template-columns: minmax(0, 1fr); } }

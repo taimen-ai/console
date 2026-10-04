@@ -1,0 +1,25 @@
+<!-- @dsCard group="Правила игры и аудит" height=345 subtitle="журнал-повествование: кто · что · с чем · почему; аварийное выделено" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>JournalEntry — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { className: 'tc-journal', style: { maxWidth: 720 } },
+      h(T.JournalEntry, { at: '12:36', actor: { kind: 'process', name: 'Правило «Счёт получен»', label: '' }, verb: 'завело', object: '«Оплатить счёт №417»', why: 'по наблюдению из 1С: счёт получен, договор действует' }),
+      h(T.JournalEntry, { at: '12:41', actor: { kind: 'human', name: 'Ирина' }, verb: 'согласовала оплату', object: '«Альфа-Снаб», 184 500 ₽', channel: 'Telegram' }),
+      h(T.JournalEntry, { at: '13:02', actor: { kind: 'agent', name: 'Сверщик', label: 'Св' }, verb: 'сдал', object: '«Сверить счёт №421»', why: 'на проверке: 2 из 3 критериев прошли' }),
+      h(T.JournalEntry, { at: '13:40', emergency: true, actor: { kind: 'human', name: 'Антон' }, verb: 'выполнил аварийный вход', object: 'ключ на 1 ч', why: 'причина: «IAM недоступен, нужно снять зависшее дело»' }),
+      h(T.JournalEntry, { at: '14:00', actor: { kind: 'human', name: 'Антон' }, verb: 'применил пакет', object: 'invoice-approval 0.4.0', why: '3 объекта изменены · план 9f8e7d6' }))
+  );
+</script>
+</body>
+</html>

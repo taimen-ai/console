@@ -1,0 +1,29 @@
+<!-- @dsCard group="Правила игры и аудит" height=550 subtitle="план пакета словами: было → станет, судьба открытых дел" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>PlanDiff — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { maxWidth: 720 } }, h(T.PlanDiff, {
+      summary: 'Если установить invoice-approval 0.4.0: 3 объекта изменятся, 1 добавится',
+      meta: 'Пакет проверен и протестирован · 7/7 сценариев · открытых дел затронет: 5',
+      hash: 'plan 9f8e7d6',
+      items: [
+        { op: 'change', object: 'Таблица согласования', kind: 'таблица решений', before: 'выше 150 000 ₽ — финансовый директор', after: 'выше 100 000 ₽ — финансовый директор', owner: 'Поле объявлено пакетом — в консоли не редактируется' },
+        { op: 'change', object: 'Процесс «Оплата счетов»', kind: 'процесс v2 → v3', before: 'маршрут без учёта договора', after: 'маршрут по договорам', openCases: '5 открытых дел доработают на v2; новые пойдут по v3' },
+        { op: 'add', object: 'Правило «Счёт просрочен»', kind: 'правило вывода', after: 'когда срок оплаты прошёл и счёт не оплачен → завести работу «Разобрать просрочку»' },
+        { op: 'change', object: 'Тип работы «Оплата счёта»', kind: 'тип работы', before: 'мера результата не объявлена', after: 'мера результата: сумма оплаты, ₽' }
+      ] }))
+  );
+</script>
+</body>
+</html>

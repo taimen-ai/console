@@ -1,0 +1,25 @@
+<!-- @dsCard group="Решения" height=300 subtitle="нажатие ≠ подтверждённое действие системы" width=760 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>DecisionStatus — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 12 } },
+      h(T.DecisionStatus, { rows: [{ state: 'wait', text: 'Отправляю решение…' }] }),
+      h(T.DecisionStatus, { rows: [{ state: 'done', text: 'Записано в ядре', at: '14:31' }, { state: 'wait', text: 'Исполняется: дело переходит на «Оплату»' }] }),
+      h(T.DecisionStatus, { rows: [{ state: 'done', text: 'Записано в ядре', at: '14:31' }, { state: 'done', text: 'Исполнено: дело на шаге «Оплата»', at: '14:31' }] }),
+      h(T.DecisionStatus, { rows: [{ state: 'fail', text: 'Не записано: Ирина Котова уже приняла эту работу', at: '14:29' }], actions: h(T.Button, { size: 'sm', variant: 'secondary' }, 'Обновить') }),
+      h(T.DecisionStatus, { rows: [{ state: 'warn', text: 'Не записано: Иван заменил счёт (14:30) — проверьте заново' }], actions: h(T.Button, { size: 'sm', variant: 'secondary' }, 'Показать изменения') }),
+      h(T.DecisionStatus, { rows: [{ state: 'fail', text: 'Не отправлено: нет связи с сервером. Решение не записано' }], actions: h(T.Button, { size: 'sm', variant: 'secondary' }, 'Повторить') })));
+</script>
+</body>
+</html>

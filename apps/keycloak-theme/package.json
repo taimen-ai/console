@@ -1,0 +1,31 @@
+{
+  "name": "@console/keycloak-theme",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Тема входа Keycloak в дизайн-системе консоли (Keycloakify): вход, смена пароля, сброс, ошибки",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build-keycloak-theme": "vite build && keycloakify build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@console/tokens": "workspace:*",
+    "@console/ui": "workspace:*",
+    "keycloakify": "11.16.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^6.0.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  }
+}

@@ -1,0 +1,27 @@
+packages:
+  - apps/*
+  - packages/*
+minimumReleaseAgeExclude:
+  - '@tanstack/react-router@1.170.41'
+  - '@tanstack/router-core@1.171.34'
+  - vite@8.3.2
+  - '@lingui/babel-plugin-lingui-macro@6.9.0'
+  - '@lingui/conf@6.9.0'
+  - '@lingui/core@6.9.0'
+  - '@lingui/message-utils@6.9.0'
+  - '@lingui/react@6.9.0'
+  - '@lingui/babel-plugin-extract-messages@6.9.0'
+  - '@lingui/cli@6.9.0'
+  - '@lingui/format-po@6.9.0'
+  - '@lingui/native-tools-android-arm64@0.1.5'
+  - '@lingui/native-tools-darwin-arm64@0.1.5'
+  - '@lingui/native-tools-darwin-x64@0.1.5'
+  - '@lingui/native-tools-linux-arm64-gnu@0.1.5'
+  - '@lingui/native-tools-linux-arm64-musl@0.1.5'
+  - '@lingui/native-tools-linux-x64-gnu@0.1.5'
+  - '@lingui/native-tools-linux-x64-musl@0.1.5'
+  - '@lingui/native-tools-win32-arm64-msvc@0.1.5'
+  - '@lingui/native-tools-win32-x64-msvc@0.1.5'
+  - '@lingui/native-tools@0.1.5'
+  - '@lingui/vite-plugin@6.9.0'
+  - globals@17.13.0

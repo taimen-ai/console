@@ -1,0 +1,72 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Taimen Console</title>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--surface-page); color: var(--text-primary); font-family: var(--font-sans); overflow: hidden; }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; }
+  .art { position: absolute; top: 0; left: 480px; width: 480px; height: 288px; overflow: hidden; }
+  .art svg { display: block; width: 480px; height: 288px; }
+  .brand { fill: var(--brand); }
+  .deep { fill: var(--text-primary); }
+  .human { fill: var(--accent); }
+  .tint { fill: var(--teal-100); }
+  .blk { rx: var(--radius-md); }
+  .cut { fill: var(--surface-page); }
+  .cut-line { fill: none; stroke: var(--surface-page); stroke-width: 2; }
+  .wait { fill: none; stroke: var(--border-dashed); stroke-width: 2; stroke-dasharray: 4 3; }
+  .gate { stroke: var(--border-dashed); stroke-width: 1; stroke-dasharray: 3 3; }
+  .sq { rx: var(--radius-sm); }
+  .words { position: absolute; left: var(--space-6); bottom: var(--space-6); max-width: 440px; }
+  .name { margin: 0; font-size: 96px; line-height: .95; font-weight: 600; letter-spacing: -0.02em; color: var(--text-primary); }
+  .tag { margin: var(--space-3) 0 0 4px; font-size: 14px; line-height: 20px; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="art" aria-hidden="true">
+    <svg viewBox="0 0 480 288" width="480" height="288">
+      <!--
+        blocks      brand 144×280 slab bled off the top (identity, largest) · text-primary 128×176 (ink / чернила) · accent 96×96 once (единственное «нужен человек») · teal-100 tint 64×224 bled off the right — ≈38% of 960×288
+        arrangement a strip of stages like «Путь работы»: bottoms on one line space-6 above the edge, dashed gates (border-dashed) between the first three stages
+        pattern     executor glyphs from «человек ○ · агент ▢ · процесс ⬡»: circles, radius-sm squares and hexagons cut out of the slabs in surface-page at a space-6 pitch, one dashed circle waiting on the ground before the accent block
+        scales      sides in space-4 multiples; gutters space-4 + gate space-4; pitch space-6; corners radius-md (blocks), radius-sm (glyph squares), radius-full circles
+      -->
+      <rect class="brand blk" x="16" y="-16" width="144" height="280" rx="8"/>
+      <line class="gate" x1="176" y1="120" x2="176" y2="264"/>
+      <rect class="deep blk" x="192" y="88" width="128" height="176" rx="8"/>
+      <line class="gate" x1="328" y1="176" x2="328" y2="264"/>
+      <rect class="human blk" x="336" y="168" width="96" height="96" rx="8"/>
+      <rect class="tint blk" x="448" y="40" width="64" height="224" rx="8"/>
+
+      <!-- glyph column on the brand slab: human / agent / process at a space-6 pitch -->
+      <circle class="cut" cx="52" cy="40" r="8"/>
+      <rect class="cut sq" x="68" y="32" width="16" height="16" rx="4"/>
+      <path class="cut" d="M112 31l8 4.5v9l-8 4.5-8-4.5v-9z"/>
+      <rect class="cut sq" x="44" y="80" width="16" height="16" rx="4"/>
+      <path class="cut" d="M88 79l8 4.5v9l-8 4.5-8-4.5v-9z"/>
+      <circle class="cut" cx="124" cy="88" r="8"/>
+      <path class="cut" d="M52 127l8 4.5v9l-8 4.5-8-4.5v-9z"/>
+      <circle class="cut" cx="88" cy="136" r="8"/>
+      <rect class="cut sq" x="116" y="128" width="16" height="16" rx="4"/>
+      <circle class="cut" cx="52" cy="184" r="8"/>
+      <rect class="cut sq" x="80" y="176" width="16" height="16" rx="4"/>
+      <circle class="cut-line" cx="124" cy="184" r="7"/>
+      <!-- a row across the ink block -->
+      <circle class="cut" cx="224" cy="120" r="8"/>
+      <rect class="cut sq" x="248" y="112" width="16" height="16" rx="4"/>
+      <path class="cut" d="M288 111l8 4.5v9l-8 4.5-8-4.5v-9z"/>
+      <!-- a person waiting before the human block -->
+      <circle class="wait" cx="384" cy="136" r="10"/>
+    </svg>
+  </div>
+  <div class="words">
+    <h1 class="name">Taimen<br>Console</h1>
+    <p class="tag">Диспетчерская для человека, а не для машины</p>
+  </div>
+</div>
+</body>
+</html>

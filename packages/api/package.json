@@ -1,0 +1,20 @@
+{
+  "name": "@console/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Типы API ядра, сгенерированные из снимка openapi/control-plane.json; руками не пишутся",
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "openapi-typescript ../../openapi/control-plane.json -o src/control-plane.ts --root-types --alphabetize",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "openapi-typescript ../../openapi/control-plane.json -o src/control-plane.ts --root-types --alphabetize"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.13.0",
+    "typescript": "^6.0.2"
+  }
+}

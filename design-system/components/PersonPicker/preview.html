@@ -1,0 +1,25 @@
+<!-- @dsCard group="Формы" height=200 subtitle="исполнители по роли; без роли — предупреждением" width=560 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>PersonPicker — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  function Demo() {
+    var s = React.useState('ivan');
+    return h(T.PersonPicker, { value: s[0], onChange: s[1], options: [
+      { id: 'ivan', name: 'Иван Сорокин', meta: 'Бухгалтер · ведёт «Вектор» · в работе 3' },
+      { id: 'maria', name: 'Мария Лебедева', meta: 'Бухгалтер · в отпуске до 6 октября', disabled: true },
+      { id: 'irina', name: 'Ирина Котова', meta: 'Финансовый директор · нет роли «Бухгалтер»', warn: true }] });
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h(Demo));
+</script>
+</body>
+</html>

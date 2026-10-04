@@ -1,0 +1,21 @@
+<!-- @dsCard group="Каркас" height=200 subtitle="путь, статус, заголовок с глагола, действия" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>PageHeader — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.PageHeader, { crumbs: [{ label: '← Работа', href: '#' }], number: 'TASK-000845', status: { status: 'failed', label: 'не прошла проверку' },
+      title: 'Сверить счёт №421 «Вектор»', lead: 'Три попытки: в счёте 99 600 ₽, в акте сверки 96 000 ₽ — агенту не исправить',
+      actions: [h(T.Button, { key: 1, variant: 'ghost', size: 'sm' }, 'Передать'), h(T.Button, { key: 2, variant: 'ghost', size: 'sm' }, 'Снять'), h(T.Button, { key: 3, variant: 'secondary', size: 'sm' }, 'Изменить')] }));
+</script>
+</body>
+</html>

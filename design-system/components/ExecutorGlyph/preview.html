@@ -1,0 +1,29 @@
+<!-- @dsCard group="Идентичность" height=104 subtitle="круг — человек · скруглённый квадрат — агент · шестиугольник — процесс/правило" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>ExecutorGlyph — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' } },
+      ['lg', 'md', 'sm'].map(function (s) {
+        return h('div', { key: s, style: { display: 'flex', gap: 10, alignItems: 'center' } },
+          h(T.ExecutorGlyph, { kind: 'human', name: 'Ирина Котова', size: s }),
+          h(T.ExecutorGlyph, { kind: 'agent', name: 'Сверщик счетов', label: 'Св', size: s }),
+          h(T.ExecutorGlyph, { kind: 'process', name: 'Оплата счетов', label: 'ОС', size: s }));
+      }),
+      h('div', { style: { display: 'flex', gap: 10, alignItems: 'center' } },
+        h(T.ExecutorGlyph, { kind: 'human', name: 'Иван Лебедев', size: 'lg', waiting: true }),
+        h('span', { style: { fontSize: 12, color: 'var(--text-muted)' } }, 'ожидание человека — пунктир')))
+  );
+</script>
+</body>
+</html>

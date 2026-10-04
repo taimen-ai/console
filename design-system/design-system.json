@@ -1,0 +1,198 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-09-29T22:40:00+03:00"
+  },
+  "title": "Taimen Console",
+  "namespace": "TaimenConsole",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "sections": {},
+  "groups": [
+    "Icons"
+  ],
+  "assetGroups": {
+    "Icons": {
+      "name": "Icons",
+      "tile": "s",
+      "order": [
+        "search.svg",
+        "command.svg",
+        "message-square.svg",
+        "inbox.svg",
+        "clock.svg",
+        "check.svg",
+        "x.svg",
+        "lock.svg",
+        "shield-check.svg",
+        "file-text.svg",
+        "file-check.svg",
+        "layers.svg",
+        "target.svg",
+        "gauge.svg",
+        "activity.svg",
+        "wrench.svg",
+        "database.svg",
+        "wifi-off.svg",
+        "arrow-left.svg",
+        "arrow-right.svg",
+        "chevron-down.svg",
+        "plus.svg"
+      ],
+      "files": {
+        "search.svg": {
+          "name": "search.svg",
+          "blob": "830abb43a8b23dcaf9ae67c3e3571fd4",
+          "size": 8041,
+          "type": "image/svg+xml"
+        },
+        "command.svg": {
+          "name": "command.svg",
+          "blob": "fbc2296c48762f8d62774c6a89e45b00",
+          "size": 8054,
+          "type": "image/svg+xml"
+        },
+        "message-square.svg": {
+          "name": "message-square.svg",
+          "blob": "528bc60b440730d055ee4565ee346ffb",
+          "size": 324,
+          "type": "image/svg+xml"
+        },
+        "inbox.svg": {
+          "name": "inbox.svg",
+          "blob": "67959caae7b7b69b0b9a995a87fbf103",
+          "size": 8156,
+          "type": "image/svg+xml"
+        },
+        "clock.svg": {
+          "name": "clock.svg",
+          "blob": "7f5a5b680b31d887d653a45b95a6e27b",
+          "size": 263,
+          "type": "image/svg+xml"
+        },
+        "check.svg": {
+          "name": "check.svg",
+          "blob": "9e24bee905253331d69dc11214f06787",
+          "size": 224,
+          "type": "image/svg+xml"
+        },
+        "x.svg": {
+          "name": "x.svg",
+          "blob": "126c257438a15bfc5ddd24a40df7e613",
+          "size": 250,
+          "type": "image/svg+xml"
+        },
+        "lock.svg": {
+          "name": "lock.svg",
+          "blob": "a8ef489177e89827f1dc92041d23249a",
+          "size": 299,
+          "type": "image/svg+xml"
+        },
+        "shield-check.svg": {
+          "name": "shield-check.svg",
+          "blob": "d07c9fece3d56208c0b9ac3d4ef9f42d",
+          "size": 405,
+          "type": "image/svg+xml"
+        },
+        "file-text.svg": {
+          "name": "file-text.svg",
+          "blob": "c44489701108341dd3da9ac1403da09a",
+          "size": 449,
+          "type": "image/svg+xml"
+        },
+        "file-check.svg": {
+          "name": "file-check.svg",
+          "blob": "fb00562785ab89e993149f47f48c217a",
+          "size": 397,
+          "type": "image/svg+xml"
+        },
+        "layers.svg": {
+          "name": "layers.svg",
+          "blob": "64e2e37ec225195cd838738b697a712c",
+          "size": 505,
+          "type": "image/svg+xml"
+        },
+        "target.svg": {
+          "name": "target.svg",
+          "blob": "d01649c282408ad6318b534e9a7de99c",
+          "size": 315,
+          "type": "image/svg+xml"
+        },
+        "gauge.svg": {
+          "name": "gauge.svg",
+          "blob": "f67b654bb94204f39ab4ae88953fa914",
+          "size": 268,
+          "type": "image/svg+xml"
+        },
+        "activity.svg": {
+          "name": "activity.svg",
+          "blob": "5239000539f3541a303c03bef9bc899b",
+          "size": 8105,
+          "type": "image/svg+xml"
+        },
+        "wrench.svg": {
+          "name": "wrench.svg",
+          "blob": "f710f200485f6a3be67ef2055df1052f",
+          "size": 402,
+          "type": "image/svg+xml"
+        },
+        "database.svg": {
+          "name": "database.svg",
+          "blob": "582276713f9eb38c9bb2119e74be8d7f",
+          "size": 327,
+          "type": "image/svg+xml"
+        },
+        "wifi-off.svg": {
+          "name": "wifi-off.svg",
+          "blob": "0d0948fe068023476b46bf66516002cf",
+          "size": 8283,
+          "type": "image/svg+xml"
+        },
+        "arrow-left.svg": {
+          "name": "arrow-left.svg",
+          "blob": "42d12f0c28294da0c441c84a489658c9",
+          "size": 8026,
+          "type": "image/svg+xml"
+        },
+        "arrow-right.svg": {
+          "name": "arrow-right.svg",
+          "blob": "3f5f5902a7a8b6bddfbb4582acc636c2",
+          "size": 251,
+          "type": "image/svg+xml"
+        },
+        "chevron-down.svg": {
+          "name": "chevron-down.svg",
+          "blob": "05e4be27475aefc43dbd697df8e4132f",
+          "size": 221,
+          "type": "image/svg+xml"
+        },
+        "plus.svg": {
+          "name": "plus.svg",
+          "blob": "77d08f47e6ad9a556d820e9b659c9b08",
+          "size": 246,
+          "type": "image/svg+xml"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Taimen Console maintainers",
+    "at": "2026-10-03T20:40:00+03:00",
+    "via": "Claude Code",
+    "note": "Combobox: подпись варианта на подсвеченной строке — вторичным цветом (контраст AA; приглушённый на surface-hover не проходил)"
+  }
+}

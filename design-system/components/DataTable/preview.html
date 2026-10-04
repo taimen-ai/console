@@ -1,0 +1,22 @@
+<!-- @dsCard group="Списки" height=300 subtitle="справочник: название и суть, срок, источник" width=900 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>DataTable — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.DataTable, { columns: [{ key: 'name', title: 'Договор' }, { key: 'until', title: 'Срок действия', num: true }, { key: 'src', title: 'Источник' }, { key: 'upd', title: 'Обновлено', num: true }],
+      rows: [
+        { name: h('span', null, h('a', { className: 'tc-cell-title', href: '#' }, 'Договор поставки № АС-12'), h('span', { className: 'tc-cell-sub' }, 'ООО «Альфа-Снаб» · поставка металлопроката')), until: 'до 31.12.2026', src: h(T.SourceChip, { source: 'external', label: 'из 1С' }), upd: 'сегодня 12:00' },
+        { name: h('span', null, h('a', { className: 'tc-cell-title', href: '#' }, 'Договор аренды склада № 3'), h('span', { className: 'tc-cell-sub' }, 'ИП Петров · склад на Заводской, 4')), until: h('span', null, 'до 31.10.2026', h('span', { className: 'tc-cell-warn' }, 'через 30 дней')), src: h(T.SourceChip, { source: 'authoritative', label: 'вручную' }), upd: '12.09' }] }));
+</script>
+</body>
+</html>

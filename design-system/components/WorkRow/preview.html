@@ -1,0 +1,32 @@
+<!-- @dsCard group="Работа" height=310 subtitle="строка = четыре печати + фраза готовности + давность" width=1200 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>WorkRow — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { border: '1px solid var(--border-subtle)', borderRadius: 8, overflow: 'hidden' } },
+      h(T.WorkRow, { mine: true, status: 'waiting_human', statusLabel: 'ждёт вас', title: 'Согласовать оплату счёта «Альфа-Снаб»', number: 'TASK-000840',
+        readiness: 'Счёт сверен с поставкой; нужна ваша подпись — сумма выше порога', age: '1 ч 25 мин', action: 'Решить',
+        seals: { origin: { kind: 'rule', text: 'правило «Счёт получен»' }, executor: { kind: 'process', name: 'Оплата счетов', label: 'ОС' }, evidence: { method: 'pending' }, signature: { pending: true, who: 'вы' } } }),
+      h(T.WorkRow, { status: 'blocked', statusLabel: 'застряла: некому поручить', title: 'Проверить договор с «Вектор»', number: 'TASK-000838',
+        readiness: 'Ждёт роль «Юрист» 4 ч', age: '4 ч', action: 'Назначить',
+        seals: { origin: { kind: 'process', text: 'шаг «Проверка договора»' }, executor: null, evidence: { method: 'none' }, signature: null } }),
+      h(T.WorkRow, { status: 'running', title: 'Подготовить заявку на тендер №0373200041', number: 'TASK-000836',
+        readiness: 'Попытка №1 · 12 мин · 4 из 6 разделов', age: '12 мин',
+        seals: { origin: { kind: 'external', text: 'пришло из ЕИС' }, executor: { kind: 'agent', name: 'Подготовщик', label: 'Пз' }, evidence: { method: 'none', text: 'проверка впереди' }, signature: { pending: true, who: 'Ирина' } } }),
+      h(T.WorkRow, { status: 'verified', title: 'Оплатить счёт №417', number: 'TASK-000812',
+        readiness: 'Оплачено 184 500 ₽ — платёж подтверждён банком', age: 'вчера',
+        seals: { origin: { kind: 'rule', text: 'правило «Счёт получен»' }, executor: { kind: 'human', name: 'Иван Лебедев' }, evidence: { method: 'external', text: 'внешним состоянием' }, signature: { who: 'Ирина', channel: 'Telegram', at: '12:41' } } }))
+  );
+</script>
+</body>
+</html>

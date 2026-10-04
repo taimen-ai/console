@@ -1,0 +1,5 @@
+Иконки Lucide (ISC), контур 2px, 24×24, `stroke="currentColor"`. Через `<img>` они рисуются чёрным, поэтому в интерфейсе их вставляют CSS-маской: `mask: url(<asset>) center / contain no-repeat; background: currentColor;` — так иконка берёт цвет текста (`text-secondary`, `text-muted` или цвет статуса).
+
+Для чего какая: `search` — поиск и ⌘K · `command` — палитра · `message-square` — ассистент и канал · `clock` — давность, срок, свежесть · `check` — предусловие выполнено · `x` — закрыть · `shield-check` — «что доверено», полномочия · `lock` — нельзя решать / режим чтения · `file-text`, `file-check` — доказательства и результаты · `layers` — пакеты · `target` — исходы и меры результата · `gauge`, `activity` — итоги периода · `inbox` — «ждёт вашей подписи» · `wrench` — правила игры · `database` — технический слой · `wifi-off` — деградация · `arrow-left`, `arrow-right`, `chevron-down`, `plus` — навигация и раскрытие.
+
+Намеренно не взяты `git-branch`, `terminal`, `cpu` (подразумевают разработку ПО) и `sparkles` (клише «ИИ»). Новые иконки берутся только из Lucide.

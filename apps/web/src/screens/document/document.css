@@ -1,0 +1,61 @@
+/* Страница документа: содержимое слева, «О документе» справа. */
+.doc { container-type: inline-size; }
+.doc-tools { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.doc-tools a { text-decoration: none; }
+.doc-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, var(--layout-rail)); gap: var(--zone-pad); align-items: start; }
+.doc-pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font: 400 13px/19px var(--font-mono); color: var(--text-primary); max-height: 70vh; overflow: auto; }
+.doc-md { font-size: 14px; line-height: 21px; }
+.doc-md table { border-collapse: collapse; margin: var(--space-2) 0; }
+.doc-md th, .doc-md td { border: 1px solid var(--border-subtle); padding: 4px 8px; text-align: left; }
+.doc-image { max-width: 100%; height: auto; border-radius: var(--radius-sm); }
+.doc-none { display: flex; align-items: center; gap: var(--space-3); color: var(--text-secondary); }
+.doc-none .tc-icon { width: 24px; height: 24px; flex: none; }
+.doc-hash { font-size: 12px; }
+@container (max-width: 880px) { .doc-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* PDF — страницы на canvas по ширине колонки */
+.doc-pdf { display: flex; flex-direction: column; gap: var(--space-4); }
+.doc-pdf-page { margin: 0; display: flex; flex-direction: column; gap: var(--space-1); }
+.doc-pdf-sheet { position: relative; align-self: flex-start; max-width: 100%; --scale-round-x: 1px; --scale-round-y: 1px; }
+.doc-pdf-page canvas { display: block; max-width: 100%; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); }
+.doc-pdf-search { display: flex; flex-direction: column; gap: var(--space-1); }
+.doc-pdf-found { margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-2); font-size: 13px; min-height: 1.2em; }
+/* Текстовый слой pdf.js (подмножество web/pdf_viewer.css): прозрачный текст поверх рисунка. */
+.doc-pdf-sheet .textLayer { position: absolute; inset: 0; overflow: clip; opacity: 1; line-height: 1; text-align: initial; letter-spacing: normal; word-spacing: normal; text-size-adjust: none; forced-color-adjust: none; transform-origin: 0 0; z-index: 0; color-scheme: only light;
+  --min-font-size: 1; --text-scale-factor: calc(var(--total-scale-factor) * var(--min-font-size)); --min-font-size-inv: calc(1 / var(--min-font-size)); }
+.doc-pdf-sheet .textLayer :is(span, br) { color: transparent; position: absolute; white-space: pre; cursor: text; transform-origin: 0% 0%; user-select: text; }
+.doc-pdf-sheet .textLayer > :not(.markedContent), .doc-pdf-sheet .textLayer .markedContent span:not(.markedContent) {
+  z-index: 1; --font-height: 0; font-size: calc(var(--text-scale-factor) * var(--font-height)); --scale-x: 1; --rotate: 0deg;
+  transform: rotate(var(--rotate)) scaleX(var(--scale-x)) scale(var(--min-font-size-inv)); }
+.doc-pdf-sheet .textLayer .markedContent { display: contents; }
+.doc-pdf-sheet .textLayer span[role="img"] { user-select: none; cursor: default; }
+.doc-pdf-sheet .textLayer ::selection { background: color-mix(in srgb, AccentColor, transparent 50%); color: transparent; }
+.doc-pdf-sheet .textLayer br::selection { background: transparent; }
+.doc-pdf-sheet .textLayer .endOfContent { display: block; position: absolute; inset: 100% 0 0; z-index: 0; cursor: default; user-select: none; }
+.doc-pdf-sheet .textLayer.selecting .endOfContent { top: 0; }
+.doc-pdf-sheet .textLayer mark.doc-pdf-mark { color: transparent; background: color-mix(in srgb, var(--accent) 35%, transparent); border-radius: 2px; padding: 0; }
+.doc-pdf-sheet .textLayer mark.doc-pdf-mark-on { background: color-mix(in srgb, var(--accent) 70%, transparent); outline: 2px solid var(--accent); }
+.doc-pdf-nav { display: flex; align-items: center; gap: var(--space-2); font-size: 13px; }
+.doc-pdf-page figcaption { font-size: 12px; text-align: center; }
+.doc-pdf-more { display: flex; justify-content: center; }
+
+/* Офисные документы */
+.doc-docx { max-width: 72ch; line-height: 1.55; }
+.doc-docx h2, .doc-docx h3, .doc-docx h4 { margin: var(--space-4) 0 var(--space-2); }
+.doc-docx table { border-collapse: collapse; margin: var(--space-3) 0; }
+.doc-docx td, .doc-docx th { border: 1px solid var(--border-subtle); padding: var(--space-1) var(--space-2); vertical-align: top; }
+.doc-docx img { max-width: 100%; height: auto; }
+.doc-xlsx { display: flex; flex-direction: column; gap: var(--space-3); }
+.doc-xlsx-sheets { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.doc-xlsx-box { overflow: auto; max-height: 70vh; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); }
+.doc-xlsx-box:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.doc-xlsx-table { border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+.doc-xlsx-table td, .doc-xlsx-table th { border: 1px solid var(--border-subtle); padding: 4px 8px; white-space: nowrap; text-align: left; }
+.doc-xlsx-table th { position: sticky; left: 0; background: var(--surface-sunken); color: var(--text-muted); font-weight: 400; }
+
+/* Презентация: текст слайдов по порядку (OfficePreview.tsx, PptxPreview) */
+.doc-pptx-slides { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); }
+.doc-pptx-slide { border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: var(--space-3); }
+.doc-pptx-title { font-size: 16px; margin: 0 0 var(--space-2); }
+.doc-pptx-n { font-size: 12px; font-weight: 400; margin-right: var(--space-1); }
+.doc-pptx-slide ul { margin: 0; padding-left: var(--space-4); }

@@ -1,0 +1,18 @@
+<!-- @dsCard group="Списки" height=72 subtitle="поиск списка" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>SearchField — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(T.SearchField, { placeholder: 'Найти по названию или номеру', style: { maxWidth: 360 } }));
+</script>
+</body>
+</html>

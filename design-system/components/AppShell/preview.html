@@ -1,0 +1,24 @@
+<!-- @dsCard group="Каркас" height=560 subtitle="каркас: меню закреплено, ассистент открыт" width=1280 -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>AppShell — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-sans); color: var(--text-primary); }
+  #root { padding: 16px; }
+  #root { padding: 0; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.AppShell, { navPinned: true, assistantOpen: true,
+      nav: h(T.NavDrawer, { org: 'Полярис', pinned: true, onPin: function () {}, groups: [{ items: [{ label: 'Сегодня', icon: h(T.Icon, { name: 'today' }), active: true }, { label: 'Работа', icon: h(T.Icon, { name: 'work' }), count: 2, human: true }] }] }),
+      topbar: h(T.TopBar, { brand: { mark: 'П' }, showLive: false, org: 'Полярис', date: 'Сегодня, 1 октября', at: '14:02', user: 'Антон Белов', onMenu: function () {}, menuOpen: true, assistantOpen: true }),
+      status: h(T.LiveChip, { at: '14:02' }),
+      assistant: h(T.AssistantPanel, { docked: true, onClose: function () {}, suggestions: ['Что из застрявшего важнее всего?'], messages: [{ divider: 'Сегодня' }, { from: 'asst', proactive: { origin: 'процесс «Оплата счетов»', human: true }, text: 'Процесс «Оплата счетов» просит согласовать оплату счёта №417, 184 500 ₽.', actions: [{ label: 'Открыть решение' }], at: '12:37', channel: 'Telegram' }] }) },
+      h(T.Zone, { title: 'Итог' }, h('p', { className: 'tc-secondary', style: { margin: 0 } }, 'Рабочая область экрана.'))));
+</script>
+</body>
+</html>

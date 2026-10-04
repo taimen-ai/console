@@ -1,0 +1,24 @@
+<!-- @dsCard group="Идентичность" height=116 subtitle="одна анатомия для человека, агента и процесса" -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>IdentityBlock — превью</title>
+<style>
+  body { margin: 0; background: var(--surface-page); }
+  #root { padding: 16px; }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TaimenConsole, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 16 } },
+      h(T.IdentityBlock, { kind: 'human', name: 'Ирина Котова', meta: 'Финансовый директор', now: 'решает 2' }),
+      h(T.IdentityBlock, { kind: 'agent', name: 'Сверщик счетов', label: 'Св', meta: 'r7 · агент', now: 'делает «Сверить счёт №417» · 12 мин' }),
+      h(T.IdentityBlock, { kind: 'process', name: 'Оплата счетов', label: 'ОС', meta: 'процесс · v2', now: '5 дел идёт' }),
+      h(T.IdentityBlock, { kind: 'process', name: 'invoice-received', label: '', meta: 'правило · включено' }))
+  );
+</script>
+</body>
+</html>
